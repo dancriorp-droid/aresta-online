@@ -1,0 +1,64 @@
+name: 🤖 Scraper Diário - Aresta Online
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+
+  workflow_dispatch:
+    inputs:
+      data_inicio:
+        description: 'Data de início (YYYY-MM-DD) - opcional, padrão é hoje'
+        required: false
+        default: ''
+      data_fim:
+        description: 'Data final (YYYY-MM-DD) - opcional, padrão é fim do mês'
+        required: false
+        default: ''
+      hotel_id:
+        description: 'ID de um hotel específico (alto_da_boa_vista, hamburgo, etc.) - opcional, padrão é todos'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Instalar dependências
+        run: |
+          cd scraper
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: 🦈 Executar scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.data_inicio }}" ]; then
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" "${{ github.event.inputs.hotel_id }}"
+          else
+            python scraper.py
+          fi
+
+      - name: 🔄 Sincronizar config
+        run: |
+          cp scraper/hoteis_config.json hoteis_config.json
+
+      - name: 💾 Salvar resultados
+        run: |
+          git config user.name "Aresta Bot"
+          git config user.email "aresta-bot@noreply.github.com"
+          git add dados/ hoteis_config.json
+          git diff --staged --quiet || git commit -m "🤖 Atualização automática $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
