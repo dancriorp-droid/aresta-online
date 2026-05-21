@@ -1,0 +1,105 @@
+{
+  "_comentario": "Configuração dos hotéis monitorados. Para adicionar/remover, edite este arquivo. O 'id' é usado internamente (sem acentos/espaços). O 'slug' é o que aparece na URL do Booking.",
+
+  "configuracoes_busca": {
+    "adultos": 2,
+    "quartos": 1,
+    "moeda": "BRL",
+    "idioma": "pt-br"
+  },
+
+  "hoteis": [
+    {
+      "id": "alto_da_boa_vista",
+      "nome": "Pousada Alto Da Boa Vista",
+      "cidade": "Campos do Jordão",
+      "emoji": "🎯",
+      "slug": "pousada-alto-da-boa-vista",
+      "concorrentes": [
+        { "nome": "Pousada Villa Capivary",        "slug": "pousada-villa-capivary" },
+        { "nome": "Pousada Da Pedra",              "slug": "pousada-da-pedra" },
+        { "nome": "Villa Amistà Campos do Jordão", "slug": "villa-amista-campos-do-jordao" },
+        { "nome": "Pousada Boutique Figueira",     "slug": "pousada-figueira-da-serra" },
+        { "nome": "L.A.H. Hostellerie",            "slug": "l-a-h-hostellerie" },
+        { "nome": "Carballo Hotel & Spa",          "slug": "carballo-amp-spa" },
+        { "nome": "Hotel Boutique QUEBRA-NOZ",     "slug": "quebra-noz" }
+      ]
+    },
+    {
+      "id": "villa_caravaggio",
+      "nome": "Chalés Villa Caravaggio",
+      "cidade": "Domingos Martins",
+      "emoji": "🏕️",
+      "slug": "chales-villa-caravaggio",
+      "concorrentes": [
+        { "nome": "Pousada Rabo do Lagarto", "slug": "pousada-rabo-do-lagarto" },
+        { "nome": "Glamping Pedra Azul",     "slug": "glamping-pedra-azul-domingos-martins1" },
+        { "nome": "Cabana Raposo",           "slug": "cabana-raposo-em-santa-teresa" }
+      ]
+    },
+    {
+      "id": "hamburgo",
+      "nome": "Hamburgo Palace Hotel",
+      "cidade": "Balneário Camboriú",
+      "emoji": "🍺",
+      "slug": "hamburgo-palace",
+      "concorrentes": [
+        { "nome": "Camboriú Praia",      "slug": "camboriu-pecon" },
+        { "nome": "San Marino Cassino",  "slug": "san-marino-cassino" },
+        { "nome": "Bella Camboriú",      "slug": "bella-camboriu" },
+        { "nome": "Ibis Balneário",      "slug": "ibis-plaza-balneario-camboriu" }
+      ]
+    },
+    {
+      "id": "terrazzo",
+      "nome": "Terrazzo Bonjardim",
+      "cidade": "Campos do Jordão",
+      "emoji": "🏨",
+      "slug": "pousada-terrazzo-bonjardim-campos-do-jordao",
+      "concorrentes": [
+        { "nome": "Hotel Moinho Itália",       "slug": "o-moinho" },
+        { "nome": "Hotel Vila Dom Bosco",      "slug": "vila-dom-bosco" },
+        { "nome": "Altitude Lodge Hotel",      "slug": "altitude-lodge" },
+        { "nome": "La Vita Pousada de Charme", "slug": "la-vie-pousada-de-charme" }
+      ]
+    },
+    {
+      "id": "serra_negra",
+      "nome": "Serra Negra Pousada & Spa",
+      "cidade": "Guarapari",
+      "emoji": "🏖️",
+      "slug": "serra-negra-pousada-spa",
+      "concorrentes": [
+        { "nome": "Duas Praias Hotel Pousada",       "slug": "pousada-duas-praias" },
+        { "nome": "Hotel Pousada Caminho da Praia",  "slug": "pousada-caminho-da-praia-guarapari" },
+        { "nome": "Hotel Diamantina Guarapari",      "slug": "diamantina-guarapari" }
+      ]
+    },
+    {
+      "id": "canoeiros",
+      "nome": "Hotel Canoeiros",
+      "cidade": "Pirapora",
+      "emoji": "🏞️",
+      "slug": "hotel-canoeiros",
+      "concorrentes": [
+        { "nome": "Pousada Grande Rio",   "slug": "pousada-grande-rio" },
+        { "nome": "Hotel Mundial Pirapora", "slug": "mundial-pirapora" },
+        { "nome": "Villacoco",            "slug": "villacoco" }
+      ]
+    },
+    {
+      "id": "honorato",
+      "nome": "Hotel Honorato Plaza",
+      "cidade": "Rio Verde",
+      "emoji": "🏨",
+      "slug": "honorato-plaza",
+      "concorrentes": [
+        { "nome": "Hotel Gelps",              "slug": "gelps" },
+        { "nome": "Rota Hotéis Rio Verde",    "slug": "rota-hoteis-rio-verde" },
+        { "nome": "Acanto Rio Verde",         "slug": "acanto-rio-verde" },
+        { "nome": "Bons Tempos Rio Verde",    "slug": "bons-tempos-rio-verde" },
+        { "nome": "Transamerica Fit Rio Verde", "slug": "transamerica-fit-rio-verde" }
+      ]
+    }
+  ]
+}

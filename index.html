@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aresta Online — Acesso</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     ARESTA ONLINE — Design System
+     Paleta inspirada na hotelaria sofisticada:
+     - Azul-noite profundo (autoridade, confiança)
+     - Creme/marfim (warmth, hospitalidade)
+     - Dourado discreto (sofisticação)
+     ============================================================ */
+  :root {
+    --azul-noite: #0A2540;
+    --azul-medio: #185FA5;
+    --azul-claro: #EBF4FF;
+    --creme: #FAF7F2;
+    --marfim: #F5F1E8;
+    --dourado: #B8935A;
+    --dourado-claro: #D4B888;
+    --carvao: #1A1A1A;
+    --cinza: #6B6B6B;
+    --cinza-claro: #E2E6ED;
+    --branco: #FFFFFF;
+    --vermelho: #C0392B;
+    --verde: #27AE60;
+    --amarelo: #F39C12;
+
+    --sombra-suave: 0 4px 24px rgba(10, 37, 64, 0.08);
+    --sombra-forte: 0 12px 48px rgba(10, 37, 64, 0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--creme);
+    color: var(--carvao);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Fundo decorativo — formas geométricas suaves */
+  body::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--azul-claro) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -300px;
+    left: -200px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(184, 147, 90, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 440px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* CARD DE LOGIN */
+  .login-card {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 48px 40px;
+    box-shadow: var(--sombra-forte);
+    border: 1px solid rgba(10, 37, 64, 0.04);
+    animation: subir 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes subir {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* LOGO/MARCA */
+  .marca {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .marca-icone {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, var(--azul-noite) 0%, var(--azul-medio) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(10, 37, 64, 0.2);
+  }
+  .marca-icone svg { width: 28px; height: 28px; color: var(--dourado-claro); }
+  .marca-titulo {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--azul-noite);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .marca-subtitulo {
+    font-size: 12px;
+    color: var(--cinza);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* DIVISOR ELEGANTE */
+  .divisor {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 28px;
+    color: var(--cinza);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .divisor::before, .divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--cinza-claro);
+  }
+  .divisor span { padding: 0 16px; }
+
+  /* CAMPOS */
+  .campo {
+    margin-bottom: 20px;
+  }
+  .campo-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--azul-noite);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .campo-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--cinza-claro);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: var(--carvao);
+    background: var(--creme);
+    transition: all 0.2s ease;
+  }
+  .campo-input:focus {
+    outline: none;
+    border-color: var(--azul-medio);
+    background: var(--branco);
+    box-shadow: 0 0 0 4px var(--azul-claro);
+  }
+
+  /* BOTÃO */
+  .botao {
+    width: 100%;
+    padding: 15px;
+    background: var(--azul-noite);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .botao:hover {
+    background: var(--azul-medio);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(24, 95, 165, 0.25);
+  }
+  .botao:active {
+    transform: translateY(0);
+  }
+
+  /* MENSAGEM DE ERRO */
+  .erro {
+    background: rgba(192, 57, 43, 0.08);
+    border: 1px solid rgba(192, 57, 43, 0.2);
+    color: var(--vermelho);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 16px;
+    display: none;
+    text-align: center;
+  }
+  .erro.ativo {
+    display: block;
+    animation: tremer 0.4s ease;
+  }
+  @keyframes tremer {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+
+  /* RODAPÉ */
+  .rodape {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 11px;
+    color: var(--cinza);
+    letter-spacing: 0.05em;
+  }
+  .rodape span { color: var(--dourado); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="login-card">
+
+    <div class="marca">
+      <div class="marca-icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/>
+        </svg>
+      </div>
+      <h1 class="marca-titulo">Aresta</h1>
+      <div class="marca-subtitulo">Rate Intelligence</div>
+    </div>
+
+    <div class="divisor"><span>Acesso da Equipe</span></div>
+
+    <form id="formLogin" onsubmit="fazerLogin(event)">
+      <div class="campo">
+        <label class="campo-label" for="usuario">Usuário</label>
+        <input class="campo-input" type="text" id="usuario" name="usuario" required autocomplete="username" placeholder="Digite seu usuário">
+      </div>
+
+      <div class="campo">
+        <label class="campo-label" for="senha">Senha</label>
+        <input class="campo-input" type="password" id="senha" name="senha" required autocomplete="current-password" placeholder="Digite sua senha">
+      </div>
+
+      <button type="submit" class="botao">
+        Entrar
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+      <div class="erro" id="erro">Usuário ou senha incorretos.</div>
+    </form>
+
+    <div class="rodape">
+      © 2026 <span>Aresta Soluções</span> · Monitoramento Inteligente
+    </div>
+
+  </div>
+</div>
+
+<script>
+  /* ============================================================
+     LOGIN — Lista de usuários permitidos
+     Pra adicionar/remover usuário: edite o objeto abaixo.
+     Pra produção, considere usar um sistema mais seguro.
+     ============================================================ */
+  const USUARIOS = {
+    'admin':    'aresta2026',
+    'daniel':   'aresta2026',
+    'equipe':   'hotel123'
+    // adicione mais: 'nome': 'senha'
+  };
+
+  function fazerLogin(e) {
+    e.preventDefault();
+    const usuario = document.getElementById('usuario').value.trim().toLowerCase();
+    const senha = document.getElementById('senha').value;
+    const erro = document.getElementById('erro');
+
+    if (USUARIOS[usuario] && USUARIOS[usuario] === senha) {
+      // Salva sessão
+      sessionStorage.setItem('aresta_logado', usuario);
+      sessionStorage.setItem('aresta_login_em', new Date().toISOString());
+      // Redireciona pro dashboard
+      window.location.href = 'dashboard.html';
+    } else {
+      erro.classList.add('ativo');
+      setTimeout(() => erro.classList.remove('ativo'), 3000);
+      document.getElementById('senha').value = '';
+    }
+  }
+
+  /* Se já tá logado, vai direto pro dashboard */
+  if (sessionStorage.getItem('aresta_logado')) {
+    window.location.href = 'dashboard.html';
+  }
+</script>
+
+</body>
+</html>

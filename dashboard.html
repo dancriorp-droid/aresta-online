@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aresta Online — Painel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --azul-noite: #0A2540;
+    --azul-medio: #185FA5;
+    --azul-claro: #EBF4FF;
+    --azul-suave: #F0F6FC;
+    --creme: #FAF7F2;
+    --marfim: #F5F1E8;
+    --dourado: #B8935A;
+    --dourado-claro: #D4B888;
+    --carvao: #1A1A1A;
+    --cinza-escuro: #4A4A4A;
+    --cinza: #6B6B6B;
+    --cinza-claro: #E2E6ED;
+    --cinza-extra: #F5F7FA;
+    --branco: #FFFFFF;
+    --vermelho: #C0392B;
+    --vermelho-bg: #FDEDEC;
+    --verde: #27AE60;
+    --verde-bg: #E8F8EF;
+    --amarelo: #F39C12;
+    --amarelo-bg: #FEF5E7;
+
+    --sombra-suave: 0 2px 8px rgba(10, 37, 64, 0.06);
+    --sombra-card: 0 4px 24px rgba(10, 37, 64, 0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--creme);
+    color: var(--carvao);
+    min-height: 100vh;
+  }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  .header {
+    background: var(--azul-noite);
+    color: var(--branco);
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--sombra-card);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-marca {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .header-icone {
+    width: 38px;
+    height: 38px;
+    background: rgba(212, 184, 136, 0.15);
+    border: 1px solid rgba(212, 184, 136, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-icone svg { width: 20px; height: 20px; color: var(--dourado-claro); }
+  .header-titulo {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .header-subtitulo {
+    font-size: 11px;
+    color: var(--dourado-claro);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .header-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+  }
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--verde);
+    box-shadow: 0 0 8px var(--verde);
+    animation: pulsar 2s infinite;
+  }
+  @keyframes pulsar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .header-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.06);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .header-sair {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--branco);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .header-sair:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.4);
+  }
+
+  /* ============================================================
+     CONTAINER PRINCIPAL
+     ============================================================ */
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+
+  /* ============================================================
+     ABAS DE HOTÉIS
+     ============================================================ */
+  .abas {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+    background: var(--branco);
+    padding: 6px;
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    overflow-x: auto;
+    border: 1px solid rgba(10, 37, 64, 0.04);
+  }
+  .abas::-webkit-scrollbar { height: 4px; }
+  .abas::-webkit-scrollbar-thumb { background: var(--cinza-claro); border-radius: 4px; }
+
+  .aba {
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    color: var(--cinza);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .aba:hover {
+    background: var(--azul-suave);
+    color: var(--azul-noite);
+  }
+  .aba.ativa {
+    background: var(--azul-noite);
+    color: var(--branco);
+    font-weight: 600;
+  }
+  .aba-emoji { font-size: 16px; }
+
+  /* ============================================================
+     PAINEL DE FILTROS (calendário estilo Aresta)
+     ============================================================ */
+  .filtros {
+    background: var(--branco);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--sombra-card);
+    border: 1px solid rgba(10, 37, 64, 0.04);
+  }
+
+  .filtros-titulo {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul-noite);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .filtros-titulo svg { width: 18px; height: 18px; color: var(--dourado); }
+
+  .filtros-modos {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .modo-btn {
+    padding: 10px 16px;
+    background: var(--cinza-extra);
+    border: 1.5px solid transparent;
+    color: var(--cinza-escuro);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .modo-btn:hover {
+    background: var(--azul-claro);
+    color: var(--azul-noite);
+  }
+  .modo-btn.ativo {
+    background: var(--azul-claro);
+    color: var(--azul-noite);
+    border-color: var(--azul-medio);
+    font-weight: 600;
+  }
+
+  .filtros-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 16px;
+    align-items: end;
+  }
+
+  .filtro-campo label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--azul-noite);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .filtro-campo input, .filtro-campo select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--cinza-claro);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--carvao);
+    background: var(--branco);
+    transition: all 0.2s;
+  }
+  .filtro-campo input:focus, .filtro-campo select:focus {
+    outline: none;
+    border-color: var(--azul-medio);
+    box-shadow: 0 0 0 4px var(--azul-claro);
+  }
+
+  .filtro-aplicar {
+    padding: 12px 24px;
+    background: var(--azul-noite);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 46px;
+  }
+  .filtro-aplicar:hover {
+    background: var(--azul-medio);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(24, 95, 165, 0.25);
+  }
+
+  .info-meta {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: var(--azul-suave);
+    border-radius: 10px;
+    font-size: 13px;
+    color: var(--azul-noite);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 3px solid var(--dourado);
+  }
+  .info-meta svg { width: 16px; height: 16px; color: var(--dourado); flex-shrink: 0; }
+
+  /* ============================================================
+     CARD DE CONTEÚDO
+     ============================================================ */
+  .card {
+    background: var(--branco);
+    border-radius: 14px;
+    box-shadow: var(--sombra-card);
+    border: 1px solid rgba(10, 37, 64, 0.04);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .card-header {
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--cinza-claro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .card-titulo {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--azul-noite);
+    letter-spacing: -0.01em;
+  }
+  .card-titulo .emoji { margin-right: 10px; }
+  .card-subtitulo {
+    font-size: 13px;
+    color: var(--cinza);
+    margin-top: 4px;
+  }
+  .card-acoes {
+    display: flex;
+    gap: 8px;
+  }
+  .btn-acao {
+    padding: 10px 16px;
+    background: var(--cinza-extra);
+    color: var(--azul-noite);
+    border: 1.5px solid transparent;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-acao:hover {
+    background: var(--azul-claro);
+    border-color: var(--azul-medio);
+  }
+  .btn-acao svg { width: 14px; height: 14px; }
+
+  /* ============================================================
+     TABELA DE PREÇOS (a estrela do show!)
+     ============================================================ */
+  .tabela-wrap {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .tabela {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+  }
+  .tabela thead th {
+    background: var(--azul-noite);
+    color: var(--branco);
+    padding: 16px 14px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 3px solid var(--dourado);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+  }
+  .tabela thead th.col-data {
+    text-align: left;
+    background: var(--carvao);
+    min-width: 130px;
+  }
+  .tabela thead th.col-base {
+    background: linear-gradient(135deg, var(--azul-medio) 0%, var(--azul-noite) 100%);
+    position: relative;
+  }
+  .tabela thead th.col-base::after {
+    content: '★';
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    color: var(--dourado-claro);
+    font-size: 14px;
+  }
+
+  .tabela tbody tr {
+    transition: background 0.15s;
+  }
+  .tabela tbody tr:hover {
+    background: var(--azul-suave);
+  }
+  .tabela tbody tr.fds {
+    background: var(--marfim);
+  }
+  .tabela tbody tr.fds:hover {
+    background: #EDE4D1;
+  }
+
+  .tabela td {
+    padding: 14px 14px;
+    border-bottom: 1px solid var(--cinza-claro);
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--carvao);
+    font-weight: 500;
+    position: relative;
+  }
+  .tabela td.col-data {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--azul-noite);
+    background: var(--cinza-extra);
+    border-right: 2px solid var(--cinza-claro);
+  }
+  .tabela td.col-base {
+    background: var(--azul-claro);
+    font-weight: 700;
+    color: var(--azul-noite);
+    border-left: 1px solid rgba(24, 95, 165, 0.2);
+    border-right: 1px solid rgba(24, 95, 165, 0.2);
+  }
+  .tabela tbody tr:hover td.col-base {
+    background: #DCEAFE;
+  }
+
+  /* Cores condicionais — quem é o mais barato/caro */
+  .preco-mais-barato {
+    color: var(--verde) !important;
+    font-weight: 700;
+    position: relative;
+  }
+  .preco-mais-barato::before {
+    content: '▼';
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  .preco-mais-caro {
+    color: var(--vermelho) !important;
+    font-weight: 700;
+  }
+  .preco-mais-caro::before {
+    content: '▲';
+    font-size: 10px;
+    margin-right: 4px;
+  }
+
+  .esgotado {
+    color: var(--cinza);
+    font-style: italic;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Tooltip do nome do quarto */
+  .preco-cell { cursor: help; position: relative; }
+  .preco-cell .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--carvao);
+    color: var(--branco);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    pointer-events: none;
+  }
+  .preco-cell .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--carvao);
+  }
+  .preco-cell:hover .tooltip {
+    visibility: visible;
+  }
+
+  /* Linha de média no rodapé */
+  .tabela tfoot td {
+    background: var(--marfim);
+    font-weight: 700;
+    color: var(--azul-noite);
+    border-top: 2px solid var(--dourado);
+    padding: 16px 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tabela tfoot td.col-data {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--cinza-escuro);
+  }
+  .tabela tfoot td.col-base {
+    background: var(--dourado-claro);
+    color: var(--azul-noite);
+  }
+
+  /* ============================================================
+     ESTADO VAZIO / CARREGANDO
+     ============================================================ */
+  .estado-vazio {
+    padding: 80px 32px;
+    text-align: center;
+    color: var(--cinza);
+  }
+  .estado-vazio svg {
+    width: 48px;
+    height: 48px;
+    color: var(--cinza-claro);
+    margin-bottom: 16px;
+  }
+  .estado-vazio h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--azul-noite);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .estado-vazio p {
+    font-size: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .carregando {
+    padding: 60px 32px;
+    text-align: center;
+    color: var(--cinza);
+  }
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--cinza-claro);
+    border-top-color: var(--azul-medio);
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    animation: girar 0.8s linear infinite;
+  }
+  @keyframes girar {
+    to { transform: rotate(360deg); }
+  }
+
+  /* ============================================================
+     RESPONSIVO
+     ============================================================ */
+  @media (max-width: 768px) {
+    .container { padding: 16px; }
+    .header { padding: 14px 16px; }
+    .header-info { gap: 12px; }
+    .header-status span { display: none; }
+    .filtros-campos { grid-template-columns: 1fr; }
+    .card-header { padding: 16px 20px; }
+    .tabela th, .tabela td { padding: 10px 8px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+  <div class="header-marca">
+    <div class="header-icone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/>
+      </svg>
+    </div>
+    <div>
+      <div class="header-titulo">Aresta</div>
+      <div class="header-subtitulo">Rate Intelligence</div>
+    </div>
+  </div>
+
+  <div class="header-info">
+    <div class="header-status" id="statusAtualizacao">
+      <span class="status-dot"></span>
+      <span>Atualizado em <strong id="ultimaAtualizacao">—</strong></span>
+    </div>
+    <div class="header-usuario">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M4 21a8 8 0 0 1 16 0"/>
+      </svg>
+      <span id="usuarioLogado">—</span>
+    </div>
+    <button class="header-sair" onclick="sair()">Sair</button>
+  </div>
+</header>
+
+<!-- ============================================================
+     CONTAINER PRINCIPAL
+============================================================ -->
+<div class="container">
+
+  <!-- ABAS DE HOTÉIS (geradas dinamicamente) -->
+  <div class="abas" id="abas"></div>
+
+  <!-- PAINEL DE FILTROS -->
+  <div class="filtros">
+    <div class="filtros-titulo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      Período de Análise
+    </div>
+
+    <div class="filtros-modos">
+      <button class="modo-btn ativo" data-modo="atual" onclick="mudarModo('atual')">Mês Atual</button>
+      <button class="modo-btn" data-modo="proximo" onclick="mudarModo('proximo')">Próximo Mês</button>
+      <button class="modo-btn" data-modo="custom" onclick="mudarModo('custom')">Período Personalizado</button>
+    </div>
+
+    <div class="filtros-campos">
+      <div class="filtro-campo">
+        <label>Data Início</label>
+        <input type="date" id="dataIni">
+      </div>
+      <div class="filtro-campo">
+        <label>Data Fim</label>
+        <input type="date" id="dataFim">
+      </div>
+      <button class="filtro-aplicar" onclick="aplicarFiltro()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        Aplicar
+      </button>
+    </div>
+
+    <div class="info-meta" id="infoMeta" style="display:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <span id="infoMetaTexto"></span>
+    </div>
+  </div>
+
+  <!-- CARD DA TABELA -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-titulo">
+          <span class="emoji" id="cardEmoji">🏨</span>
+          <span id="cardNomeHotel">Selecione um hotel</span>
+        </div>
+        <div class="card-subtitulo" id="cardSubtitulo">Análise comparativa de tarifas</div>
+      </div>
+      <div class="card-acoes">
+        <button class="btn-acao" onclick="exportarCSV()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Exportar CSV
+        </button>
+      </div>
+    </div>
+
+    <div id="conteudoTabela">
+      <div class="estado-vazio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/>
+        </svg>
+        <h3>Selecione um hotel acima</h3>
+        <p>Escolha uma das abas no topo pra visualizar os preços do hotel e seus concorrentes lado a lado.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+/* ============================================================
+   PROTEÇÃO DE ACESSO
+============================================================ */
+const usuario = sessionStorage.getItem('aresta_logado');
+if (!usuario) {
+  window.location.href = 'index.html';
+}
+document.getElementById('usuarioLogado').textContent = usuario || '—';
+
+function sair() {
+  sessionStorage.removeItem('aresta_logado');
+  sessionStorage.removeItem('aresta_login_em');
+  window.location.href = 'index.html';
+}
+
+/* ============================================================
+   ESTADO GLOBAL
+============================================================ */
+let CONFIG = null;        // hoteis_config.json
+let HOTEL_ATUAL = null;   // id do hotel sendo exibido
+let DADOS_HOTEL = null;   // JSON do hotel atual
+let MODO_FILTRO = 'atual';
+
+/* ============================================================
+   FORMATAÇÃO
+============================================================ */
+function fmtData(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+function fmtDataCurta(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', weekday: 'short' });
+}
+function fmtMoeda(v) {
+  if (v === null || v === undefined) return '—';
+  return 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+}
+function fmtTimestamp(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return d.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+}
+function ehFimDeSemana(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  const dia = d.getDay();
+  return dia === 0 || dia === 6 || dia === 5;
+}
+
+/* ============================================================
+   CARREGAR CONFIG (hoteis_config.json)
+   Tenta múltiplos caminhos pra funcionar em qualquer hospedagem
+============================================================ */
+async function carregarConfig() {
+  // Lista de caminhos a tentar, em ordem
+  const caminhos = [
+    'hoteis_config.json',           // mesma pasta (GitHub Pages)
+    '../scraper/hoteis_config.json', // pasta scraper (servidor local)
+    './hoteis_config.json',          // explícito local
+  ];
+
+  let erroFinal = null;
+  for (const caminho of caminhos) {
+    try {
+      const resp = await fetch(caminho);
+      if (resp.ok) {
+        CONFIG = await resp.json();
+        renderizarAbas();
+        if (CONFIG.hoteis.length > 0) {
+          selecionarHotel(CONFIG.hoteis[0].id);
+        }
+        return; // sucesso, sai da função
+      }
+    } catch (err) {
+      erroFinal = err;
+    }
+  }
+
+  // Se nenhum caminho funcionou
+  document.getElementById('conteudoTabela').innerHTML = `
+    <div class="estado-vazio">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <h3>Configuração não encontrada</h3>
+      <p>O arquivo <code>hoteis_config.json</code> não foi encontrado.</p>
+    </div>`;
+}
+
+/* ============================================================
+   RENDERIZAR ABAS DE HOTÉIS
+============================================================ */
+function renderizarAbas() {
+  const container = document.getElementById('abas');
+  container.innerHTML = CONFIG.hoteis.map(h => `
+    <button class="aba" data-hotel="${h.id}" onclick="selecionarHotel('${h.id}')">
+      <span class="aba-emoji">${h.emoji}</span>
+      <span>${h.nome}</span>
+    </button>
+  `).join('');
+}
+
+/* ============================================================
+   SELECIONAR HOTEL
+============================================================ */
+async function selecionarHotel(hotelId) {
+  HOTEL_ATUAL = hotelId;
+
+  // Marca aba ativa
+  document.querySelectorAll('.aba').forEach(a => {
+    a.classList.toggle('ativa', a.dataset.hotel === hotelId);
+  });
+
+  const hotel = CONFIG.hoteis.find(h => h.id === hotelId);
+  document.getElementById('cardEmoji').textContent = hotel.emoji;
+  document.getElementById('cardNomeHotel').textContent = hotel.nome;
+  document.getElementById('cardSubtitulo').textContent = `${hotel.cidade} · ${hotel.concorrentes.length} concorrentes monitorados`;
+
+  // Mostra estado de carregamento
+  document.getElementById('conteudoTabela').innerHTML = `
+    <div class="carregando">
+      <div class="spinner"></div>
+      <div>Carregando dados...</div>
+    </div>`;
+
+  // Carrega o JSON do hotel — tenta múltiplos caminhos
+  const caminhosHotel = [
+    `dados/${hotelId}.json`,        // GitHub Pages (estrutura raiz)
+    `../dados/${hotelId}.json`,     // servidor local (dentro de site/)
+    `./dados/${hotelId}.json`,
+  ];
+
+  let dadosCarregados = false;
+  for (const caminho of caminhosHotel) {
+    try {
+      const resp = await fetch(caminho);
+      if (resp.ok) {
+        DADOS_HOTEL = await resp.json();
+        document.getElementById('ultimaAtualizacao').textContent = fmtTimestamp(DADOS_HOTEL.data_busca);
+        aplicarFiltro();
+        dadosCarregados = true;
+        break;
+      }
+    } catch (err) { /* tenta o próximo */ }
+  }
+
+  if (!dadosCarregados) {
+    document.getElementById('conteudoTabela').innerHTML = `
+      <div class="estado-vazio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <h3>Ainda sem dados pra este hotel</h3>
+        <p>O scraper ainda não rodou pra ${hotel.nome}.<br>Aguarde a próxima atualização automática ou rode manualmente.</p>
+      </div>`;
+  }
+}
+
+/* ============================================================
+   MUDAR MODO DE FILTRO
+============================================================ */
+function mudarModo(modo) {
+  MODO_FILTRO = modo;
+  document.querySelectorAll('.modo-btn').forEach(b => {
+    b.classList.toggle('ativo', b.dataset.modo === modo);
+  });
+
+  const hoje = new Date();
+  const dataIni = document.getElementById('dataIni');
+  const dataFim = document.getElementById('dataFim');
+
+  if (modo === 'atual') {
+    dataIni.value = hoje.toISOString().slice(0, 10);
+    const ult = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0);
+    dataFim.value = ult.toISOString().slice(0, 10);
+  } else if (modo === 'proximo') {
+    const prox = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 1);
+    const ult = new Date(hoje.getFullYear(), hoje.getMonth() + 2, 0);
+    dataIni.value = prox.toISOString().slice(0, 10);
+    dataFim.value = ult.toISOString().slice(0, 10);
+  }
+  // Em 'custom' o usuário escolhe manualmente
+
+  if (DADOS_HOTEL) aplicarFiltro();
+}
+
+/* ============================================================
+   APLICAR FILTRO (renderiza a tabela)
+============================================================ */
+function aplicarFiltro() {
+  if (!DADOS_HOTEL) return;
+
+  const dataIni = document.getElementById('dataIni').value;
+  const dataFim = document.getElementById('dataFim').value;
+
+  let registros = DADOS_HOTEL.precos_por_data || [];
+
+  if (dataIni && dataFim) {
+    registros = registros.filter(r => r.check_in >= dataIni && r.check_in <= dataFim);
+  }
+
+  if (registros.length === 0) {
+    document.getElementById('conteudoTabela').innerHTML = `
+      <div class="estado-vazio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <h3>Sem registros no período</h3>
+        <p>Não há dados pra este intervalo de datas. Tente alterar o período ou rodar o scraper.</p>
+      </div>`;
+    document.getElementById('infoMeta').style.display = 'none';
+    return;
+  }
+
+  // Info de meta
+  document.getElementById('infoMeta').style.display = 'flex';
+  document.getElementById('infoMetaTexto').textContent =
+    `Exibindo ${registros.length} data(s) — de ${fmtData(registros[0].check_in)} até ${fmtData(registros[registros.length-1].check_in)}`;
+
+  renderizarTabela(registros);
+}
+
+/* ============================================================
+   RENDERIZAR TABELA (a peça central!)
+============================================================ */
+function renderizarTabela(registros) {
+  const hotel = CONFIG.hoteis.find(h => h.id === HOTEL_ATUAL);
+  const nomesHoteis = [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
+
+  // Calcula médias por hotel
+  const medias = {};
+  nomesHoteis.forEach(nh => {
+    const valores = registros.map(r => r.precos[nh]).filter(v => v !== null && v !== undefined);
+    medias[nh] = valores.length > 0 ? Math.round(valores.reduce((a, b) => a + b, 0) / valores.length) : null;
+  });
+
+  // Cabeçalho
+  const thead = `
+    <thead>
+      <tr>
+        <th class="col-data">Data</th>
+        <th class="col-base">${hotel.nome}</th>
+        ${hotel.concorrentes.map(c => `<th>${c.nome}</th>`).join('')}
+      </tr>
+    </thead>`;
+
+  // Corpo
+  const tbody = '<tbody>' + registros.map(r => {
+    const ehFds = ehFimDeSemana(r.check_in);
+
+    // Acha menor e maior preço da linha pra colorir
+    const precosLinha = nomesHoteis.map(n => r.precos[n]).filter(v => v !== null);
+    const menor = precosLinha.length > 0 ? Math.min(...precosLinha) : null;
+    const maior = precosLinha.length > 0 ? Math.max(...precosLinha) : null;
+
+    function celula(nomeHotel, ehBase) {
+      const preco = r.precos[nomeHotel];
+      const quarto = r.precos[nomeHotel + '__quarto'] || '';
+
+      const classes = [];
+      if (ehBase) classes.push('col-base');
+      classes.push('preco-cell');
+
+      if (preco === null || preco === undefined) {
+        return `<td class="${classes.join(' ')}"><span class="esgotado">Esgotado</span></td>`;
+      }
+      if (preco === menor && precosLinha.length > 1) classes.push('preco-mais-barato');
+      else if (preco === maior && precosLinha.length > 1) classes.push('preco-mais-caro');
+
+      const tooltip = quarto ? `<div class="tooltip">${quarto}</div>` : '';
+
+      return `<td class="${classes.join(' ')}">${fmtMoeda(preco)}${tooltip}</td>`;
+    }
+
+    return `
+      <tr class="${ehFds ? 'fds' : ''}">
+        <td class="col-data">${fmtDataCurta(r.check_in)}</td>
+        ${celula(hotel.nome, true)}
+        ${hotel.concorrentes.map(c => celula(c.nome, false)).join('')}
+      </tr>`;
+  }).join('') + '</tbody>';
+
+  // Rodapé com médias
+  const tfoot = `
+    <tfoot>
+      <tr>
+        <td class="col-data">Média do período</td>
+        <td class="col-base">${fmtMoeda(medias[hotel.nome])}</td>
+        ${hotel.concorrentes.map(c => `<td>${fmtMoeda(medias[c.nome])}</td>`).join('')}
+      </tr>
+    </tfoot>`;
+
+  document.getElementById('conteudoTabela').innerHTML = `
+    <div class="tabela-wrap">
+      <table class="tabela">
+        ${thead}
+        ${tbody}
+        ${tfoot}
+      </table>
+    </div>`;
+}
+
+/* ============================================================
+   EXPORTAR CSV
+============================================================ */
+function exportarCSV() {
+  if (!DADOS_HOTEL) return;
+
+  const dataIni = document.getElementById('dataIni').value;
+  const dataFim = document.getElementById('dataFim').value;
+
+  let registros = DADOS_HOTEL.precos_por_data || [];
+  if (dataIni && dataFim) {
+    registros = registros.filter(r => r.check_in >= dataIni && r.check_in <= dataFim);
+  }
+
+  const hotel = CONFIG.hoteis.find(h => h.id === HOTEL_ATUAL);
+  const nomes = [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
+
+  const cabecalho = ['Data', ...nomes].join(';');
+  const linhas = registros.map(r => {
+    const dt = fmtData(r.check_in);
+    const vals = nomes.map(n => r.precos[n] !== null && r.precos[n] !== undefined ? r.precos[n] : 'Esgotado');
+    return [dt, ...vals].join(';');
+  });
+
+  const csv = '\uFEFF' + [cabecalho, ...linhas].join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `aresta_${hotel.id}_${new Date().toISOString().slice(0,10)}.csv`;
+  link.click();
+}
+
+/* ============================================================
+   INICIALIZAÇÃO
+============================================================ */
+mudarModo('atual');
+carregarConfig();
+
+</script>
+</body>
+</html>
