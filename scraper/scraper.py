@@ -51,15 +51,13 @@ def gerar_datas_mes(data_inicio=None, data_fim=None):
         data_inicio = hoje
 
     if data_fim is None:
-        # Último dia do MÊS SEGUINTE (mês atual + próximo)
-        # Avança 2 meses e pega o dia 1, depois volta 1 dia = último dia do mês seguinte
-        mes = hoje.month + 2
-        ano = hoje.year
-        if mes > 12:
-            mes -= 12
-            ano += 1
-        primeiro_dia_dois_meses_a_frente = date(ano, mes, 1)
-        data_fim = primeiro_dia_dois_meses_a_frente - timedelta(days=1)
+        # Último dia do MÊS SEGUINTE usando timedelta (100% correto pra todos os meses)
+        # Avança 62 dias a partir do 1º do mês atual → garante estar no mês+2
+        # Depois pega o 1º desse mês e volta 1 dia = último dia do mês seguinte
+        primeiro_do_mes_atual = date(hoje.year, hoje.month, 1)
+        dois_meses_a_frente = primeiro_do_mes_atual + timedelta(days=62)
+        primeiro_do_mes_alvo = date(dois_meses_a_frente.year, dois_meses_a_frente.month, 1)
+        data_fim = primeiro_do_mes_alvo - timedelta(days=1)
 
     datas = []
     atual = data_inicio
