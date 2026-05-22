@@ -1,0 +1,177 @@
+{
+  "hotel_id": "terrazzo",
+  "hotel_nome": "Terrazzo Bonjardim",
+  "cidade": "Campos do Jordão",
+  "emoji": "🏨",
+  "data_busca": "2026-05-21T23:38:28.457522",
+  "concorrentes": [
+    "Terrazzo Bonjardim",
+    "Hotel Moinho Itália",
+    "Hotel Vila Dom Bosco",
+    "Altitude Lodge Hotel",
+    "La Vita Pousada de Charme"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-21",
+      "check_out": "2026-05-22",
+      "precos": {
+        "Terrazzo Bonjardim": 438,
+        "Terrazzo Bonjardim__quarto": "Apartamento Superior",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 455,
+        "Altitude Lodge Hotel__quarto": "Quarto Mountain",
+        "La Vita Pousada de Charme": 202,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-22",
+      "check_out": "2026-05-23",
+      "precos": {
+        "Terrazzo Bonjardim": 646,
+        "Terrazzo Bonjardim__quarto": "Apartamento Luxo PNE",
+        "Hotel Moinho Itália": null,
+        "Hotel Moinho Itália__quarto": "",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 1183,
+        "Altitude Lodge Hotel__quarto": "Quarto Mountain",
+        "La Vita Pousada de Charme": 344,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-23",
+      "check_out": "2026-05-24",
+      "precos": {
+        "Terrazzo Bonjardim": 1099,
+        "Terrazzo Bonjardim__quarto": "Apartamento Luxo",
+        "Hotel Moinho Itália": null,
+        "Hotel Moinho Itália__quarto": "",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": null,
+        "Altitude Lodge Hotel__quarto": "",
+        "La Vita Pousada de Charme": 693,
+        "La Vita Pousada de Charme__quarto": "Estúdio"
+      }
+    },
+    {
+      "check_in": "2026-05-24",
+      "check_out": "2026-05-25",
+      "precos": {
+        "Terrazzo Bonjardim": null,
+        "Terrazzo Bonjardim__quarto": "",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 256,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 270,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Terrazzo Bonjardim": null,
+        "Terrazzo Bonjardim__quarto": "",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 350,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 270,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-26",
+      "check_out": "2026-05-27",
+      "precos": {
+        "Terrazzo Bonjardim": 481,
+        "Terrazzo Bonjardim__quarto": "Apartamento Superior",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 350,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 270,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-27",
+      "check_out": "2026-05-28",
+      "precos": {
+        "Terrazzo Bonjardim": 481,
+        "Terrazzo Bonjardim__quarto": "Apartamento Superior",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 385,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 270,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-28",
+      "check_out": "2026-05-29",
+      "precos": {
+        "Terrazzo Bonjardim": 547,
+        "Terrazzo Bonjardim__quarto": "Apartamento Superior",
+        "Hotel Moinho Itália": 464,
+        "Hotel Moinho Itália__quarto": "Quarto Duplo Standard",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 366,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 270,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-29",
+      "check_out": "2026-05-30",
+      "precos": {
+        "Terrazzo Bonjardim": 613,
+        "Terrazzo Bonjardim__quarto": "Apartamento Superior",
+        "Hotel Moinho Itália": null,
+        "Hotel Moinho Itália__quarto": "",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": 834,
+        "Altitude Lodge Hotel__quarto": "Quarto Altitude",
+        "La Vita Pousada de Charme": 460,
+        "La Vita Pousada de Charme__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-30",
+      "check_out": "2026-05-31",
+      "precos": {
+        "Terrazzo Bonjardim": 1002,
+        "Terrazzo Bonjardim__quarto": "Apartamento Luxo",
+        "Hotel Moinho Itália": null,
+        "Hotel Moinho Itália__quarto": "",
+        "Hotel Vila Dom Bosco": null,
+        "Hotel Vila Dom Bosco__quarto": "",
+        "Altitude Lodge Hotel": null,
+        "Altitude Lodge Hotel__quarto": "",
+        "La Vita Pousada de Charme": null,
+        "La Vita Pousada de Charme__quarto": ""
+      }
+    }
+  ],
+  "historico": []
+}

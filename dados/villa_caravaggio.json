@@ -1,0 +1,156 @@
+{
+  "hotel_id": "villa_caravaggio",
+  "hotel_nome": "Chalés Villa Caravaggio",
+  "cidade": "Domingos Martins",
+  "emoji": "🏕️",
+  "data_busca": "2026-05-21T23:23:37.574961",
+  "concorrentes": [
+    "Chalés Villa Caravaggio",
+    "Pousada Rabo do Lagarto",
+    "Glamping Pedra Azul",
+    "Cabana Raposo"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-21",
+      "check_out": "2026-05-22",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 1799,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-22",
+      "check_out": "2026-05-23",
+      "precos": {
+        "Chalés Villa Caravaggio": 1329,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 2701,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-23",
+      "check_out": "2026-05-24",
+      "precos": {
+        "Chalés Villa Caravaggio": 1828,
+        "Chalés Villa Caravaggio__quarto": "Suíte Família",
+        "Pousada Rabo do Lagarto": 3900,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo Deluxe com Banheira",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-24",
+      "check_out": "2026-05-25",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 1683,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": 1420,
+        "Cabana Raposo__quarto": "Tenda"
+      }
+    },
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 1683,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": 1420,
+        "Cabana Raposo__quarto": "Tenda"
+      }
+    },
+    {
+      "check_in": "2026-05-26",
+      "check_out": "2026-05-27",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 1683,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": 1420,
+        "Cabana Raposo__quarto": "Tenda"
+      }
+    },
+    {
+      "check_in": "2026-05-27",
+      "check_out": "2026-05-28",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 1793,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-28",
+      "check_out": "2026-05-29",
+      "precos": {
+        "Chalés Villa Caravaggio": 953,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 2233,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-29",
+      "check_out": "2026-05-30",
+      "precos": {
+        "Chalés Villa Caravaggio": 1329,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 2701,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-30",
+      "check_out": "2026-05-31",
+      "precos": {
+        "Chalés Villa Caravaggio": 1692,
+        "Chalés Villa Caravaggio__quarto": "Suíte com Vista do Lago",
+        "Pousada Rabo do Lagarto": 3900,
+        "Pousada Rabo do Lagarto__quarto": "Quarto Duplo Deluxe com Banheira",
+        "Glamping Pedra Azul": null,
+        "Glamping Pedra Azul__quarto": "",
+        "Cabana Raposo": null,
+        "Cabana Raposo__quarto": ""
+      }
+    }
+  ],
+  "historico": []
+}
