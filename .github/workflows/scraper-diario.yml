@@ -2,20 +2,20 @@ name: 🤖 Scraper Diário - Aresta Online
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 7 * * *'  # 4h Brasília (UTC-3)
 
   workflow_dispatch:
     inputs:
       data_inicio:
-        description: 'Data de início (YYYY-MM-DD) - opcional, padrão é hoje'
+        description: 'Data de início (YYYY-MM-DD) - opcional'
         required: false
         default: ''
       data_fim:
-        description: 'Data final (YYYY-MM-DD) - opcional, padrão é fim do mês'
+        description: 'Data final (YYYY-MM-DD) - opcional'
         required: false
         default: ''
       hotel_id:
-        description: 'ID de um hotel específico (alto_da_boa_vista, hamburgo, etc.) - opcional, padrão é todos'
+        description: 'ID hotel específico - opcional (padrão: todos)'
         required: false
         default: ''
 
@@ -23,39 +23,207 @@ permissions:
   contents: write
 
 jobs:
-  scrape:
+  # ============================================================
+  # JOB 1: Instala dependências e roda TODOS os hotéis em paralelo
+  # Cada hotel vira um "job" separado → roda ao mesmo tempo!
+  # Tempo total: ~30-40min (antes era 2h+)
+  # ============================================================
+
+  alto_da_boa_vista:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
-
+    timeout-minutes: 90
     steps:
-      - name: 📥 Checkout do código
-        uses: actions/checkout@v4
-
-      - name: 🐍 Setup Python 3.11
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: 📦 Instalar dependências
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
         run: |
           cd scraper
-          pip install -r requirements.txt
-          playwright install --with-deps chromium
-
-      - name: 🦈 Executar scraper
-        run: |
-          cd scraper
-          if [ -n "${{ github.event.inputs.data_inicio }}" ]; then
-            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" "${{ github.event.inputs.hotel_id }}"
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "alto_da_boa_vista" ]; then
+            echo "Pulando este hotel (não foi solicitado)"
           else
-            python scraper.py
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" alto_da_boa_vista
           fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-alto_da_boa_vista
+          path: dados/
+
+  hamburgo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "hamburgo" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" hamburgo
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-hamburgo
+          path: dados/
+
+  terrazzo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "terrazzo" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" terrazzo
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-terrazzo
+          path: dados/
+
+  serra_negra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "serra_negra" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" serra_negra
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-serra_negra
+          path: dados/
+
+  honorato:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "honorato" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" honorato
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-honorato
+          path: dados/
+
+  golden_plaza:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "golden_plaza" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" golden_plaza
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-golden_plaza
+          path: dados/
+
+  maper_ouro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 📦 Instalar
+        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - name: 🦈 Scraper
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.hotel_id }}" ] && [ "${{ github.event.inputs.hotel_id }}" != "maper_ouro" ]; then
+            echo "Pulando este hotel"
+          else
+            python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" maper_ouro
+          fi
+      - name: 💾 Upload dados
+        uses: actions/upload-artifact@v4
+        with:
+          name: dados-maper_ouro
+          path: dados/
+
+  # ============================================================
+  # JOB FINAL: Junta todos os dados e faz commit no repositório
+  # Roda só depois que TODOS os hotéis terminarem
+  # ============================================================
+  salvar:
+    runs-on: ubuntu-latest
+    needs: [alto_da_boa_vista, hamburgo, terrazzo, serra_negra, honorato, golden_plaza, maper_ouro]
+    if: always()  # roda mesmo se algum hotel falhar
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 📥 Baixar todos os dados
+        uses: actions/download-artifact@v4
+        with:
+          path: dados-temp/
+          merge-multiple: true
+
+      - name: 📁 Mover dados pro lugar certo
+        run: |
+          mkdir -p dados
+          cp -f dados-temp/*.json dados/ 2>/dev/null || true
+          ls -la dados/
 
       - name: 🔄 Sincronizar config
-        run: |
-          cp scraper/hoteis_config.json hoteis_config.json
+        run: cp scraper/hoteis_config.json hoteis_config.json
 
-      - name: 💾 Salvar resultados
+      - name: 💾 Commit e push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
