@@ -262,51 +262,10 @@ def buscar_hotel(page, slug, check_in, check_out, config_busca, nome_hotel=""):
 # ============================================================
 # FUNÇÃO PRINCIPAL DE VARREDURA
 # ============================================================
-def buscar_par(context, h1, h2, check_in, check_out, config_busca):
-    """
-    Busca 2 hotéis em paralelo usando 2 abas simultâneas.
-    Retorna tuple (resultado_h1, resultado_h2).
-    """
-    from threading import Thread
-
-    resultados = [None, None]
-
-    def busca_aba(idx, h, page):
-        try:
-            resultados[idx] = buscar_hotel(
-                page, h["slug"], check_in, check_out,
-                config_busca, nome_hotel=h["nome"]
-            )
-        except Exception as e:
-            log(f"  ⚠️  Erro na aba {idx}: {e}")
-            resultados[idx] = None
-
-    # Abre 2 páginas
-    page1 = context.new_page()
-    page2 = context.new_page()
-
-    # Roda as 2 buscas em paralelo
-    t1 = Thread(target=busca_aba, args=(0, h1, page1))
-    t2 = Thread(target=busca_aba, args=(1, h2, page2))
-    t1.start()
-    t2.start()
-    t1.join()
-    t2.join()
-
-    # Fecha as abas
-    try:
-        page1.close()
-        page2.close()
-    except Exception:
-        pass
-
-    return resultados[0], resultados[1]
-
-
 def varrer_hotel(context, hotel, config_busca, datas):
     """
     Faz a varredura completa de UM hotel-base + seus concorrentes.
-    Usa 2 abas em paralelo + delay reduzido pra ser ~3x mais rápido.
+    Sequencial com delay reduzido (1-2s) pra equilibrar velocidade e segurança.
     """
     log(f"\n{hotel['emoji']} {hotel['nome']} ({hotel['cidade']}) — {len(datas)} datas")
 
@@ -327,6 +286,9 @@ def varrer_hotel(context, hotel, config_busca, datas):
     total_buscas = len(datas) * len(todos_hoteis)
     buscas_feitas = 0
 
+    # Abre UMA página e reutiliza (mais estável)
+    page = context.new_page()
+
     for check_in, check_out in datas:
         linha = {
             "check_in": check_in.isoformat(),
@@ -334,47 +296,31 @@ def varrer_hotel(context, hotel, config_busca, datas):
             "precos": {}
         }
 
-        # Processa hotéis em pares (2 abas simultâneas)
-        i = 0
-        while i < len(todos_hoteis):
-            h1 = todos_hoteis[i]
+        for h in todos_hoteis:
+            buscas_feitas += 1
+            resultado_busca = buscar_hotel(
+                page, h["slug"], check_in, check_out,
+                config_busca, nome_hotel=h["nome"]
+            )
 
-            # Se tem próximo hotel, busca em par
-            if i + 1 < len(todos_hoteis):
-                h2 = todos_hoteis[i + 1]
-                r1, r2 = buscar_par(context, h1, h2, check_in, check_out, config_busca)
-                pares = [(h1, r1), (h2, r2)]
-                buscas_feitas += 2
-                i += 2
+            if resultado_busca and resultado_busca.get("preco"):
+                preco = resultado_busca["preco"]
+                nome_quarto = resultado_busca.get("nome_quarto", "")
+                linha["precos"][h["nome"]] = preco
+                linha["precos"][f"{h['nome']}__quarto"] = nome_quarto
+                quarto_label = f" ({nome_quarto[:30]})" if nome_quarto else ""
+                log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = R$ {preco}{quarto_label}")
             else:
-                # Último hotel sozinho (número ímpar)
-                page = context.new_page()
-                r1 = buscar_hotel(page, h1["slug"], check_in, check_out,
-                                  config_busca, nome_hotel=h1["nome"])
-                page.close()
-                pares = [(h1, r1)]
-                buscas_feitas += 1
-                i += 1
+                linha["precos"][h["nome"]] = None
+                linha["precos"][f"{h['nome']}__quarto"] = ""
+                log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = Esgotado/Erro")
 
-            # Grava resultados do par
-            for h, resultado_busca in pares:
-                if resultado_busca and resultado_busca.get("preco"):
-                    preco = resultado_busca["preco"]
-                    nome_quarto = resultado_busca.get("nome_quarto", "")
-                    linha["precos"][h["nome"]] = preco
-                    linha["precos"][f"{h['nome']}__quarto"] = nome_quarto
-                    quarto_label = f" ({nome_quarto[:30]})" if nome_quarto else ""
-                    log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = R$ {preco}{quarto_label}")
-                else:
-                    linha["precos"][h["nome"]] = None
-                    linha["precos"][f"{h['nome']}__quarto"] = ""
-                    log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = Esgotado/Erro")
-
-            # Delay reduzido entre pares (era 2-5s por hotel, agora 1-2s por par)
+            # Delay reduzido: 1-2s (antes era 2-5s) — ~2x mais rápido
             time.sleep(random.uniform(1.0, 2.0))
 
         resultado["precos_por_data"].append(linha)
 
+    page.close()
     return resultado
 
 
