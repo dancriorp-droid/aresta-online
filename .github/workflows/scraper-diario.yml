@@ -21,6 +21,10 @@ on:
 permissions:
   contents: write
 
+# Script de push com rebase automático — resolve conflito de push paralelo
+# Cada job tem sua pasta exclusiva (zero conflito de arquivo)
+# O rebase resolve conflito de histórico do git
+
 jobs:
   alto_da_boa_vista:
     runs-on: ubuntu-latest
@@ -37,8 +41,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/alto_da_boa_vista/
-          git diff --staged --quiet || git commit -m "🤖 alto_da_boa_vista $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/alto_da_boa_vista/ &&
+            git commit -m "🤖 alto_da_boa_vista $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   hamburgo:
     runs-on: ubuntu-latest
@@ -55,8 +65,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/hamburgo/
-          git diff --staged --quiet || git commit -m "🤖 hamburgo $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/hamburgo/ &&
+            git commit -m "🤖 hamburgo $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   terrazzo:
     runs-on: ubuntu-latest
@@ -73,8 +89,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/terrazzo/
-          git diff --staged --quiet || git commit -m "🤖 terrazzo $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/terrazzo/ &&
+            git commit -m "🤖 terrazzo $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   serra_negra:
     runs-on: ubuntu-latest
@@ -91,8 +113,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/serra_negra/
-          git diff --staged --quiet || git commit -m "🤖 serra_negra $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/serra_negra/ &&
+            git commit -m "🤖 serra_negra $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   honorato:
     runs-on: ubuntu-latest
@@ -109,8 +137,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/honorato/
-          git diff --staged --quiet || git commit -m "🤖 honorato $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/honorato/ &&
+            git commit -m "🤖 honorato $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   golden_plaza:
     runs-on: ubuntu-latest
@@ -127,8 +161,14 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/golden_plaza/
-          git diff --staged --quiet || git commit -m "🤖 golden_plaza $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/golden_plaza/ &&
+            git commit -m "🤖 golden_plaza $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
 
   maper_ouro:
     runs-on: ubuntu-latest
@@ -145,5 +185,11 @@ jobs:
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
           git add -f dados/maper_ouro/
-          git diff --staged --quiet || git commit -m "🤖 maper_ouro $(date -u +'%Y-%m-%d %H:%M')"
-          git push
+          git diff --staged --quiet && echo "Sem mudanças" || (
+            git stash &&
+            git pull --rebase origin main &&
+            git stash pop &&
+            git add -f dados/maper_ouro/ &&
+            git commit -m "🤖 maper_ouro $(date -u +'%Y-%m-%d %H:%M')" &&
+            git push
+          )
