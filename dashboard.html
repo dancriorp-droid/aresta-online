@@ -640,6 +640,10 @@
       </svg>
       <span id="usuarioLogado">—</span>
     </div>
+    <button id="btnAdmin" onclick="abrirAdmin()" style="display:none;background:rgba(184,147,90,0.15);border:1px solid rgba(212,184,136,0.4);color:var(--dourado-claro);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;font-family:inherit;transition:all 0.2s;align-items:center;gap:6px;" onmouseover="this.style.background='rgba(184,147,90,0.25)'" onmouseout="this.style.background='rgba(184,147,90,0.15)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      Usuários
+    </button>
     <button class="header-sair" onclick="sair()">Sair</button>
   </div>
 </header>
@@ -701,6 +705,10 @@
         <div class="card-subtitulo" id="cardSubtitulo">Análise comparativa de tarifas</div>
       </div>
       <div class="card-acoes">
+        <button class="btn-acao" onclick="abrirBuscaManual()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Busca Manual
+        </button>
         <button class="btn-acao" onclick="exportarCSV()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Exportar CSV
@@ -725,15 +733,20 @@
 /* ============================================================
    PROTEÇÃO DE ACESSO
 ============================================================ */
-const usuario = sessionStorage.getItem('aresta_logado');
-if (!usuario) {
-  window.location.href = 'index.html';
-}
+// ── Autenticação ──────────────────────────────────────────
+const usuario = sessionStorage.getItem('aresta_user');
+const ehAdmin = sessionStorage.getItem('aresta_admin') === 'true';
+if (!usuario) { window.location.href = 'index.html'; }
 document.getElementById('usuarioLogado').textContent = usuario || '—';
 
+// Mostra botão de admin só pra admins
+if (ehAdmin) {
+  document.getElementById('btnAdmin').style.display = 'flex';
+}
+
 function sair() {
-  sessionStorage.removeItem('aresta_logado');
-  sessionStorage.removeItem('aresta_login_em');
+  sessionStorage.removeItem('aresta_user');
+  sessionStorage.removeItem('aresta_admin');
   window.location.href = 'index.html';
 }
 
@@ -1062,6 +1075,319 @@ function exportarCSV() {
 mudarModo('atual');
 carregarConfig();
 
+
+
+/* ============================================================
+   SISTEMA DE USUÁRIOS — Gerenciamento pelo painel (só admins)
+============================================================ */
+const ADMINS_FIXOS = { 'admin': true, 'daniel': true };
+
+function getUsuariosExtras() {
+  try { return JSON.parse(localStorage.getItem('aresta_usuarios_extras') || '{}'); }
+  catch { return {}; }
+}
+function salvarUsuariosExtras(extras) {
+  localStorage.setItem('aresta_usuarios_extras', JSON.stringify(extras));
+}
+
+function abrirAdmin() {
+  renderizarListaUsuarios();
+  document.getElementById('modalAdmin').style.display = 'flex';
+}
+function fecharAdmin() {
+  document.getElementById('modalAdmin').style.display = 'none';
+  document.getElementById('erroAdmin').style.display = 'none';
+  document.getElementById('novoUser').value = '';
+  document.getElementById('novaSenha').value = '';
+  document.getElementById('novoAdmin').checked = false;
+}
+
+function renderizarListaUsuarios() {
+  const extras = getUsuariosExtras();
+  const lista = document.getElementById('listaUsuarios');
+
+  // Admins fixos
+  let html = `
+    <div style="margin-bottom:8px;padding:12px 14px;background:#F0F6FC;border-radius:8px;display:flex;align-items:center;justify-content:space-between;">
+      <div><strong style="color:#0A2540">admin</strong> <span style="font-size:11px;color:#6B6B6B;margin-left:8px;background:#E2E6ED;padding:2px 8px;border-radius:20px;">Admin fixo</span></div>
+      <span style="font-size:11px;color:#6B6B6B">Não pode ser removido</span>
+    </div>
+    <div style="margin-bottom:16px;padding:12px 14px;background:#F0F6FC;border-radius:8px;display:flex;align-items:center;justify-content:space-between;">
+      <div><strong style="color:#0A2540">daniel</strong> <span style="font-size:11px;color:#6B6B6B;margin-left:8px;background:#E2E6ED;padding:2px 8px;border-radius:20px;">Admin fixo</span></div>
+      <span style="font-size:11px;color:#6B6B6B">Não pode ser removido</span>
+    </div>`;
+
+  const nomesExtras = Object.keys(extras);
+  if (nomesExtras.length === 0) {
+    html += `<p style="color:#6B6B6B;font-size:13px;text-align:center;padding:16px 0;">Nenhum usuário extra cadastrado.</p>`;
+  } else {
+    nomesExtras.forEach(nome => {
+      const u = extras[nome];
+      html += `
+        <div style="margin-bottom:8px;padding:12px 14px;background:#fff;border:1.5px solid #E2E6ED;border-radius:8px;display:flex;align-items:center;justify-content:space-between;">
+          <div>
+            <strong style="color:#0A2540">${nome}</strong>
+            ${u.admin ? '<span style="font-size:11px;color:#185FA5;margin-left:8px;background:#EBF4FF;padding:2px 8px;border-radius:20px;">Admin</span>' : '<span style="font-size:11px;color:#6B6B6B;margin-left:8px;background:#F5F7FA;padding:2px 8px;border-radius:20px;">Usuário</span>'}
+          </div>
+          <button onclick="removerUsuario('${nome}')" style="background:#FDEDEC;color:#C0392B;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;">Remover</button>
+        </div>`;
+    });
+  }
+
+  lista.innerHTML = html;
+}
+
+function adicionarUsuario() {
+  const nome   = document.getElementById('novoUser').value.trim().toLowerCase();
+  const senha  = document.getElementById('novaSenha').value;
+  const admin  = document.getElementById('novoAdmin').checked;
+  const erro   = document.getElementById('erroAdmin');
+
+  // Validações
+  if (!nome || !senha) { mostrarErroAdmin('Preencha usuário e senha!'); return; }
+  if (nome.length < 3)  { mostrarErroAdmin('Usuário precisa ter no mínimo 3 caracteres.'); return; }
+  if (senha.length < 4) { mostrarErroAdmin('Senha precisa ter no mínimo 4 caracteres.'); return; }
+  if (ADMINS_FIXOS[nome]) { mostrarErroAdmin('Esse nome é reservado (admin/daniel).'); return; }
+  if (!/^[a-z0-9_]+$/.test(nome)) { mostrarErroAdmin('Use apenas letras minúsculas, números ou _'); return; }
+
+  const extras = getUsuariosExtras();
+  if (extras[nome]) { mostrarErroAdmin('Esse usuário já existe!'); return; }
+
+  extras[nome] = { senha, admin };
+  salvarUsuariosExtras(extras);
+
+  // Limpa campos
+  document.getElementById('novoUser').value = '';
+  document.getElementById('novaSenha').value = '';
+  document.getElementById('novoAdmin').checked = false;
+  erro.style.display = 'none';
+
+  renderizarListaUsuarios();
+  mostrarSucessoAdmin(`Usuário "${nome}" criado com sucesso!`);
+}
+
+function removerUsuario(nome) {
+  if (!confirm(`Remover o usuário "${nome}"?`)) return;
+  const extras = getUsuariosExtras();
+  delete extras[nome];
+  salvarUsuariosExtras(extras);
+  renderizarListaUsuarios();
+}
+
+function mostrarErroAdmin(msg) {
+  const el = document.getElementById('erroAdmin');
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.style.background = 'rgba(192,57,43,0.08)';
+  el.style.color = '#C0392B';
+  el.style.borderColor = 'rgba(192,57,43,0.2)';
+}
+function mostrarSucessoAdmin(msg) {
+  const el = document.getElementById('erroAdmin');
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.style.background = 'rgba(39,174,96,0.08)';
+  el.style.color = '#27AE60';
+  el.style.borderColor = 'rgba(39,174,96,0.2)';
+  setTimeout(() => el.style.display = 'none', 3000);
+}
+
+/* ============================================================
+   BUSCA MANUAL — Dispara GitHub Actions via API
+   Precisa de um GitHub Token no campo abaixo
+============================================================ */
+function abrirBuscaManual() {
+  // Preenche o select de hotéis
+  if (CONFIG) {
+    const sel = document.getElementById('buscaHotel');
+    sel.innerHTML = CONFIG.hoteis.map(h =>
+      `<option value="${h.id}">${h.emoji} ${h.nome}</option>`
+    ).join('');
+  }
+  // Preenche datas padrão: hoje até fim do próximo mês
+  const hoje = new Date();
+  const fimProximo = new Date(hoje.getFullYear(), hoje.getMonth() + 2, 0);
+  document.getElementById('buscaIni').value = hoje.toISOString().slice(0,10);
+  document.getElementById('buscaFim').value = fimProximo.toISOString().slice(0,10);
+  document.getElementById('modalBusca').style.display = 'flex';
+  document.getElementById('buscaStatus').style.display = 'none';
+}
+function fecharBuscaManual() {
+  document.getElementById('modalBusca').style.display = 'none';
+}
+
+async function dispararBusca() {
+  const token     = document.getElementById('buscaToken').value.trim();
+  const hotelId   = document.getElementById('buscaHotel').value;
+  const dataIni   = document.getElementById('buscaIni').value;
+  const dataFim   = document.getElementById('buscaFim').value;
+  const status    = document.getElementById('buscaStatus');
+  const btnBuscar = document.getElementById('btnBuscar');
+
+  if (!token) { alert('Cole o GitHub Token pra disparar a busca!'); return; }
+  if (!dataIni || !dataFim) { alert('Selecione as datas!'); return; }
+  if (dataFim < dataIni) { alert('Data fim não pode ser menor que data início!'); return; }
+
+  // Pega repo do URL (funciona no GitHub Pages)
+  const partes = window.location.hostname.split('.');
+  const repoOwner = partes[0]; // usuario.github.io
+  const repoName  = window.location.pathname.split('/')[1] || 'aresta-online';
+
+  btnBuscar.disabled = true;
+  btnBuscar.textContent = 'Disparando...';
+  status.style.display = 'none';
+
+  try {
+    const resp = await fetch(
+      `https://api.github.com/repos/${repoOwner}/${repoName}/actions/workflows/scraper-diario.yml/dispatches`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ref: 'main',
+          inputs: {
+            data_inicio: dataIni,
+            data_fim:    dataFim,
+            hotel_id:    hotelId
+          }
+        })
+      }
+    );
+
+    if (resp.status === 204) {
+      status.innerHTML = `
+        <div style="background:rgba(39,174,96,0.08);border:1px solid rgba(39,174,96,0.3);color:#27AE60;padding:14px 16px;border-radius:10px;font-size:14px;line-height:1.6;">
+          🤖 <strong>Robô ativado com sucesso!</strong><br>
+          Buscando <strong>${document.getElementById('buscaHotel').options[document.getElementById('buscaHotel').selectedIndex].text}</strong><br>
+          Período: ${dataIni} até ${dataFim}<br>
+          <span style="color:#6B6B6B;font-size:12px;">Dados prontos em ~30 minutos. Recarregue a página para ver.</span>
+        </div>`;
+      status.style.display = 'block';
+      document.getElementById('buscaToken').value = '';
+    } else if (resp.status === 401) {
+      alert('Token inválido ou sem permissão. Verifique se o token tem a permissão "workflow".');
+    } else if (resp.status === 404) {
+      alert('Repositório não encontrado. Verifique se o token tem acesso ao repo.');
+    } else {
+      const body = await resp.text();
+      alert(`Erro ${resp.status}: ${body}`);
+    }
+  } catch (err) {
+    alert('Erro de conexão: ' + err.message);
+  }
+
+  btnBuscar.disabled = false;
+  btnBuscar.textContent = 'Buscar Agora';
+}
+
 </script>
+
+<!-- ============================================================
+     MODAL: GERENCIAR USUÁRIOS (só admins)
+============================================================ -->
+<div id="modalAdmin" style="display:none;position:fixed;inset:0;background:rgba(10,37,64,0.5);z-index:1000;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)fecharAdmin()">
+  <div style="background:#fff;border-radius:20px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;box-shadow:0 24px 64px rgba(10,37,64,0.2);">
+    <!-- Header do modal -->
+    <div style="padding:24px 28px 20px;border-bottom:1px solid #E2E6ED;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <h2 style="font-family:'Fraunces',serif;font-size:22px;font-weight:500;color:#0A2540;">Gerenciar Usuários</h2>
+        <p style="font-size:13px;color:#6B6B6B;margin-top:4px;">Adicione ou remova quem pode acessar o painel</p>
+      </div>
+      <button onclick="fecharAdmin()" style="background:#F5F7FA;border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px;color:#6B6B6B;display:flex;align-items:center;justify-content:center;">✕</button>
+    </div>
+
+    <!-- Lista de usuários -->
+    <div style="padding:24px 28px 0;">
+      <p style="font-size:12px;font-weight:600;color:#0A2540;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:12px;">Usuários Ativos</p>
+      <div id="listaUsuarios"></div>
+    </div>
+
+    <!-- Adicionar novo -->
+    <div style="padding:0 28px 24px;">
+      <p style="font-size:12px;font-weight:600;color:#0A2540;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:16px;margin-top:24px;padding-top:24px;border-top:1px solid #E2E6ED;">Adicionar Novo Usuário</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+        <div>
+          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Usuário</label>
+          <input id="novoUser" type="text" placeholder="ex: joana" style="width:100%;padding:11px 13px;border:1.5px solid #E2E6ED;border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;" onkeydown="if(event.key==='Enter')adicionarUsuario()">
+        </div>
+        <div>
+          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Senha</label>
+          <input id="novaSenha" type="password" placeholder="mínimo 4 caracteres" style="width:100%;padding:11px 13px;border:1.5px solid #E2E6ED;border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;" onkeydown="if(event.key==='Enter')adicionarUsuario()">
+        </div>
+      </div>
+
+      <label style="display:flex;align-items:center;gap:8px;margin-bottom:16px;cursor:pointer;font-size:14px;color:#4A4A4A;">
+        <input id="novoAdmin" type="checkbox" style="width:16px;height:16px;cursor:pointer;">
+        Este usuário é Admin (pode gerenciar outros usuários)
+      </label>
+
+      <div id="erroAdmin" style="display:none;padding:10px 14px;border-radius:8px;font-size:13px;border:1px solid;margin-bottom:12px;"></div>
+
+      <button onclick="adicionarUsuario()" style="width:100%;padding:13px;background:#0A2540;color:#fff;border:none;border-radius:10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.background='#185FA5'" onmouseout="this.style.background='#0A2540'">
+        + Adicionar Usuário
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MODAL: BUSCA MANUAL
+============================================================ -->
+<div id="modalBusca" style="display:none;position:fixed;inset:0;background:rgba(10,37,64,0.5);z-index:1000;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)fecharBuscaManual()">
+  <div style="background:#fff;border-radius:20px;width:100%;max-width:480px;box-shadow:0 24px 64px rgba(10,37,64,0.2);">
+    <!-- Header -->
+    <div style="padding:24px 28px 20px;border-bottom:1px solid #E2E6ED;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <h2 style="font-family:'Fraunces',serif;font-size:22px;font-weight:500;color:#0A2540;">Busca Manual</h2>
+        <p style="font-size:13px;color:#6B6B6B;margin-top:4px;">Dispara o scraper agora pra um hotel específico</p>
+      </div>
+      <button onclick="fecharBuscaManual()" style="background:#F5F7FA;border:none;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px;color:#6B6B6B;display:flex;align-items:center;justify-content:center;">✕</button>
+    </div>
+
+    <div style="padding:24px 28px;">
+      <!-- Hotel -->
+      <div style="margin-bottom:16px;">
+        <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Hotel</label>
+        <select id="buscaHotel" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;color:#1A1A1A;background:#fff;cursor:pointer;"></select>
+      </div>
+
+      <!-- Datas -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+        <div>
+          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Início</label>
+          <input id="buscaIni" type="date" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
+        </div>
+        <div>
+          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Fim</label>
+          <input id="buscaFim" type="date" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
+        </div>
+      </div>
+
+      <!-- Token -->
+      <div style="margin-bottom:16px;">
+        <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">GitHub Token</label>
+        <input id="buscaToken" type="password" placeholder="ghp_xxxxxxxxxxxx" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
+        <p style="font-size:11px;color:#6B6B6B;margin-top:6px;">Token com permissão <strong>workflow</strong>. Não é salvo, use uma vez.</p>
+      </div>
+
+      <!-- Status -->
+      <div id="buscaStatus" style="display:none;margin-bottom:16px;"></div>
+
+      <!-- Botão -->
+      <button id="btnBuscar" onclick="dispararBusca()" style="width:100%;padding:14px;background:#0A2540;color:#fff;border:none;border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px;" onmouseover="this.style.background='#185FA5'" onmouseout="this.style.background='#0A2540'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Buscar Agora
+      </button>
+
+      <p style="font-size:12px;color:#6B6B6B;text-align:center;margin-top:12px;">⏱️ Leva ~30 minutos. Dados aparecem automaticamente no painel.</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
