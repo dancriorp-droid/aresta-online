@@ -41,8 +41,9 @@ def carregar_config():
 
 def gerar_datas_mes(data_inicio=None, data_fim=None):
     """
-    Gera lista de (check-in, check-out) do mês.
-    Se nenhuma data for fornecida: do dia atual até o último dia do mês.
+    Gera lista de (check-in, check-out), dia por dia.
+    Se nenhuma data for fornecida: do dia atual até o último dia do MÊS SEGUINTE.
+    (Ex: se hoje é 22/maio, busca de 22/maio até 30/junho.)
     """
     hoje = date.today()
 
@@ -50,13 +51,15 @@ def gerar_datas_mes(data_inicio=None, data_fim=None):
         data_inicio = hoje
 
     if data_fim is None:
-        # Último dia do mês atual
-        if hoje.month == 12:
-            ultimo_dia = date(hoje.year, 12, 31)
-        else:
-            proximo_mes = date(hoje.year, hoje.month + 1, 1)
-            ultimo_dia = proximo_mes - timedelta(days=1)
-        data_fim = ultimo_dia
+        # Último dia do MÊS SEGUINTE (mês atual + próximo)
+        # Avança 2 meses e pega o dia 1, depois volta 1 dia = último dia do mês seguinte
+        mes = hoje.month + 2
+        ano = hoje.year
+        if mes > 12:
+            mes -= 12
+            ano += 1
+        primeiro_dia_dois_meses_a_frente = date(ano, mes, 1)
+        data_fim = primeiro_dia_dois_meses_a_frente - timedelta(days=1)
 
     datas = []
     atual = data_inicio
