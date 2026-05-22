@@ -455,6 +455,8 @@ if __name__ == "__main__":
     # python scraper.py 2026-06-01 2026-06-30 hamburgo  → 1 hotel específico
 
     args = sys.argv[1:]
+    # Ignora argumentos vazios (vem do GitHub Actions quando não preenchido)
+    args = [a for a in args if a.strip()]
     data_ini = date.fromisoformat(args[0]) if len(args) >= 1 else None
     data_fim = date.fromisoformat(args[1]) if len(args) >= 2 else None
     hotel_filtro = args[2] if len(args) >= 3 else None
