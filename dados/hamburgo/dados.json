@@ -1,0 +1,657 @@
+{
+  "hotel_id": "hamburgo",
+  "hotel_nome": "Hamburgo Palace Hotel",
+  "cidade": "Balneário Camboriú",
+  "emoji": "🍺",
+  "data_busca": "2026-05-22T19:13:37.867972",
+  "concorrentes": [
+    "Hamburgo Palace Hotel",
+    "Camboriú Praia",
+    "San Marino Cassino",
+    "Bella Camboriú",
+    "Ibis Balneário"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-22",
+      "check_out": "2026-05-23",
+      "precos": {
+        "Hamburgo Palace Hotel": 514,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 501,
+        "Camboriú Praia__quarto": "Quarto Triplo Deluxe",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 297,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 385,
+        "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
+      }
+    },
+    {
+      "check_in": "2026-05-23",
+      "check_out": "2026-05-24",
+      "precos": {
+        "Hamburgo Palace Hotel": 541,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Superior",
+        "Camboriú Praia": 387,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 376,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 385,
+        "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
+      }
+    },
+    {
+      "check_in": "2026-05-24",
+      "check_out": "2026-05-25",
+      "precos": {
+        "Hamburgo Palace Hotel": 404,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 275,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 273,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 385,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Hamburgo Palace Hotel": 404,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 289,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 385,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-05-26",
+      "check_out": "2026-05-27",
+      "precos": {
+        "Hamburgo Palace Hotel": 404,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 275,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 289,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 385,
+        "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
+      }
+    },
+    {
+      "check_in": "2026-05-27",
+      "check_out": "2026-05-28",
+      "precos": {
+        "Hamburgo Palace Hotel": 404,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 289,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": null,
+        "Ibis Balneário__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-28",
+      "check_out": "2026-05-29",
+      "precos": {
+        "Hamburgo Palace Hotel": 404,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 346,
+        "Camboriú Praia__quarto": "Quarto Triplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 289,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": null,
+        "Ibis Balneário__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-05-29",
+      "check_out": "2026-05-30",
+      "precos": {
+        "Hamburgo Palace Hotel": 514,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 352,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 289,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 366,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-05-30",
+      "check_out": "2026-05-31",
+      "precos": {
+        "Hamburgo Palace Hotel": 514,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 352,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 347,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 366,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-05-31",
+      "check_out": "2026-06-01",
+      "precos": {
+        "Hamburgo Palace Hotel": 514,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 227,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 273,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 366,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-01",
+      "check_out": "2026-06-02",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 273,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 337,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-02",
+      "check_out": "2026-06-03",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 273,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 337,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-03",
+      "check_out": "2026-06-04",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 275,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 273,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 337,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-04",
+      "check_out": "2026-06-05",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": null,
+        "Camboriú Praia__quarto": "",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": null,
+        "Bella Camboriú__quarto": "",
+        "Ibis Balneário": 423,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-05",
+      "check_out": "2026-06-06",
+      "precos": {
+        "Hamburgo Palace Hotel": 473,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": null,
+        "Camboriú Praia__quarto": "",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": null,
+        "Bella Camboriú__quarto": "",
+        "Ibis Balneário": 423,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-06",
+      "check_out": "2026-06-07",
+      "precos": {
+        "Hamburgo Palace Hotel": 473,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": null,
+        "Camboriú Praia__quarto": "",
+        "San Marino Cassino": 225,
+        "San Marino Cassino__quarto": "Apartamento com Varanda",
+        "Bella Camboriú": null,
+        "Bella Camboriú__quarto": "",
+        "Ibis Balneário": 401,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-07",
+      "check_out": "2026-06-08",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 275,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-08",
+      "check_out": "2026-06-09",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 227,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-09",
+      "check_out": "2026-06-10",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-10",
+      "check_out": "2026-06-11",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-11",
+      "check_out": "2026-06-12",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 278,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-12",
+      "check_out": "2026-06-13",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 306,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
+      }
+    },
+    {
+      "check_in": "2026-06-13",
+      "check_out": "2026-06-14",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 352,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 225,
+        "San Marino Cassino__quarto": "Apartamento com Varanda",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-14",
+      "check_out": "2026-06-15",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 275,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-15",
+      "check_out": "2026-06-16",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-16",
+      "check_out": "2026-06-17",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": null,
+        "Ibis Balneário__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-06-17",
+      "check_out": "2026-06-18",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 275,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": null,
+        "Ibis Balneário__quarto": ""
+      }
+    },
+    {
+      "check_in": "2026-06-18",
+      "check_out": "2026-06-19",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 278,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-19",
+      "check_out": "2026-06-20",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 352,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-20",
+      "check_out": "2026-06-21",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 306,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 225,
+        "San Marino Cassino__quarto": "Apartamento com Varanda",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-21",
+      "check_out": "2026-06-22",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
+      }
+    },
+    {
+      "check_in": "2026-06-22",
+      "check_out": "2026-06-23",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
+      }
+    },
+    {
+      "check_in": "2026-06-23",
+      "check_out": "2026-06-24",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 288,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-24",
+      "check_out": "2026-06-25",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-25",
+      "check_out": "2026-06-26",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 320,
+        "Camboriú Praia__quarto": "Quarto Duplo Luxo",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-26",
+      "check_out": "2026-06-27",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": null,
+        "Camboriú Praia__quarto": "",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-27",
+      "check_out": "2026-06-28",
+      "precos": {
+        "Hamburgo Palace Hotel": 445,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 306,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 225,
+        "San Marino Cassino__quarto": "Apartamento com Varanda",
+        "Bella Camboriú": 363,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-29",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-29",
+      "check_out": "2026-06-30",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    },
+    {
+      "check_in": "2026-06-30",
+      "check_out": "2026-07-01",
+      "precos": {
+        "Hamburgo Palace Hotel": 390,
+        "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
+        "Camboriú Praia": 251,
+        "Camboriú Praia__quarto": "Quarto Duplo Standard",
+        "San Marino Cassino": 208,
+        "San Marino Cassino__quarto": "Apartamento",
+        "Bella Camboriú": 312,
+        "Bella Camboriú__quarto": "Quarto Duplo",
+        "Ibis Balneário": 320,
+        "Ibis Balneário__quarto": "Quarto Duplo Standard"
+      }
+    }
+  ],
+  "historico": []
+}
