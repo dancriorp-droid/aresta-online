@@ -1,0 +1,576 @@
+{
+  "hotel_id": "serra_negra",
+  "hotel_nome": "Serra Negra Pousada & Spa",
+  "cidade": "Guarapari",
+  "emoji": "🏖️",
+  "data_busca": "2026-05-22T19:13:36.849621",
+  "concorrentes": [
+    "Serra Negra Pousada & Spa",
+    "Duas Praias Hotel Pousada",
+    "Hotel Pousada Caminho da Praia",
+    "Hotel Diamantina Guarapari"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-22",
+      "check_out": "2026-05-23",
+      "precos": {
+        "Serra Negra Pousada & Spa": 449,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 372,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família",
+        "Hotel Pousada Caminho da Praia": 728,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Família",
+        "Hotel Diamantina Guarapari": 377,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-23",
+      "check_out": "2026-05-24",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 372,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família",
+        "Hotel Pousada Caminho da Praia": null,
+        "Hotel Pousada Caminho da Praia__quarto": "",
+        "Hotel Diamantina Guarapari": 377,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-24",
+      "check_out": "2026-05-25",
+      "precos": {
+        "Serra Negra Pousada & Spa": 477,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Superior",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 365,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Serra Negra Pousada & Spa": 477,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Superior",
+        "Duas Praias Hotel Pousada": 346,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 365,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-26",
+      "check_out": "2026-05-27",
+      "precos": {
+        "Serra Negra Pousada & Spa": 477,
+        "Serra Negra Pousada & Spa__quarto": "Quarto Triplo Luxo",
+        "Duas Praias Hotel Pousada": 310,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 365,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-27",
+      "check_out": "2026-05-28",
+      "precos": {
+        "Serra Negra Pousada & Spa": 720,
+        "Serra Negra Pousada & Spa__quarto": "Suíte com Banheira de Hidromassagem",
+        "Duas Praias Hotel Pousada": 310,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-28",
+      "check_out": "2026-05-29",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 310,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-29",
+      "check_out": "2026-05-30",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-30",
+      "check_out": "2026-05-31",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 599,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo com Varanda",
+        "Hotel Diamantina Guarapari": 425,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-05-31",
+      "check_out": "2026-06-01",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-01",
+      "check_out": "2026-06-02",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 346,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-02",
+      "check_out": "2026-06-03",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 346,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-03",
+      "check_out": "2026-06-04",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 744,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-04",
+      "check_out": "2026-06-05",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 744,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": null,
+        "Hotel Pousada Caminho da Praia__quarto": "",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-05",
+      "check_out": "2026-06-06",
+      "precos": {
+        "Serra Negra Pousada & Spa": 477,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Superior",
+        "Duas Praias Hotel Pousada": 744,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": null,
+        "Hotel Pousada Caminho da Praia__quarto": "",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-06",
+      "check_out": "2026-06-07",
+      "precos": {
+        "Serra Negra Pousada & Spa": 516,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Superior",
+        "Duas Praias Hotel Pousada": 744,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": null,
+        "Hotel Pousada Caminho da Praia__quarto": "",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-07",
+      "check_out": "2026-06-08",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 744,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": null,
+        "Hotel Pousada Caminho da Praia__quarto": "",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-08",
+      "check_out": "2026-06-09",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-09",
+      "check_out": "2026-06-10",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-10",
+      "check_out": "2026-06-11",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-11",
+      "check_out": "2026-06-12",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-12",
+      "check_out": "2026-06-13",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-13",
+      "check_out": "2026-06-14",
+      "precos": {
+        "Serra Negra Pousada & Spa": 434,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Superior",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-14",
+      "check_out": "2026-06-15",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-15",
+      "check_out": "2026-06-16",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-16",
+      "check_out": "2026-06-17",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-17",
+      "check_out": "2026-06-18",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-18",
+      "check_out": "2026-06-19",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-19",
+      "check_out": "2026-06-20",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-20",
+      "check_out": "2026-06-21",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-21",
+      "check_out": "2026-06-22",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-22",
+      "check_out": "2026-06-23",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 428,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Standard com 2 Camas de Solteiro e Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-23",
+      "check_out": "2026-06-24",
+      "precos": {
+        "Serra Negra Pousada & Spa": 408,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Executiva",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-24",
+      "check_out": "2026-06-25",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 425,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-25",
+      "check_out": "2026-06-26",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 425,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-26",
+      "check_out": "2026-06-27",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 425,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-27",
+      "check_out": "2026-06-28",
+      "precos": {
+        "Serra Negra Pousada & Spa": 357,
+        "Serra Negra Pousada & Spa__quarto": "Suíte Standard",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 425,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-29",
+      "precos": {
+        "Serra Negra Pousada & Spa": null,
+        "Serra Negra Pousada & Spa__quarto": "",
+        "Duas Praias Hotel Pousada": 326,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-29",
+      "check_out": "2026-06-30",
+      "precos": {
+        "Serra Negra Pousada & Spa": null,
+        "Serra Negra Pousada & Spa__quarto": "",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    },
+    {
+      "check_in": "2026-06-30",
+      "check_out": "2026-07-01",
+      "precos": {
+        "Serra Negra Pousada & Spa": null,
+        "Serra Negra Pousada & Spa__quarto": "",
+        "Duas Praias Hotel Pousada": 311,
+        "Duas Praias Hotel Pousada__quarto": "Quarto Família Standard",
+        "Hotel Pousada Caminho da Praia": 342,
+        "Hotel Pousada Caminho da Praia__quarto": "Quarto Duplo Standard com Ar-condicionado",
+        "Hotel Diamantina Guarapari": 413,
+        "Hotel Diamantina Guarapari__quarto": "Quarto Triplo"
+      }
+    }
+  ],
+  "historico": []
+}
