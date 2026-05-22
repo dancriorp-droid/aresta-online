@@ -30,22 +30,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" alto_da_boa_vista
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" alto_da_boa_vista
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/alto_da_boa_vista.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 alto_da_boa_vista $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/alto_da_boa_vista/
+          git diff --staged --quiet || git commit -m "🤖 alto_da_boa_vista $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   hamburgo:
     runs-on: ubuntu-latest
@@ -55,22 +48,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" hamburgo
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" hamburgo
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/hamburgo.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 hamburgo $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/hamburgo/
+          git diff --staged --quiet || git commit -m "🤖 hamburgo $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   terrazzo:
     runs-on: ubuntu-latest
@@ -80,22 +66,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" terrazzo
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" terrazzo
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/terrazzo.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 terrazzo $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/terrazzo/
+          git diff --staged --quiet || git commit -m "🤖 terrazzo $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   serra_negra:
     runs-on: ubuntu-latest
@@ -105,22 +84,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" serra_negra
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" serra_negra
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/serra_negra.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 serra_negra $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/serra_negra/
+          git diff --staged --quiet || git commit -m "🤖 serra_negra $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   honorato:
     runs-on: ubuntu-latest
@@ -130,22 +102,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" honorato
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" honorato
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/honorato.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 honorato $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/honorato/
+          git diff --staged --quiet || git commit -m "🤖 honorato $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   golden_plaza:
     runs-on: ubuntu-latest
@@ -155,22 +120,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" golden_plaza
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" golden_plaza
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/golden_plaza.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 golden_plaza $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/golden_plaza/
+          git diff --staged --quiet || git commit -m "🤖 golden_plaza $(date -u +'%Y-%m-%d %H:%M')"
+          git push
 
   maper_ouro:
     runs-on: ubuntu-latest
@@ -180,19 +138,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 📦 Instalar
-        run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - name: 🦈 Scraper
-        run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" maper_ouro
-      - name: 💾 Commit
+      - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" maper_ouro
+      - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add -f dados/maper_ouro.json
-          git diff --staged --quiet && echo "Sem mudanças" || (
-            for i in 1 2 3 4 5; do
-              git commit -m "🤖 maper_ouro $(date -u +'%Y-%m-%d %H:%M UTC')" &&
-              git push && break ||
-              (echo "Tentativa $i falhou, tentando novamente..." && git pull --rebase && sleep $((i * 5)))
-            done
-          )
+          git add -f dados/maper_ouro/
+          git diff --staged --quiet || git commit -m "🤖 maper_ouro $(date -u +'%Y-%m-%d %H:%M')"
+          git push
