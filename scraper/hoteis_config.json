@@ -26,18 +26,6 @@
       ]
     },
     {
-      "id": "villa_caravaggio",
-      "nome": "Chalés Villa Caravaggio",
-      "cidade": "Domingos Martins",
-      "emoji": "🏕️",
-      "slug": "chales-villa-caravaggio",
-      "concorrentes": [
-        { "nome": "Pousada Rabo do Lagarto", "slug": "pousada-rabo-do-lagarto" },
-        { "nome": "Glamping Pedra Azul",     "slug": "glamping-pedra-azul-domingos-martins1" },
-        { "nome": "Cabana Raposo",           "slug": "cabana-raposo-em-santa-teresa" }
-      ]
-    },
-    {
       "id": "hamburgo",
       "nome": "Hamburgo Palace Hotel",
       "cidade": "Balneário Camboriú",
@@ -76,29 +64,40 @@
       ]
     },
     {
-      "id": "canoeiros",
-      "nome": "Hotel Canoeiros",
-      "cidade": "Pirapora",
-      "emoji": "🏞️",
-      "slug": "hotel-canoeiros",
-      "concorrentes": [
-        { "nome": "Pousada Grande Rio",   "slug": "pousada-grande-rio" },
-        { "nome": "Hotel Mundial Pirapora", "slug": "mundial-pirapora" },
-        { "nome": "Villacoco",            "slug": "villacoco" }
-      ]
-    },
-    {
       "id": "honorato",
       "nome": "Hotel Honorato Plaza",
       "cidade": "Rio Verde",
       "emoji": "🏨",
       "slug": "honorato-plaza",
       "concorrentes": [
-        { "nome": "Hotel Gelps",              "slug": "gelps" },
-        { "nome": "Rota Hotéis Rio Verde",    "slug": "rota-hoteis-rio-verde" },
-        { "nome": "Acanto Rio Verde",         "slug": "acanto-rio-verde" },
-        { "nome": "Bons Tempos Rio Verde",    "slug": "bons-tempos-rio-verde" },
+        { "nome": "Hotel Gelps",                "slug": "gelps" },
+        { "nome": "Rota Hotéis Rio Verde",      "slug": "rota-hoteis-rio-verde" },
+        { "nome": "Acanto Rio Verde",           "slug": "acanto-rio-verde" },
+        { "nome": "Bons Tempos Rio Verde",      "slug": "bons-tempos-rio-verde" },
         { "nome": "Transamerica Fit Rio Verde", "slug": "transamerica-fit-rio-verde" }
+      ]
+    },
+    {
+      "id": "golden_plaza",
+      "nome": "Golden Plaza Hotel",
+      "cidade": "Porto Velho",
+      "emoji": "🌟",
+      "slug": "golden-plaza",
+      "concorrentes": [
+        { "nome": "Oscar Hotel Executive", "slug": "oscar-executive" },
+        { "nome": "Slaviero Porto Velho",  "slug": "slaviero-essential-porto-velho" }
+      ]
+    },
+    {
+      "id": "maper_ouro",
+      "nome": "Maper Ouro Hotel",
+      "cidade": "Parauapebas",
+      "emoji": "⛏️",
+      "slug": "maper-mardan-ouro",
+      "concorrentes": [
+        { "nome": "Hotel Vale dos Carajás", "slug": "vale-dos-caraja-s-park" },
+        { "nome": "Atrium Conforts Hotel", "slug": "atrium-conforts-ltda" },
+        { "nome": "Ibis Styles Parauapebas", "slug": "zii-parauapebas" }
       ]
     }
   ]
