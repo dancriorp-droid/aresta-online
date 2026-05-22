@@ -21,14 +21,12 @@ on:
 permissions:
   contents: write
 
-# Script de push com rebase automático — resolve conflito de push paralelo
-# Cada job tem sua pasta exclusiva (zero conflito de arquivo)
-# O rebase resolve conflito de histórico do git
-
 jobs:
   alto_da_boa_vista:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    # Roda se: nenhum hotel foi especificado OU este hotel foi especificado
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'alto_da_boa_vista' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -53,6 +51,7 @@ jobs:
   hamburgo:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'hamburgo' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -77,6 +76,7 @@ jobs:
   terrazzo:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'terrazzo' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -101,6 +101,7 @@ jobs:
   serra_negra:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'serra_negra' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -125,6 +126,7 @@ jobs:
   honorato:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'honorato' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -149,6 +151,7 @@ jobs:
   golden_plaza:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'golden_plaza' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -173,6 +176,7 @@ jobs:
   maper_ouro:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    if: ${{ github.event.inputs.hotel_id == '' || github.event.inputs.hotel_id == 'maper_ouro' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
