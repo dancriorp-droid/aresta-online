@@ -849,9 +849,9 @@ async function selecionarHotel(hotelId) {
 
   // Carrega o JSON do hotel — tenta múltiplos caminhos
   const caminhosHotel = [
-    `dados/${hotelId}.json`,        // GitHub Pages (estrutura raiz)
-    `../dados/${hotelId}.json`,     // servidor local (dentro de site/)
-    `./dados/${hotelId}.json`,
+    `dados/${hotelId}/dados.json`,        // GitHub Pages (estrutura raiz)
+    `../dados/${hotelId}/dados.json`,     // servidor local (dentro de site/)
+    `./dados/${hotelId}/dados.json`,
   ];
 
   let dadosCarregados = false;
