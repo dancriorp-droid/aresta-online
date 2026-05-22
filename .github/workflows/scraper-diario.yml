@@ -227,6 +227,7 @@ jobs:
         run: |
           git config user.name "Aresta Bot"
           git config user.email "aresta-bot@noreply.github.com"
-          git add dados/ hoteis_config.json
+          git add -f dados/ hoteis_config.json
+          git status
           git diff --staged --quiet || git commit -m "🤖 Atualização automática $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
