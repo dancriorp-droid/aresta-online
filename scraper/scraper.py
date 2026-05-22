@@ -63,7 +63,7 @@ def gerar_datas_mes(data_inicio=None, data_fim=None):
 
     datas = []
     atual = data_inicio
-    while atual < data_fim:
+    while atual <= data_fim:  # <= em vez de < pra incluir o último dia
         check_in = atual
         check_out = atual + timedelta(days=1)
         datas.append((check_in, check_out))
