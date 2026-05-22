@@ -382,6 +382,28 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
     log(f"📅 Período: {datas[0][0]} até {datas[-1][1]} ({len(datas)} dias)")
     log(f"🏨 Hotéis: {len(hoteis)} base(s) + concorrentes")
 
+    # Tenta carregar cookies do Booking (Genius)
+    # Vem da variável de ambiente BOOKING_COOKIES (GitHub Secret)
+    # ou do arquivo cookies_booking.json (teste local)
+    cookies_booking = []
+    try:
+        import os, base64
+        cookies_b64 = os.environ.get("BOOKING_COOKIES", "")
+        if cookies_b64:
+            cookies_booking = json.loads(base64.b64decode(cookies_b64).decode())
+            log(f"🍪 Cookies Genius carregados! ({len(cookies_booking)} cookies)")
+        else:
+            # Tenta arquivo local (pra testar no PC)
+            arquivo_cookies = Path(__file__).parent / "cookies_booking.json"
+            if arquivo_cookies.exists():
+                with open(arquivo_cookies, "r") as f:
+                    cookies_booking = json.load(f)
+                log(f"🍪 Cookies locais carregados! ({len(cookies_booking)} cookies)")
+            else:
+                log("ℹ️  Sem cookies — buscando preço público (sem Genius)")
+    except Exception as e:
+        log(f"⚠️  Erro ao carregar cookies: {e} — continuando sem Genius")
+
     # Inicia o navegador
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -398,6 +420,15 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
             viewport={"width": 1920, "height": 1080},
             locale="pt-BR",
         )
+
+        # Injeta cookies do Booking se disponíveis (ativa Genius!)
+        if cookies_booking:
+            try:
+                context.add_cookies(cookies_booking)
+                log("✅ Cookies injetados — buscando com Genius!")
+            except Exception as e:
+                log(f"⚠️  Erro ao injetar cookies: {e}")
+
         # Bloqueia imagens pra acelerar (igual o Aresta faz)
         context.route("**/*.{png,jpg,jpeg,gif,webp,svg}", lambda route: route.abort())
 
