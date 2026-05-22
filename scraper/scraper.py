@@ -326,7 +326,9 @@ def varrer_hotel(context, hotel, config_busca, datas):
 
 def salvar_resultado(resultado):
     """Salva resultado em JSON na pasta /dados/."""
-    arquivo = PASTA_DADOS / f"{resultado['hotel_id']}.json"
+    pasta_hotel = PASTA_DADOS / resultado['hotel_id']
+    pasta_hotel.mkdir(exist_ok=True)
+    arquivo = pasta_hotel / 'dados.json'
 
     # Se já existe, mantém histórico das últimas 30 buscas
     historico = []
