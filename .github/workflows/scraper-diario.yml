@@ -17,6 +17,10 @@ on:
         description: 'Hotel específico - opcional (padrão: todos)'
         required: false
         default: ''
+      modo:
+        description: 'Modo de busca: vazio=dia a dia | periodo=entrada/saída completo'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -33,7 +37,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" alto_da_boa_vista
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" alto_da_boa_vista "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -58,7 +62,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" hamburgo
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" hamburgo "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -83,7 +87,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" terrazzo
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" terrazzo "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -108,7 +112,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" serra_negra
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" serra_negra "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -133,7 +137,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" honorato
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" honorato "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -158,7 +162,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" golden_plaza
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" golden_plaza "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
@@ -183,7 +187,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: cd scraper && pip install -r requirements.txt && playwright install --with-deps chromium
-      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" maper_ouro
+      - run: cd scraper && python scraper.py "${{ github.event.inputs.data_inicio }}" "${{ github.event.inputs.data_fim }}" maper_ouro "${{ github.event.inputs.modo }}"
       - name: 💾 Push
         run: |
           git config user.name "Aresta Bot"
