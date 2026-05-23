@@ -1341,69 +1341,51 @@ function fecharBuscaManual() {
   document.getElementById('modalBusca').style.display = 'none';
 }
 
+// Canal ntfy — mesmo configurado no listener.py do notebook
+const NTFY_CANAL = "aresta-daniel-2026-xyz";
+
 async function dispararBusca() {
-  const token     = document.getElementById('buscaToken').value.trim();
   const hotelId   = document.getElementById('buscaHotel').value;
   const dataIni   = document.getElementById('buscaIni').value;
   const dataFim   = document.getElementById('buscaFim').value;
   const status    = document.getElementById('buscaStatus');
   const btnBuscar = document.getElementById('btnBuscar');
 
-  if (!token) { alert('Cole o GitHub Token pra disparar a busca!'); return; }
   if (!dataIni || !dataFim) { alert('Selecione as datas!'); return; }
   if (dataFim < dataIni) { alert('Data fim não pode ser menor que data início!'); return; }
 
-  // Pega repo do URL (funciona no GitHub Pages)
-  const partes = window.location.hostname.split('.');
-  const repoOwner = partes[0]; // usuario.github.io
-  const repoName  = window.location.pathname.split('/')[1] || 'aresta-online';
-
   btnBuscar.disabled = true;
-  btnBuscar.textContent = 'Disparando...';
+  btnBuscar.textContent = 'Enviando...';
   status.style.display = 'none';
 
-  try {
-    const resp = await fetch(
-      `https://api.github.com/repos/${repoOwner}/${repoName}/actions/workflows/scraper-diario.yml/dispatches`,
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Accept': 'application/vnd.github+json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ref: 'main',
-          inputs: {
-            data_inicio: dataIni,
-            data_fim:    dataFim,
-            hotel_id:    hotelId,
-            modo:        MODO_BUSCA === 'periodo' ? 'periodo' : ''
-          }
-        })
-      }
-    );
+  const modo = MODO_BUSCA === 'periodo' ? 'periodo' : '';
+  const corpo = `${dataIni}|${dataFim}|${modo}`;
+  const nomeHotel = document.getElementById('buscaHotel').options[document.getElementById('buscaHotel').selectedIndex].text;
 
-    if (resp.status === 204) {
+  try {
+    const resp = await fetch(`https://ntfy.sh/${NTFY_CANAL}`, {
+      method: 'POST',
+      headers: {
+        'Title': `aresta:${hotelId}`,
+        'Content-Type': 'text/plain',
+      },
+      body: corpo
+    });
+
+    if (resp.ok) {
       const modoLabel = MODO_BUSCA === 'periodo'
         ? `Período completo: entrada ${dataIni} → saída ${dataFim}`
         : `Dia a dia: ${dataIni} até ${dataFim}`;
       status.innerHTML = `
         <div style="background:rgba(39,174,96,0.08);border:1px solid rgba(39,174,96,0.3);color:#27AE60;padding:14px 16px;border-radius:10px;font-size:14px;line-height:1.6;">
-          🤖 <strong>Robô ativado com sucesso!</strong><br>
-          Buscando <strong>${document.getElementById('buscaHotel').options[document.getElementById('buscaHotel').selectedIndex].text}</strong><br>
+          🤖 <strong>Comando enviado pro notebook!</strong><br>
+          Buscando <strong>${nomeHotel}</strong><br>
           ${modoLabel}<br>
-          <span style="color:#6B6B6B;font-size:12px;">Dados prontos em ~30 minutos. Recarregue a página para ver.</span>
+          <span style="color:#6B6B6B;font-size:12px;">O notebook precisa estar ligado. Dados prontos em ~30 min.</span>
         </div>`;
       status.style.display = 'block';
-      document.getElementById('buscaToken').value = '';
-    } else if (resp.status === 401) {
-      alert('Token inválido ou sem permissão. Verifique se o token tem a permissão "workflow".');
-    } else if (resp.status === 404) {
-      alert('Repositório não encontrado. Verifique se o token tem acesso ao repo.');
     } else {
-      const body = await resp.text();
-      alert(`Erro ${resp.status}: ${body}`);
+      alert('Erro ao enviar comando. Verifique sua conexão.');
     }
   } catch (err) {
     alert('Erro de conexão: ' + err.message);
@@ -1511,11 +1493,9 @@ async function dispararBusca() {
         </div>
       </div>
 
-      <!-- Token -->
-      <div style="margin-bottom:16px;">
-        <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">GitHub Token</label>
-        <input id="buscaToken" type="password" placeholder="ghp_xxxxxxxxxxxx" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
-        <p style="font-size:11px;color:#6B6B6B;margin-top:6px;">Token com permissão <strong>workflow</strong>. Não é salvo, use uma vez.</p>
+      <!-- Info notebook -->
+      <div style="margin-bottom:16px;padding:12px 14px;background:#EBF4FF;border-radius:10px;border:1px solid #185FA5;">
+        <p style="font-size:12px;color:#185FA5;margin:0;">💻 <strong>O notebook precisa estar ligado</strong> para receber o comando e executar a busca com Genius!</p>
       </div>
 
       <!-- Status -->
