@@ -231,14 +231,22 @@ def buscar_hotel(page, slug, check_in, check_out, config_busca, nome_hotel=""):
         page.goto(url, timeout=30000, wait_until="domcontentloaded")
 
         # ⚠️ CHECAGEM DE REDIRECT
-        # Se o Booking redirecionar pra outro hotel ou pra busca,
-        # a URL final NÃO vai mais conter o slug que pedimos.
+        # O Booking redireciona pra searchresults quando o hotel não existe
+        # ou pra outro hotel quando não tem disponibilidade.
+        # Verificamos se a URL ainda aponta pro hotel certo usando /hotel/br/{slug}
         url_atual = page.url.lower()
         slug_lower = slug.lower()
 
-        # Se o slug saiu da URL OU veio pra página de search → esgotado
-        if slug_lower not in url_atual or "searchresults" in url_atual:
-            log(f"  ⚠️  Hotel {nome_hotel} redirecionado (esgotado/não encontrado)")
+        # Só considera redirect se foi pra searchresults (busca geral)
+        # NÃO bloqueia se o Booking expandiu o slug (ex: pousada-da-pedra → pousada-da-pedra-campos-do-jordao)
+        # porque o slug original ainda aparece dentro do novo slug
+        if "searchresults" in url_atual:
+            log(f"  ⚠️  Hotel {nome_hotel} redirecionado pra busca (não encontrado)")
+            return None
+
+        # Verifica se ainda é a página de um hotel (não outra coisa)
+        if "/hotel/br/" not in url_atual:
+            log(f"  ⚠️  Hotel {nome_hotel} saiu do contexto de hotel")
             return None
 
         # Espera elementos de preço aparecerem (até 10s)
@@ -322,41 +330,92 @@ def varrer_hotel(context, hotel, config_busca, datas):
     return resultado
 
 
-def salvar_resultado(resultado):
-    """Salva resultado em JSON na pasta /dados/."""
+def salvar_resultado(resultado, periodo=False, manual=False):
+    """
+    Salva resultado em JSON na pasta /dados/.
+
+    Modos:
+    - Automático (manual=False): dados/{hotel_id}/dados.json  ← arquivo principal
+    - Manual dia a dia (manual=True, periodo=False): dados/{hotel_id}/manual_{ini}_{fim}_diadia.json
+    - Manual período (manual=True, periodo=True): dados/{hotel_id}/manual_{ini}_{fim}.json
+
+    Regra fundamental: NUNCA sobrescreve dados.json numa busca manual.
+    """
     pasta_hotel = PASTA_DADOS / resultado['hotel_id']
     pasta_hotel.mkdir(exist_ok=True)
-    arquivo = pasta_hotel / 'dados.json'
 
-    # Se já existe, mantém histórico das últimas 30 buscas
-    historico = []
-    if arquivo.exists():
-        try:
-            with open(arquivo, "r", encoding="utf-8") as f:
-                dados_antigos = json.load(f)
-                historico = dados_antigos.get("historico", [])
-                # Adiciona a busca atual anterior ao histórico
-                if "precos_por_data" in dados_antigos:
-                    historico.insert(0, {
-                        "data_busca": dados_antigos.get("data_busca"),
-                        "precos_por_data": dados_antigos["precos_por_data"]
-                    })
-                # Limita histórico a 30 dias
-                historico = historico[:30]
-        except Exception:
-            pass
+    if manual and resultado.get('precos_por_data'):
+        # ── BUSCA MANUAL — arquivo separado, nunca sobrescreve dados.json ──
+        datas = resultado['precos_por_data']
+        check_in_primeiro = datas[0]['check_in']
 
-    resultado["historico"] = historico
+        if periodo:
+            # Período completo: 1 entrada com check-in e check-out reais
+            check_out_ultimo = datas[0]['check_out']
+            nome_arq = f"manual_{check_in_primeiro}_{check_out_ultimo}.json"
+            tipo = "período"
+        else:
+            # Dia a dia: múltiplas entradas, usa primeira e última data
+            check_in_ultimo = datas[-1]['check_in']
+            nome_arq = f"manual_{check_in_primeiro}_{check_in_ultimo}_diadia.json"
+            tipo = "dia a dia"
 
-    with open(arquivo, "w", encoding="utf-8") as f:
-        json.dump(resultado, f, ensure_ascii=False, indent=2)
-    log(f"💾 Salvo em: {arquivo.name}")
+        arquivo = pasta_hotel / nome_arq
+        resultado["historico"] = []
+        with open(arquivo, "w", encoding="utf-8") as f:
+            json.dump(resultado, f, ensure_ascii=False, indent=2)
+        log(f"💾 Salvo em: {arquivo.name} (manual {tipo})")
+
+        # Atualiza índice de buscas manuais (dashboard usa pra listar as abas)
+        indice_arq = pasta_hotel / 'indice.json'
+        indice = []
+        if indice_arq.exists():
+            try:
+                with open(indice_arq, "r", encoding="utf-8") as f:
+                    indice = json.load(f)
+            except Exception:
+                pass
+        check_out_label = datas[0]['check_out'] if periodo else datas[-1]['check_in']
+        entrada = {
+            "arquivo":  nome_arq,
+            "check_in": check_in_primeiro,
+            "check_out": check_out_label,
+            "tipo": tipo
+        }
+        if not any(e["arquivo"] == nome_arq for e in indice):
+            indice.insert(0, entrada)
+        indice = indice[:10]  # máximo 10 buscas manuais
+        with open(indice_arq, "w", encoding="utf-8") as f:
+            json.dump(indice, f, ensure_ascii=False, indent=2)
+        log(f"📋 Índice: {len(indice)} busca(s) manual(is)")
+
+    else:
+        # ── BUSCA AUTOMÁTICA — arquivo principal com histórico ──
+        arquivo = pasta_hotel / 'dados.json'
+        historico = []
+        if arquivo.exists():
+            try:
+                with open(arquivo, "r", encoding="utf-8") as f:
+                    dados_antigos = json.load(f)
+                    historico = dados_antigos.get("historico", [])
+                    if "precos_por_data" in dados_antigos:
+                        historico.insert(0, {
+                            "data_busca": dados_antigos.get("data_busca"),
+                            "precos_por_data": dados_antigos["precos_por_data"]
+                        })
+                    historico = historico[:30]
+            except Exception:
+                pass
+        resultado["historico"] = historico
+        with open(arquivo, "w", encoding="utf-8") as f:
+            json.dump(resultado, f, ensure_ascii=False, indent=2)
+        log(f"💾 Salvo em: {arquivo.name}")
 
 
 # ============================================================
 # MAIN
 # ============================================================
-def main(data_inicio=None, data_fim=None, hotel_id=None):
+def main(data_inicio=None, data_fim=None, hotel_id=None, periodo=False, manual=False):
     """
     Executa o scraper.
 
@@ -364,6 +423,8 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
     - data_inicio (date): data inicial da busca. Padrão: hoje
     - data_fim (date): data final. Padrão: último dia do mês
     - hotel_id (str): se preenchido, busca apenas este hotel. Padrão: todos
+    - periodo (bool): True = 1 busca com check-in/check-out definidos
+    - manual (bool): True = busca manual, salva em arquivo separado (não sobrescreve dados.json)
     """
     log("=" * 60)
     log("🚀 ARESTA ONLINE — Iniciando scraping")
@@ -381,8 +442,14 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
             return
 
     # Gera as datas a buscar
-    datas = gerar_datas_mes(data_inicio, data_fim)
-    log(f"📅 Período: {datas[0][0]} até {datas[-1][1]} ({len(datas)} dias)")
+    if periodo and data_inicio and data_fim:
+        # Modo período completo: UMA busca com check-in e check-out definidos
+        datas = [(data_inicio, data_fim)]
+        log(f"📅 Modo Período: check-in {data_inicio} → check-out {data_fim} (1 busca)")
+    else:
+        # Modo padrão: dia a dia
+        datas = gerar_datas_mes(data_inicio, data_fim)
+        log(f"📅 Modo Dia a Dia: {datas[0][0]} até {datas[-1][0]} ({len(datas)} dias)")
     log(f"🏨 Hotéis: {len(hoteis)} base(s) + concorrentes")
 
     # Tenta carregar cookies do Booking (Genius)
@@ -439,7 +506,7 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
         for hotel in hoteis:
             try:
                 resultado = varrer_hotel(context, hotel, config_busca, datas)
-                salvar_resultado(resultado)
+                salvar_resultado(resultado, periodo=periodo, manual=manual)
             except Exception as e:
                 log(f"❌ Erro fatal no hotel {hotel['nome']}: {e}")
 
@@ -451,19 +518,22 @@ def main(data_inicio=None, data_fim=None, hotel_id=None):
 
 
 if __name__ == "__main__":
-    # Permite passar argumentos via linha de comando:
-    # python scraper.py                                 → todos hotéis, mês atual
-    # python scraper.py 2026-06-01 2026-06-30           → datas customizadas
-    # python scraper.py 2026-06-01 2026-06-30 hamburgo  → 1 hotel específico
+    # Argumentos:
+    # python scraper.py                                          → todos hotéis, mês atual, dia a dia
+    # python scraper.py 2026-06-01 2026-06-30 hamburgo          → 1 hotel, dia a dia
+    # python scraper.py 2026-06-10 2026-06-15 hamburgo periodo  → 1 hotel, período completo (1 busca só)
 
     args = sys.argv[1:]
-    # Trata argumentos vazios (vêm do GitHub Actions quando não preenchido)
-    data_ini_str   = args[0].strip() if len(args) >= 1 else ''
-    data_fim_str   = args[1].strip() if len(args) >= 2 else ''
-    hotel_filtro   = args[2].strip() if len(args) >= 3 else ''
+    data_ini_str  = args[0].strip() if len(args) >= 1 else ''
+    data_fim_str  = args[1].strip() if len(args) >= 2 else ''
+    hotel_filtro  = args[2].strip() if len(args) >= 3 else ''
+    modo          = args[3].strip() if len(args) >= 4 else ''
 
-    data_ini     = date.fromisoformat(data_ini_str)   if data_ini_str   else None
-    data_fim     = date.fromisoformat(data_fim_str)   if data_fim_str   else None
-    hotel_filtro = hotel_filtro                        if hotel_filtro   else None
+    data_ini     = date.fromisoformat(data_ini_str) if data_ini_str  else None
+    data_fim     = date.fromisoformat(data_fim_str) if data_fim_str  else None
+    hotel_filtro = hotel_filtro if hotel_filtro else None
+    periodo      = modo == 'periodo'
 
-    main(data_inicio=data_ini, data_fim=data_fim, hotel_id=hotel_filtro)
+    # Se hotel_id foi especificado = busca manual (não sobrescreve dados.json)
+    eh_manual = hotel_filtro is not None
+    main(data_inicio=data_ini, data_fim=data_fim, hotel_id=hotel_filtro, periodo=periodo, manual=eh_manual)
