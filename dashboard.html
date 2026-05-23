@@ -197,6 +197,23 @@
     color: var(--branco);
     font-weight: 600;
   }
+  .aba-manual {
+    padding: 8px 14px;
+    border: 1.5px solid var(--dourado);
+    background: var(--marfim);
+    color: var(--dourado);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .aba-manual:hover, .aba-manual.ativa {
+    background: var(--dourado);
+    color: var(--branco);
+  }
   .aba-emoji { font-size: 16px; }
 
   /* ============================================================
@@ -656,6 +673,9 @@
   <!-- ABAS DE HOTÉIS (geradas dinamicamente) -->
   <div class="abas" id="abas"></div>
 
+  <!-- ABAS DE BUSCAS MANUAIS (aparecem quando há buscas manuais) -->
+  <div id="abasManuais" style="display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap;"></div>
+
   <!-- PAINEL DE FILTROS -->
   <div class="filtros">
     <div class="filtros-titulo">
@@ -890,6 +910,74 @@ async function selecionarHotel(hotelId) {
         <h3>Ainda sem dados pra este hotel</h3>
         <p>O scraper ainda não rodou pra ${hotel.nome}.<br>Aguarde a próxima atualização automática ou rode manualmente.</p>
       </div>`;
+  }
+
+  // Carrega buscas manuais de período (arquivos manual_*.json)
+  await carregarBuscasManuais(hotelId);
+}
+
+/* ============================================================
+   BUSCAS MANUAIS DE PERÍODO
+   Lê arquivos manual_{ini}_{fim}.json da pasta do hotel
+   e adiciona como abas extras no painel
+============================================================ */
+let BUSCAS_MANUAIS = {};  // { hotelId: [{check_in, check_out, dados}] }
+
+async function carregarBuscasManuais(hotelId) {
+  // Tenta carregar o índice de buscas manuais
+  // O scraper gera um arquivo indice.json com a lista dos arquivos manuais
+  const caminhos = [
+    `dados/${hotelId}/indice.json`,
+    `../dados/${hotelId}/indice.json`,
+  ];
+
+  for (const caminho of caminhos) {
+    try {
+      const resp = await fetch(caminho);
+      if (!resp.ok) continue;
+      const indice = await resp.json();
+      BUSCAS_MANUAIS[hotelId] = indice;
+      renderizarAbasManuais(hotelId);
+      return;
+    } catch(e) { /* sem buscas manuais, tudo ok */ }
+  }
+  // Sem índice = sem buscas manuais, remove abas se existirem
+  document.getElementById('abasManuais').innerHTML = '';
+}
+
+function renderizarAbasManuais(hotelId) {
+  const container = document.getElementById('abasManuais');
+  const buscas = BUSCAS_MANUAIS[hotelId] || [];
+  if (buscas.length === 0) { container.innerHTML = ''; return; }
+
+  container.innerHTML = buscas.map(b => `
+    <button class="aba aba-manual" data-arquivo="${b.arquivo}" onclick="verBuscaManual('${hotelId}','${b.arquivo}')">
+      🔍 ${fmtData(b.check_in)} → ${fmtData(b.check_out)}
+    </button>
+  `).join('');
+}
+
+async function verBuscaManual(hotelId, arquivo) {
+  const caminhos = [
+    `dados/${hotelId}/${arquivo}`,
+    `../dados/${hotelId}/${arquivo}`,
+  ];
+  for (const caminho of caminhos) {
+    try {
+      const resp = await fetch(caminho);
+      if (!resp.ok) continue;
+      const dados = await resp.json();
+      // Mostra no painel igual os dados normais
+      DADOS_HOTEL = dados;
+      document.getElementById('ultimaAtualizacao').textContent = fmtTimestamp(dados.data_busca) + ' (manual)';
+      // Sem filtro de data — mostra tudo
+      renderizarTabela(dados.precos_por_data);
+      // Marca aba ativa
+      document.querySelectorAll('.aba-manual').forEach(a => {
+        a.classList.toggle('ativa', a.dataset.arquivo === arquivo);
+      });
+      return;
+    } catch(e) { }
   }
 }
 
@@ -1196,6 +1284,40 @@ function mostrarSucessoAdmin(msg) {
    BUSCA MANUAL — Dispara GitHub Actions via API
    Precisa de um GitHub Token no campo abaixo
 ============================================================ */
+// Modo de busca selecionado: 'dia_a_dia' ou 'periodo'
+let MODO_BUSCA = 'dia_a_dia';
+
+function selecionarModo(modo) {
+  MODO_BUSCA = modo;
+  const btnDia    = document.getElementById('modoDiaDia');
+  const btnPer    = document.getElementById('modoPeriodo');
+  const desc      = document.getElementById('descModo');
+  const labelIni  = document.getElementById('labelIni');
+  const labelFim  = document.getElementById('labelFim');
+
+  if (modo === 'dia_a_dia') {
+    btnDia.style.background = '#0A2540';
+    btnDia.style.color = '#fff';
+    btnDia.style.borderColor = '#0A2540';
+    btnPer.style.background = '#fff';
+    btnPer.style.color = '#6B6B6B';
+    btnPer.style.borderColor = '#E2E6ED';
+    desc.textContent = 'Busca cada data separada (check-in + 1 dia). Ex: 01/06, 02/06, 03/06...';
+    labelIni.textContent = 'Data Início';
+    labelFim.textContent = 'Data Fim';
+  } else {
+    btnPer.style.background = '#0A2540';
+    btnPer.style.color = '#fff';
+    btnPer.style.borderColor = '#0A2540';
+    btnDia.style.background = '#fff';
+    btnDia.style.color = '#6B6B6B';
+    btnDia.style.borderColor = '#E2E6ED';
+    desc.textContent = 'Uma busca única com entrada e saída definidas. Ex: entrada 10/06, saída 15/06 (5 noites).';
+    labelIni.textContent = 'Check-in (Entrada)';
+    labelFim.textContent = 'Check-out (Saída)';
+  }
+}
+
 function abrirBuscaManual() {
   // Preenche o select de hotéis
   if (CONFIG) {
@@ -1204,7 +1326,10 @@ function abrirBuscaManual() {
       `<option value="${h.id}">${h.emoji} ${h.nome}</option>`
     ).join('');
   }
-  // Preenche datas padrão: hoje até fim do próximo mês
+  // Inicia no modo dia a dia
+  MODO_BUSCA = 'dia_a_dia';
+  selecionarModo('dia_a_dia');
+  // Preenche datas padrão
   const hoje = new Date();
   const fimProximo = new Date(hoje.getFullYear(), hoje.getMonth() + 2, 0);
   document.getElementById('buscaIni').value = hoje.toISOString().slice(0,10);
@@ -1252,18 +1377,22 @@ async function dispararBusca() {
           inputs: {
             data_inicio: dataIni,
             data_fim:    dataFim,
-            hotel_id:    hotelId
+            hotel_id:    hotelId,
+            modo:        MODO_BUSCA === 'periodo' ? 'periodo' : ''
           }
         })
       }
     );
 
     if (resp.status === 204) {
+      const modoLabel = MODO_BUSCA === 'periodo'
+        ? `Período completo: entrada ${dataIni} → saída ${dataFim}`
+        : `Dia a dia: ${dataIni} até ${dataFim}`;
       status.innerHTML = `
         <div style="background:rgba(39,174,96,0.08);border:1px solid rgba(39,174,96,0.3);color:#27AE60;padding:14px 16px;border-radius:10px;font-size:14px;line-height:1.6;">
           🤖 <strong>Robô ativado com sucesso!</strong><br>
           Buscando <strong>${document.getElementById('buscaHotel').options[document.getElementById('buscaHotel').selectedIndex].text}</strong><br>
-          Período: ${dataIni} até ${dataFim}<br>
+          ${modoLabel}<br>
           <span style="color:#6B6B6B;font-size:12px;">Dados prontos em ~30 minutos. Recarregue a página para ver.</span>
         </div>`;
       status.style.display = 'block';
@@ -1356,14 +1485,28 @@ async function dispararBusca() {
         <select id="buscaHotel" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;color:#1A1A1A;background:#fff;cursor:pointer;"></select>
       </div>
 
+      <!-- Modo de busca -->
+      <div style="margin-bottom:16px;">
+        <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Modo de Busca</label>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <button id="modoDiaDia" onclick="selecionarModo('dia_a_dia')" style="padding:12px;border:2px solid #0A2540;background:#0A2540;color:#fff;border-radius:10px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">
+            📅 Dia a Dia
+          </button>
+          <button id="modoPeriodo" onclick="selecionarModo('periodo')" style="padding:12px;border:2px solid #E2E6ED;background:#fff;color:#6B6B6B;border-radius:10px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">
+            🗓️ Período Completo
+          </button>
+        </div>
+        <p id="descModo" style="font-size:11px;color:#6B6B6B;margin-top:8px;">Busca cada data separada (check-in + 1 dia). Ex: 01/06, 02/06, 03/06...</p>
+      </div>
+
       <!-- Datas -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Início</label>
+          <label id="labelIni" style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Início / Check-in</label>
           <input id="buscaIni" type="date" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
         </div>
         <div>
-          <label style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Fim</label>
+          <label id="labelFim" style="display:block;font-size:12px;font-weight:600;color:#0A2540;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;">Data Fim / Check-out</label>
           <input id="buscaFim" type="date" style="width:100%;padding:12px 14px;border:1.5px solid #E2E6ED;border-radius:10px;font-size:14px;font-family:'Inter',sans-serif;">
         </div>
       </div>
