@@ -1,5 +1,11 @@
 [
   {
+    "arquivo": "manual_2026-05-23_2026-06-30_diadia.json",
+    "check_in": "2026-05-23",
+    "check_out": "2026-06-30",
+    "tipo": "dia a dia"
+  },
+  {
     "arquivo": "manual_2026-10-19_2026-10-21.json",
     "check_in": "2026-10-19",
     "check_out": "2026-10-21",

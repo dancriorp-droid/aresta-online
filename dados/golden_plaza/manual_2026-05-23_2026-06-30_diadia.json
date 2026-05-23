@@ -1,0 +1,483 @@
+{
+  "hotel_id": "golden_plaza",
+  "hotel_nome": "Golden Plaza Hotel",
+  "cidade": "Porto Velho",
+  "emoji": "🌟",
+  "data_busca": "2026-05-23T09:06:17.675887",
+  "concorrentes": [
+    "Golden Plaza Hotel",
+    "Oscar Hotel Executive",
+    "Slaviero Porto Velho"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-23",
+      "check_out": "2026-05-24",
+      "precos": {
+        "Golden Plaza Hotel": 450,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 426,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-24",
+      "check_out": "2026-05-25",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 426,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 513,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-26",
+      "check_out": "2026-05-27",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 513,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-27",
+      "check_out": "2026-05-28",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 484,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-28",
+      "check_out": "2026-05-29",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 513,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-29",
+      "check_out": "2026-05-30",
+      "precos": {
+        "Golden Plaza Hotel": 547,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 426,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-30",
+      "check_out": "2026-05-31",
+      "precos": {
+        "Golden Plaza Hotel": 597,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 426,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-05-31",
+      "check_out": "2026-06-01",
+      "precos": {
+        "Golden Plaza Hotel": 512,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 412,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-01",
+      "check_out": "2026-06-02",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 484,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-02",
+      "check_out": "2026-06-03",
+      "precos": {
+        "Golden Plaza Hotel": 413,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com Cama de Casal ou 2 de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-03",
+      "check_out": "2026-06-04",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 460,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-04",
+      "check_out": "2026-06-05",
+      "precos": {
+        "Golden Plaza Hotel": 527,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-05",
+      "check_out": "2026-06-06",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 458,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-06",
+      "check_out": "2026-06-07",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 408,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-07",
+      "check_out": "2026-06-08",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 393,
+        "Slaviero Porto Velho__quarto": "Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-08",
+      "check_out": "2026-06-09",
+      "precos": {
+        "Golden Plaza Hotel": 512,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-09",
+      "check_out": "2026-06-10",
+      "precos": {
+        "Golden Plaza Hotel": 447,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com Cama de Casal ou 2 de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 458,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-10",
+      "check_out": "2026-06-11",
+      "precos": {
+        "Golden Plaza Hotel": 425,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com Cama de Casal ou 2 de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 441,
+        "Slaviero Porto Velho__quarto": "Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-11",
+      "check_out": "2026-06-12",
+      "precos": {
+        "Golden Plaza Hotel": 512,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 484,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-12",
+      "check_out": "2026-06-13",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 484,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-13",
+      "check_out": "2026-06-14",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 408,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-14",
+      "check_out": "2026-06-15",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 431,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-15",
+      "check_out": "2026-06-16",
+      "precos": {
+        "Golden Plaza Hotel": 572,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 458,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-16",
+      "check_out": "2026-06-17",
+      "precos": {
+        "Golden Plaza Hotel": 572,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 484,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-17",
+      "check_out": "2026-06-18",
+      "precos": {
+        "Golden Plaza Hotel": 547,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 458,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-18",
+      "check_out": "2026-06-19",
+      "precos": {
+        "Golden Plaza Hotel": 493,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com Cama de Casal ou 2 de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-19",
+      "check_out": "2026-06-20",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 436,
+        "Slaviero Porto Velho__quarto": "Duplo"
+      }
+    },
+    {
+      "check_in": "2026-06-20",
+      "check_out": "2026-06-21",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 408,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-21",
+      "check_out": "2026-06-22",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 431,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-22",
+      "check_out": "2026-06-23",
+      "precos": {
+        "Golden Plaza Hotel": 512,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-23",
+      "check_out": "2026-06-24",
+      "precos": {
+        "Golden Plaza Hotel": 512,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com 2 Camas de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 435,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-24",
+      "check_out": "2026-06-25",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 460,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-25",
+      "check_out": "2026-06-26",
+      "precos": {
+        "Golden Plaza Hotel": 434,
+        "Golden Plaza Hotel__quarto": "Quarto Standard com Cama de Casal ou 2 de Solteiro",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 460,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-26",
+      "check_out": "2026-06-27",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 458,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-27",
+      "check_out": "2026-06-28",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 408,
+        "Slaviero Porto Velho__quarto": "Acomodação Dupla de Luxo"
+      }
+    },
+    {
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-29",
+      "precos": {
+        "Golden Plaza Hotel": 464,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 431,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-29",
+      "check_out": "2026-06-30",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 460,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    },
+    {
+      "check_in": "2026-06-30",
+      "check_out": "2026-07-01",
+      "precos": {
+        "Golden Plaza Hotel": 497,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 395,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 460,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    }
+  ],
+  "historico": []
+}
