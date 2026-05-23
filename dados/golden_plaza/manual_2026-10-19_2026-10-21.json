@@ -1,0 +1,27 @@
+{
+  "hotel_id": "golden_plaza",
+  "hotel_nome": "Golden Plaza Hotel",
+  "cidade": "Porto Velho",
+  "emoji": "🌟",
+  "data_busca": "2026-05-23T00:45:43.136249",
+  "concorrentes": [
+    "Golden Plaza Hotel",
+    "Oscar Hotel Executive",
+    "Slaviero Porto Velho"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-10-19",
+      "check_out": "2026-10-21",
+      "precos": {
+        "Golden Plaza Hotel": 994,
+        "Golden Plaza Hotel__quarto": "Quarto Duplo Standard",
+        "Oscar Hotel Executive": 790,
+        "Oscar Hotel Executive__quarto": "Quarto Duplo",
+        "Slaviero Porto Velho": 952,
+        "Slaviero Porto Velho__quarto": "Quarto Duplo Deluxe"
+      }
+    }
+  ],
+  "historico": []
+}
