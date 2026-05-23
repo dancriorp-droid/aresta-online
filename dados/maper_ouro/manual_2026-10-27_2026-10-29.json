@@ -1,0 +1,30 @@
+{
+  "hotel_id": "maper_ouro",
+  "hotel_nome": "Maper Ouro Hotel",
+  "cidade": "Parauapebas",
+  "emoji": "⛏️",
+  "data_busca": "2026-05-23T03:49:12.150158",
+  "concorrentes": [
+    "Maper Ouro Hotel",
+    "Hotel Vale dos Carajás",
+    "Atrium Conforts Hotel",
+    "Ibis Styles Parauapebas"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-10-27",
+      "check_out": "2026-10-29",
+      "precos": {
+        "Maper Ouro Hotel": 840,
+        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+        "Hotel Vale dos Carajás": 783,
+        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+        "Atrium Conforts Hotel": 832,
+        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+        "Ibis Styles Parauapebas": 932,
+        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+      }
+    }
+  ],
+  "historico": []
+}
