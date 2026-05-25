@@ -3,574 +3,912 @@
   "hotel_nome": "Maper Ouro Hotel",
   "cidade": "Parauapebas",
   "emoji": "⛏️",
-  "data_busca": "2026-05-22T19:13:30.326158",
+  "data_busca": "2026-05-25T12:56:10.032910",
   "concorrentes": [
     "Maper Ouro Hotel",
-    "Hotel Vale dos Carajás",
-    "Atrium Conforts Hotel",
-    "Ibis Styles Parauapebas"
+    "Ibis Parauapebas",
+    "Hotel Savana Parauapebas"
   ],
   "precos_por_data": [
-    {
-      "check_in": "2026-05-22",
-      "check_out": "2026-05-23",
-      "precos": {
-        "Maper Ouro Hotel": 567,
-        "Maper Ouro Hotel__quarto": "Quarto Duplo - Acesso para Hóspedes com Mobilidade Reduzida",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 394,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 451,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
-      }
-    },
-    {
-      "check_in": "2026-05-23",
-      "check_out": "2026-05-24",
-      "precos": {
-        "Maper Ouro Hotel": 546,
-        "Maper Ouro Hotel__quarto": "Quarto Duplo - Acesso para Hóspedes com Mobilidade Reduzida",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 394,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 451,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
-      }
-    },
-    {
-      "check_in": "2026-05-24",
-      "check_out": "2026-05-25",
-      "precos": {
-        "Maper Ouro Hotel": 462,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto com Cama de Casal ou 2 de Solteiro",
-        "Atrium Conforts Hotel": 394,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 451,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
-      }
-    },
     {
       "check_in": "2026-05-25",
       "check_out": "2026-05-26",
       "precos": {
-        "Maper Ouro Hotel": 483,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto com Cama de Casal ou 2 de Solteiro",
-        "Atrium Conforts Hotel": 438,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 521,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": null,
+        "Hotel Savana Parauapebas": null
       }
     },
     {
       "check_in": "2026-05-26",
       "check_out": "2026-05-27",
       "precos": {
-        "Maper Ouro Hotel": 483,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 438,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 541,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 2 Camas de Solteiro"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 368,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-05-27",
       "check_out": "2026-05-28",
       "precos": {
-        "Maper Ouro Hotel": 483,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 438,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": null,
-        "Ibis Styles Parauapebas__quarto": ""
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 398,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-05-28",
       "check_out": "2026-05-29",
       "precos": {
-        "Maper Ouro Hotel": 462,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 438,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 500,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 383,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-05-29",
       "check_out": "2026-05-30",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 434,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 368,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-05-30",
       "check_out": "2026-05-31",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 434,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 256
       }
     },
     {
       "check_in": "2026-05-31",
       "check_out": "2026-06-01",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 434,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 256
       }
     },
     {
       "check_in": "2026-06-01",
       "check_out": "2026-06-02",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 434,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-02",
       "check_out": "2026-06-03",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 448,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-03",
       "check_out": "2026-06-04",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 448,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-04",
       "check_out": "2026-06-05",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 434,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-05",
       "check_out": "2026-06-06",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 405,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-06",
       "check_out": "2026-06-07",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-07",
       "check_out": "2026-06-08",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 403,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-08",
       "check_out": "2026-06-09",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 430,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-09",
       "check_out": "2026-06-10",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 481,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-10",
       "check_out": "2026-06-11",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 481,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 355,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-11",
       "check_out": "2026-06-12",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 430,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-12",
       "check_out": "2026-06-13",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-13",
       "check_out": "2026-06-14",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-14",
       "check_out": "2026-06-15",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 403,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-15",
       "check_out": "2026-06-16",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 417,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 356,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-16",
       "check_out": "2026-06-17",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 481,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-17",
       "check_out": "2026-06-18",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 481,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-18",
       "check_out": "2026-06-19",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 417,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 356,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-19",
       "check_out": "2026-06-20",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-20",
       "check_out": "2026-06-21",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 424,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": null,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-21",
       "check_out": "2026-06-22",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 401,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 403,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-22",
       "check_out": "2026-06-23",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 430,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 356,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-23",
       "check_out": "2026-06-24",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 481,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-24",
       "check_out": "2026-06-25",
       "precos": {
-        "Maper Ouro Hotel": 441,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 466,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 401,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 417,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 356,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-26",
       "check_out": "2026-06-27",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-27",
       "check_out": "2026-06-28",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 390,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-28",
       "check_out": "2026-06-29",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 403,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 342,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-29",
       "check_out": "2026-06-30",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 392,
-        "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 417,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 356,
+        "Hotel Savana Parauapebas": 288
       }
     },
     {
       "check_in": "2026-06-30",
       "check_out": "2026-07-01",
       "precos": {
-        "Maper Ouro Hotel": 420,
-        "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Hotel Vale dos Carajás": 401,
-        "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
-        "Atrium Conforts Hotel": 416,
-        "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
-        "Ibis Styles Parauapebas": 466,
-        "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+        "Maper Ouro Hotel": 260,
+        "Ibis Parauapebas": 369,
+        "Hotel Savana Parauapebas": 288
       }
     }
   ],
-  "historico": []
+  "historico": [
+    {
+      "data_busca": "2026-05-22T19:13:30.326158",
+      "precos_por_data": [
+        {
+          "check_in": "2026-05-22",
+          "check_out": "2026-05-23",
+          "precos": {
+            "Maper Ouro Hotel": 567,
+            "Maper Ouro Hotel__quarto": "Quarto Duplo - Acesso para Hóspedes com Mobilidade Reduzida",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 394,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 451,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-23",
+          "check_out": "2026-05-24",
+          "precos": {
+            "Maper Ouro Hotel": 546,
+            "Maper Ouro Hotel__quarto": "Quarto Duplo - Acesso para Hóspedes com Mobilidade Reduzida",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 394,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 451,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-24",
+          "check_out": "2026-05-25",
+          "precos": {
+            "Maper Ouro Hotel": 462,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto com Cama de Casal ou 2 de Solteiro",
+            "Atrium Conforts Hotel": 394,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 451,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-25",
+          "check_out": "2026-05-26",
+          "precos": {
+            "Maper Ouro Hotel": 483,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto com Cama de Casal ou 2 de Solteiro",
+            "Atrium Conforts Hotel": 438,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 521,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-26",
+          "check_out": "2026-05-27",
+          "precos": {
+            "Maper Ouro Hotel": 483,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 438,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 541,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 2 Camas de Solteiro"
+          }
+        },
+        {
+          "check_in": "2026-05-27",
+          "check_out": "2026-05-28",
+          "precos": {
+            "Maper Ouro Hotel": 483,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 438,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": null,
+            "Ibis Styles Parauapebas__quarto": ""
+          }
+        },
+        {
+          "check_in": "2026-05-28",
+          "check_out": "2026-05-29",
+          "precos": {
+            "Maper Ouro Hotel": 462,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 438,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 500,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-29",
+          "check_out": "2026-05-30",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 434,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-30",
+          "check_out": "2026-05-31",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 434,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-05-31",
+          "check_out": "2026-06-01",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 434,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-01",
+          "check_out": "2026-06-02",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 434,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-02",
+          "check_out": "2026-06-03",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 448,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-03",
+          "check_out": "2026-06-04",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 448,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-04",
+          "check_out": "2026-06-05",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 434,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-05",
+          "check_out": "2026-06-06",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 405,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-06",
+          "check_out": "2026-06-07",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-07",
+          "check_out": "2026-06-08",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 403,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-08",
+          "check_out": "2026-06-09",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 430,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-09",
+          "check_out": "2026-06-10",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 481,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-10",
+          "check_out": "2026-06-11",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 481,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-11",
+          "check_out": "2026-06-12",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 430,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-12",
+          "check_out": "2026-06-13",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-13",
+          "check_out": "2026-06-14",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-14",
+          "check_out": "2026-06-15",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 403,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-15",
+          "check_out": "2026-06-16",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 417,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-16",
+          "check_out": "2026-06-17",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 481,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-17",
+          "check_out": "2026-06-18",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 481,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-18",
+          "check_out": "2026-06-19",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 417,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-19",
+          "check_out": "2026-06-20",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-20",
+          "check_out": "2026-06-21",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 424,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-21",
+          "check_out": "2026-06-22",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 401,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 403,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-22",
+          "check_out": "2026-06-23",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 430,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-23",
+          "check_out": "2026-06-24",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 481,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-24",
+          "check_out": "2026-06-25",
+          "precos": {
+            "Maper Ouro Hotel": 441,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 466,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-25",
+          "check_out": "2026-06-26",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 401,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 417,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-26",
+          "check_out": "2026-06-27",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-27",
+          "check_out": "2026-06-28",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 390,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-28",
+          "check_out": "2026-06-29",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 403,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-29",
+          "check_out": "2026-06-30",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 392,
+            "Hotel Vale dos Carajás__quarto": "Acomodação Dupla de Luxo",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 417,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        },
+        {
+          "check_in": "2026-06-30",
+          "check_out": "2026-07-01",
+          "precos": {
+            "Maper Ouro Hotel": 420,
+            "Maper Ouro Hotel__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Hotel Vale dos Carajás": 401,
+            "Hotel Vale dos Carajás__quarto": "Quarto Deluxe com Cama Queen-size",
+            "Atrium Conforts Hotel": 416,
+            "Atrium Conforts Hotel__quarto": "Quarto Duplo Standard",
+            "Ibis Styles Parauapebas": 466,
+            "Ibis Styles Parauapebas__quarto": "Apartamento Standard com 1 Cama de Casal"
+          }
+        }
+      ]
+    }
+  ]
 }
