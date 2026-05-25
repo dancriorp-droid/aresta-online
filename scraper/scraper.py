@@ -1,539 +1,156 @@
-"""
-ARESTA ONLINE — Motor de Scraping
-==================================
-Roda 1x por dia (ou manualmente).
-Busca preços no Booking dos hotéis configurados em hoteis_config.json.
-Salva resultados em /dados/{hotel_id}.json
-"""
-
-import json
-import os
-import sys
-import time
-import random
-import re
-from datetime import date, datetime, timedelta
-from pathlib import Path
-from playwright.sync_api import sync_playwright
-
-# ============================================================
-# CONFIGURAÇÃO DE CAMINHOS
-# ============================================================
-PASTA_BASE = Path(__file__).parent.parent
-ARQUIVO_CONFIG = Path(__file__).parent / "hoteis_config.json"
-PASTA_DADOS = PASTA_BASE / "dados"
-PASTA_DADOS.mkdir(exist_ok=True)
-
-
-# ============================================================
-# UTILITÁRIOS
-# ============================================================
-def log(msg):
-    """Imprime mensagem com timestamp."""
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", flush=True)
-
-
-def carregar_config():
-    """Lê o arquivo de configuração dos hotéis."""
-    with open(ARQUIVO_CONFIG, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def gerar_datas_mes(data_inicio=None, data_fim=None):
-    """
-    Gera lista de (check-in, check-out), dia por dia.
-    Se nenhuma data for fornecida: do dia atual até o último dia do MÊS SEGUINTE.
-    (Ex: se hoje é 22/maio, busca de 22/maio até 30/junho.)
-    """
-    hoje = date.today()
-
-    if data_inicio is None:
-        data_inicio = hoje
-
-    if data_fim is None:
-        # Último dia do MÊS SEGUINTE usando timedelta (100% correto pra todos os meses)
-        # Avança 62 dias a partir do 1º do mês atual → garante estar no mês+2
-        # Depois pega o 1º desse mês e volta 1 dia = último dia do mês seguinte
-        primeiro_do_mes_atual = date(hoje.year, hoje.month, 1)
-        dois_meses_a_frente = primeiro_do_mes_atual + timedelta(days=62)
-        primeiro_do_mes_alvo = date(dois_meses_a_frente.year, dois_meses_a_frente.month, 1)
-        data_fim = primeiro_do_mes_alvo - timedelta(days=1)
-
-    datas = []
-    atual = data_inicio
-    while atual <= data_fim:  # <= em vez de < pra incluir o último dia
-        check_in = atual
-        check_out = atual + timedelta(days=1)
-        datas.append((check_in, check_out))
-        atual += timedelta(days=1)
-    return datas
-
-
-def montar_url_booking(slug, check_in, check_out, config_busca):
-    """Monta a URL do Booking pra um hotel específico em uma data."""
-    return (
-        f"https://www.booking.com/hotel/br/{slug}.pt-br.html"
-        f"?checkin={check_in.isoformat()}"
-        f"&checkout={check_out.isoformat()}"
-        f"&group_adults={config_busca['adultos']}"
-        f"&no_rooms={config_busca['quartos']}"
-        f"&selected_currency={config_busca['moeda']}"
-        f"&lang={config_busca['idioma']}"
-    )
-
-
-def _texto_para_numero(texto):
-    """Converte texto tipo 'R$ 1.234,56' ou 'BRL 350' em int (354). Retorna None se inválido."""
-    if not texto:
-        return None
-    # Pega só dígitos e vírgula/ponto
-    so_numeros = re.findall(r'[\d.,]+', texto)
-    if not so_numeros:
-        return None
-    # Pega o primeiro grupo numérico (geralmente o preço)
-    bruto = so_numeros[0]
-    # Remove separadores de milhar (.) e troca vírgula decimal por nada (pegamos só reais)
-    limpo = bruto.replace('.', '').replace(',', '.')
-    try:
-        return int(float(limpo))
-    except (ValueError, TypeError):
-        return None
-
-
-def extrair_preco_pagina(page, adultos_esperados=2):
-    """
-    Extrai o MENOR preço da página do hotel no Booking PARA O NÚMERO DE ADULTOS PEDIDO.
-
-    Estratégia:
-    1. Procura linhas de quartos (cada <tr> da tabela é um tipo de quarto)
-    2. Pra cada quarto, verifica se ele comporta o número de adultos pedido
-       (Booking mostra ícones de pessoa: ⚊ = 1 adulto, ⚊⚊ = 2 adultos)
-    3. Pega o preço daquela linha
-    4. Retorna o MENOR preço entre os quartos válidos
-
-    Retorna: dict {'preco': int, 'nome_quarto': str} ou None
-    """
-
-    # ESTRATÉGIA 1: Tabela tradicional de quartos (hprt-table)
-    # Cada <tr> é um quarto, com info de ocupação e preço
-    try:
-        linhas_quartos = page.query_selector_all('tr.js-rt-block-row, tr[data-block-id]')
-
-        candidatos = []
-        for linha in linhas_quartos:
-            try:
-                texto_linha = linha.inner_text()
-
-                # Verifica capacidade: procura ícones de pessoa ou texto indicando adultos
-                # Booking usa: "Máximo de X pessoas" ou ícones SVG de hóspedes
-                capacidade = _detectar_capacidade(linha, texto_linha)
-
-                # Pula quartos que claramente são pra menos pessoas que pedimos
-                if capacidade is not None and capacidade < adultos_esperados:
-                    continue
-
-                # Tenta pegar preço da linha
-                preco = _extrair_preco_da_linha(linha)
-                if preco and 80 <= preco <= 50000:
-                    # Tenta pegar o nome do quarto
-                    nome_quarto = ""
-                    try:
-                        el_nome = linha.query_selector(
-                            'span.hprt-roomtype-icon-link, .hprt-roomtype-link, '
-                            '[data-testid="property-card-room-name"]'
-                        )
-                        if el_nome:
-                            nome_quarto = el_nome.inner_text().strip()
-                    except Exception:
-                        pass
-
-                    candidatos.append({"preco": preco, "nome_quarto": nome_quarto})
-            except Exception:
-                continue
-
-        if candidatos:
-            # Retorna o quarto mais barato dos que comportam 2 adultos
-            melhor = min(candidatos, key=lambda x: x["preco"])
-            return melhor
-    except Exception:
-        pass
-
-    # NOTA: removido o fallback "preço do card" porque ele pegava
-    # preços de OUTROS hotéis quando o Booking redirecionava (hotel esgotado).
-    # Agora a detecção de redirect em buscar_hotel() já retorna None nesses casos.
-
-    return None
-
-
-def _detectar_capacidade(linha_elem, texto_linha):
-    """
-    Detecta quantos adultos o quarto comporta.
-    Retorna int ou None se não conseguir detectar.
-    """
-    texto_lower = texto_linha.lower()
-
-    # Padrão 1: "X adultos" ou "X hóspedes"
-    match = re.search(r'(\d+)\s*(?:adulto|hóspede|guest|pessoa)', texto_lower)
-    if match:
-        return int(match.group(1))
-
-    # Padrão 2: Contar ícones de pessoa (SVG ou imagens)
-    try:
-        icones_pessoa = linha_elem.query_selector_all(
-            'svg.bk-icon-occupancy, '
-            'i.bicon-occupancy, '
-            'span.c-occupancy-icons__item, '
-            '[data-testid="occupancy-icon"]'
-        )
-        if icones_pessoa:
-            return len(icones_pessoa)
-    except Exception:
-        pass
-
-    # Não conseguiu detectar → retorna None (vamos aceitar a linha por padrão)
-    return None
-
-
-def _extrair_preco_da_linha(linha):
-    """Extrai o preço numérico de uma linha de quarto."""
-    seletores_preco = [
-        'span.prco-valign-middle-helper',
-        '.bui-price-display__value',
-        '[data-testid="price-and-discounted-price"]',
-        '[data-testid="price-text"]',
-        'div.bui-price-display__value',
-    ]
-
-    for sel in seletores_preco:
-        try:
-            el = linha.query_selector(sel)
-            if el:
-                preco = _texto_para_numero(el.inner_text())
-                if preco:
-                    return preco
-        except Exception:
-            continue
-    return None
-
-
-def buscar_hotel(page, slug, check_in, check_out, config_busca, nome_hotel=""):
-    """
-    Faz UMA busca: abre página do hotel, espera carregar, pega preço.
-    Retorna dict {'preco': int, 'nome_quarto': str} ou None.
-
-    IMPORTANTE: Se o Booking redirecionar (hotel esgotado/não existe),
-    retorna None pra evitar pegar preço de outro hotel.
-    """
-    url = montar_url_booking(slug, check_in, check_out, config_busca)
-    adultos = config_busca.get("adultos", 2)
-
-    try:
-        page.goto(url, timeout=30000, wait_until="domcontentloaded")
-
-        # ⚠️ CHECAGEM DE REDIRECT
-        # O Booking redireciona pra searchresults quando o hotel não existe
-        # ou pra outro hotel quando não tem disponibilidade.
-        # Verificamos se a URL ainda aponta pro hotel certo usando /hotel/br/{slug}
-        url_atual = page.url.lower()
-        slug_lower = slug.lower()
-
-        # Só considera redirect se foi pra searchresults (busca geral)
-        # NÃO bloqueia se o Booking expandiu o slug (ex: pousada-da-pedra → pousada-da-pedra-campos-do-jordao)
-        # porque o slug original ainda aparece dentro do novo slug
-        if "searchresults" in url_atual:
-            log(f"  ⚠️  Hotel {nome_hotel} redirecionado pra busca (não encontrado)")
-            return None
-
-        # Verifica se ainda é a página de um hotel (não outra coisa)
-        if "/hotel/br/" not in url_atual:
-            log(f"  ⚠️  Hotel {nome_hotel} saiu do contexto de hotel")
-            return None
-
-        # Espera elementos de preço aparecerem (até 10s)
-        try:
-            page.wait_for_selector(
-                'tr.js-rt-block-row, tr[data-block-id]',
-                timeout=10000
-            )
-        except Exception:
-            pass  # Sem seletor exato, ainda tenta extrair
-
-        resultado = extrair_preco_pagina(page, adultos_esperados=adultos)
-        return resultado
-    except Exception as e:
-        log(f"  ⚠️  Erro buscando {nome_hotel}: {str(e)[:80]}")
-        return None
-
-
-# ============================================================
-# FUNÇÃO PRINCIPAL DE VARREDURA
-# ============================================================
-def varrer_hotel(context, hotel, config_busca, datas):
-    """
-    Faz a varredura completa de UM hotel-base + seus concorrentes.
-    Sequencial com delay reduzido (1-2s) pra equilibrar velocidade e segurança.
-    """
-    log(f"\n{hotel['emoji']} {hotel['nome']} ({hotel['cidade']}) — {len(datas)} datas")
-
-    resultado = {
-        "hotel_id": hotel["id"],
-        "hotel_nome": hotel["nome"],
-        "cidade": hotel["cidade"],
-        "emoji": hotel["emoji"],
-        "data_busca": datetime.now().isoformat(),
-        "concorrentes": [hotel["nome"]] + [c["nome"] for c in hotel["concorrentes"]],
-        "precos_por_data": []
+{
+  "configuracoes_busca": {
+    "adultos": 2,
+    "quartos": 1,
+    "moeda": "BRL",
+    "idioma": "pt-br"
+  },
+  "hoteis": [
+    {
+      "id": "alto_da_boa_vista",
+      "nome": "Pousada Alto Da Boa Vista Campos do Jordão",
+      "slug": "pousada-alto-da-boa-vista",
+      "emoji": "🎯",
+      "cidade": "Campos do Jordão",
+      "concorrentes": [
+        {
+          "nome": "Pousada Villa Capivary Campos do Jordão",
+          "slug": null
+        },
+        {
+          "nome": "Pousada Da Pedra",
+          "slug": null
+        },
+        {
+          "nome": "Villa Amistà Campos do Jordão",
+          "slug": null
+        },
+        {
+          "nome": "Pousada Boutique Figueira da Serra",
+          "slug": null
+        },
+        {
+          "nome": "L.A.H. Hostellerie",
+          "slug": null
+        },
+        {
+          "nome": "Carballo Hotel & Spa",
+          "slug": null
+        },
+        {
+          "nome": "Hotel Boutique QUEBRA-NOZ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "id": "terrazzo",
+      "nome": "Terrazzo Bonjardim",
+      "slug": "pousada-terrazzo-bonjardim-campos-do-jordao",
+      "emoji": "🏨",
+      "cidade": "Campos do Jordão",
+      "concorrentes": [
+        {
+          "nome": "Hotel Moinho Itália",
+          "slug": "o-moinho"
+        },
+        {
+          "nome": "Hotel Vila Dom Bosco",
+          "slug": "vila-dom-bosco"
+        },
+        {
+          "nome": "Altitude Lodge Hotel",
+          "slug": "altitude-lodge"
+        },
+        {
+          "nome": "La Vita Pousada de Charme",
+          "slug": "la-vie-pousada-de-charme"
+        }
+      ]
+    },
+    {
+      "id": "serra_negra",
+      "nome": "Serra Negra Pousada Spa - by Easy Hotéis",
+      "slug": "serra-negra-pousada-spa",
+      "emoji": "🏖️",
+      "cidade": "Guarapari",
+      "concorrentes": [
+        {
+          "nome": "Duas Praias Hotel Pousada",
+          "slug": "pousada-duas-praias"
+        },
+        {
+          "nome": "Hotel Pousada Caminho da Praia",
+          "slug": "pousada-caminho-da-praia-guarapari"
+        },
+        {
+          "nome": "Hotel Diamantina - em Guarapari",
+          "slug": "diamantina-guarapari"
+        }
+      ]
+    },
+    {
+      "id": "honorato",
+      "nome": "Hotel Honorato Plaza",
+      "slug": "honorato-plaza",
+      "emoji": "🏨",
+      "cidade": "Rio Verde",
+      "concorrentes": [
+        {
+          "nome": "Hotel Gelps",
+          "slug": null
+        },
+        {
+          "nome": "Rota Hotéis Rio Verde",
+          "slug": null
+        },
+        {
+          "nome": "Acanto Rio Verde",
+          "slug": null
+        },
+        {
+          "nome": "Bons Tempos Rio Verde",
+          "slug": null
+        },
+        {
+          "nome": "Transamerica Fit Rio Verde",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "id": "golden_plaza",
+      "nome": "Golden Plaza Hotel",
+      "slug": "golden-plaza",
+      "emoji": "🌟",
+      "cidade": "Porto Velho",
+      "concorrentes": [
+        {
+          "nome": "Oscar Hotel Executive",
+          "slug": "oscar-hotel-executive"
+        },
+        {
+          "nome": "Slaviero Porto Velho",
+          "slug": "slaviero-porto-velho"
+        }
+      ]
+    },
+    {
+      "id": "maper_ouro",
+      "nome": "Maper Ouro Hotel",
+      "slug": "maper-ouro",
+      "emoji": "⛏️",
+      "cidade": "Parauapebas",
+      "concorrentes": [
+        {
+          "nome": "Hotel Ibis Parauapebas",
+          "slug": "ibis-parauapebas"
+        },
+        {
+          "nome": "Hotel Savana Parauapebas",
+          "slug": "savana-parauapebas"
+        }
+      ]
     }
-
-    todos_hoteis = [{"nome": hotel["nome"], "slug": hotel["slug"], "eh_base": True}] + \
-                   [{"nome": c["nome"], "slug": c["slug"], "eh_base": False}
-                    for c in hotel["concorrentes"]]
-
-    total_buscas = len(datas) * len(todos_hoteis)
-    buscas_feitas = 0
-
-    # Abre UMA página e reutiliza (mais estável)
-    page = context.new_page()
-
-    for check_in, check_out in datas:
-        linha = {
-            "check_in": check_in.isoformat(),
-            "check_out": check_out.isoformat(),
-            "precos": {}
-        }
-
-        for h in todos_hoteis:
-            buscas_feitas += 1
-            resultado_busca = buscar_hotel(
-                page, h["slug"], check_in, check_out,
-                config_busca, nome_hotel=h["nome"]
-            )
-
-            if resultado_busca and resultado_busca.get("preco"):
-                preco = resultado_busca["preco"]
-                nome_quarto = resultado_busca.get("nome_quarto", "")
-                linha["precos"][h["nome"]] = preco
-                linha["precos"][f"{h['nome']}__quarto"] = nome_quarto
-                quarto_label = f" ({nome_quarto[:30]})" if nome_quarto else ""
-                log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = R$ {preco}{quarto_label}")
-            else:
-                linha["precos"][h["nome"]] = None
-                linha["precos"][f"{h['nome']}__quarto"] = ""
-                log(f"  [{buscas_feitas}/{total_buscas}] {check_in.strftime('%d/%m')} | {h['nome'][:35]:35s} = Esgotado/Erro")
-
-            # Delay reduzido: 1-2s (antes era 2-5s) — ~2x mais rápido
-            time.sleep(random.uniform(1.0, 2.0))
-
-        resultado["precos_por_data"].append(linha)
-
-    page.close()
-    return resultado
-
-
-def salvar_resultado(resultado, periodo=False, manual=False):
-    """
-    Salva resultado em JSON na pasta /dados/.
-
-    Modos:
-    - Automático (manual=False): dados/{hotel_id}/dados.json  ← arquivo principal
-    - Manual dia a dia (manual=True, periodo=False): dados/{hotel_id}/manual_{ini}_{fim}_diadia.json
-    - Manual período (manual=True, periodo=True): dados/{hotel_id}/manual_{ini}_{fim}.json
-
-    Regra fundamental: NUNCA sobrescreve dados.json numa busca manual.
-    """
-    pasta_hotel = PASTA_DADOS / resultado['hotel_id']
-    pasta_hotel.mkdir(exist_ok=True)
-
-    if manual and resultado.get('precos_por_data'):
-        # ── BUSCA MANUAL — arquivo separado, nunca sobrescreve dados.json ──
-        datas = resultado['precos_por_data']
-        check_in_primeiro = datas[0]['check_in']
-
-        if periodo:
-            # Período completo: 1 entrada com check-in e check-out reais
-            check_out_ultimo = datas[0]['check_out']
-            nome_arq = f"manual_{check_in_primeiro}_{check_out_ultimo}.json"
-            tipo = "período"
-        else:
-            # Dia a dia: múltiplas entradas, usa primeira e última data
-            check_in_ultimo = datas[-1]['check_in']
-            nome_arq = f"manual_{check_in_primeiro}_{check_in_ultimo}_diadia.json"
-            tipo = "dia a dia"
-
-        arquivo = pasta_hotel / nome_arq
-        resultado["historico"] = []
-        with open(arquivo, "w", encoding="utf-8") as f:
-            json.dump(resultado, f, ensure_ascii=False, indent=2)
-        log(f"💾 Salvo em: {arquivo.name} (manual {tipo})")
-
-        # Atualiza índice de buscas manuais (dashboard usa pra listar as abas)
-        indice_arq = pasta_hotel / 'indice.json'
-        indice = []
-        if indice_arq.exists():
-            try:
-                with open(indice_arq, "r", encoding="utf-8") as f:
-                    indice = json.load(f)
-            except Exception:
-                pass
-        check_out_label = datas[0]['check_out'] if periodo else datas[-1]['check_in']
-        entrada = {
-            "arquivo":  nome_arq,
-            "check_in": check_in_primeiro,
-            "check_out": check_out_label,
-            "tipo": tipo
-        }
-        if not any(e["arquivo"] == nome_arq for e in indice):
-            indice.insert(0, entrada)
-        indice = indice[:10]  # máximo 10 buscas manuais
-        with open(indice_arq, "w", encoding="utf-8") as f:
-            json.dump(indice, f, ensure_ascii=False, indent=2)
-        log(f"📋 Índice: {len(indice)} busca(s) manual(is)")
-
-    else:
-        # ── BUSCA AUTOMÁTICA — arquivo principal com histórico ──
-        arquivo = pasta_hotel / 'dados.json'
-        historico = []
-        if arquivo.exists():
-            try:
-                with open(arquivo, "r", encoding="utf-8") as f:
-                    dados_antigos = json.load(f)
-                    historico = dados_antigos.get("historico", [])
-                    if "precos_por_data" in dados_antigos:
-                        historico.insert(0, {
-                            "data_busca": dados_antigos.get("data_busca"),
-                            "precos_por_data": dados_antigos["precos_por_data"]
-                        })
-                    historico = historico[:30]
-            except Exception:
-                pass
-        resultado["historico"] = historico
-        with open(arquivo, "w", encoding="utf-8") as f:
-            json.dump(resultado, f, ensure_ascii=False, indent=2)
-        log(f"💾 Salvo em: {arquivo.name}")
-
-
-# ============================================================
-# MAIN
-# ============================================================
-def main(data_inicio=None, data_fim=None, hotel_id=None, periodo=False, manual=False):
-    """
-    Executa o scraper.
-
-    Parâmetros:
-    - data_inicio (date): data inicial da busca. Padrão: hoje
-    - data_fim (date): data final. Padrão: último dia do mês
-    - hotel_id (str): se preenchido, busca apenas este hotel. Padrão: todos
-    - periodo (bool): True = 1 busca com check-in/check-out definidos
-    - manual (bool): True = busca manual, salva em arquivo separado (não sobrescreve dados.json)
-    """
-    log("=" * 60)
-    log("🚀 ARESTA ONLINE — Iniciando scraping")
-    log("=" * 60)
-
-    config = carregar_config()
-    config_busca = config["configuracoes_busca"]
-    hoteis = config["hoteis"]
-
-    # Filtra hotel específico, se solicitado
-    if hotel_id:
-        hoteis = [h for h in hoteis if h["id"] == hotel_id]
-        if not hoteis:
-            log(f"❌ Hotel '{hotel_id}' não encontrado!")
-            return
-
-    # Gera as datas a buscar
-    if periodo and data_inicio and data_fim:
-        # Modo período completo: UMA busca com check-in e check-out definidos
-        datas = [(data_inicio, data_fim)]
-        log(f"📅 Modo Período: check-in {data_inicio} → check-out {data_fim} (1 busca)")
-    else:
-        # Modo padrão: dia a dia
-        datas = gerar_datas_mes(data_inicio, data_fim)
-        log(f"📅 Modo Dia a Dia: {datas[0][0]} até {datas[-1][0]} ({len(datas)} dias)")
-    log(f"🏨 Hotéis: {len(hoteis)} base(s) + concorrentes")
-
-    # Tenta carregar cookies do Booking (Genius)
-    # Vem da variável de ambiente BOOKING_COOKIES (GitHub Secret)
-    # ou do arquivo cookies_booking.json (teste local)
-    cookies_booking = []
-    try:
-        import os, base64
-        cookies_b64 = os.environ.get("BOOKING_COOKIES", "")
-        if cookies_b64:
-            cookies_booking = json.loads(base64.b64decode(cookies_b64).decode())
-            log(f"🍪 Cookies Genius carregados! ({len(cookies_booking)} cookies)")
-        else:
-            # Tenta arquivo local (pra testar no PC)
-            arquivo_cookies = Path(__file__).parent / "cookies_booking.json"
-            if arquivo_cookies.exists():
-                with open(arquivo_cookies, "r") as f:
-                    cookies_booking = json.load(f)
-                log(f"🍪 Cookies locais carregados! ({len(cookies_booking)} cookies)")
-            else:
-                log("ℹ️  Sem cookies — buscando preço público (sem Genius)")
-    except Exception as e:
-        log(f"⚠️  Erro ao carregar cookies: {e} — continuando sem Genius")
-
-    # Inicia o navegador
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--no-sandbox",
-                "--disable-dev-shm-usage",
-            ]
-        )
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            viewport={"width": 1920, "height": 1080},
-            locale="pt-BR",
-        )
-
-        # Injeta cookies do Booking se disponíveis (ativa Genius!)
-        if cookies_booking:
-            try:
-                context.add_cookies(cookies_booking)
-                log("✅ Cookies injetados — buscando com Genius!")
-            except Exception as e:
-                log(f"⚠️  Erro ao injetar cookies: {e}")
-
-        # Bloqueia imagens pra acelerar (igual o Aresta faz)
-        context.route("**/*.{png,jpg,jpeg,gif,webp,svg}", lambda route: route.abort())
-
-
-        for hotel in hoteis:
-            try:
-                resultado = varrer_hotel(context, hotel, config_busca, datas)
-                salvar_resultado(resultado, periodo=periodo, manual=manual)
-            except Exception as e:
-                log(f"❌ Erro fatal no hotel {hotel['nome']}: {e}")
-
-        browser.close()
-
-    log("=" * 60)
-    log("✅ Scraping concluído!")
-    log("=" * 60)
-
-
-if __name__ == "__main__":
-    # Argumentos:
-    # python scraper.py                                          → todos hotéis, mês atual, dia a dia
-    # python scraper.py 2026-06-01 2026-06-30 hamburgo          → 1 hotel, dia a dia
-    # python scraper.py 2026-06-10 2026-06-15 hamburgo periodo  → 1 hotel, período completo (1 busca só)
-
-    args = sys.argv[1:]
-    data_ini_str  = args[0].strip() if len(args) >= 1 else ''
-    data_fim_str  = args[1].strip() if len(args) >= 2 else ''
-    hotel_filtro  = args[2].strip() if len(args) >= 3 else ''
-    modo          = args[3].strip() if len(args) >= 4 else ''
-
-    data_ini     = date.fromisoformat(data_ini_str) if data_ini_str  else None
-    data_fim     = date.fromisoformat(data_fim_str) if data_fim_str  else None
-    hotel_filtro = hotel_filtro if hotel_filtro else None
-    periodo      = modo == 'periodo'
-
-    # Se hotel_id foi especificado = busca manual (não sobrescreve dados.json)
-    eh_manual = hotel_filtro is not None
-    main(data_inicio=data_ini, data_fim=data_fim, hotel_id=hotel_filtro, periodo=periodo, manual=eh_manual)
+  ]
+}
