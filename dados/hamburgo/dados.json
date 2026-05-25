@@ -6,6 +6,7 @@
   "data_busca": "2026-05-25T15:51:11.498758",
   "concorrentes": [
     "Hamburgo Palace Hotel",
+    "Hotel HM",
     "Camboriú Praia",
     "San Marino Cassino Hotel",
     "Bella Camboriú",
@@ -17,10 +18,10 @@
       "check_out": "2026-05-26",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 289,
-        "Ibis Balneario Camboriu": 385
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 289,
+        "Bella Camboriú": 385
       }
     },
     {
@@ -28,10 +29,10 @@
       "check_out": "2026-05-27",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Camboriú Praia": 248,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 289,
-        "Ibis Balneario Camboriu": 385
+        "Hotel HM": 248,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 289,
+        "Bella Camboriú": 385
       }
     },
     {
@@ -39,10 +40,10 @@
       "check_out": "2026-05-28",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 289,
-        "Ibis Balneario Camboriu": null
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 289,
+        "Bella Camboriú": null
       }
     },
     {
@@ -50,10 +51,10 @@
       "check_out": "2026-05-29",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 289,
-        "Ibis Balneario Camboriu": null
+        "Hotel HM": 275,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 289,
+        "Bella Camboriú": null
       }
     },
     {
@@ -61,10 +62,10 @@
       "check_out": "2026-05-30",
       "precos": {
         "Hamburgo Palace Hotel": 370,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 289,
-        "Ibis Balneario Camboriu": 385
+        "Hotel HM": 275,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 289,
+        "Bella Camboriú": 385
       }
     },
     {
@@ -72,10 +73,10 @@
       "check_out": "2026-05-31",
       "precos": {
         "Hamburgo Palace Hotel": 370,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 347,
-        "Ibis Balneario Camboriu": 366
+        "Hotel HM": 275,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 347,
+        "Bella Camboriú": 366
       }
     },
     {
@@ -83,10 +84,10 @@
       "check_out": "2026-06-01",
       "precos": {
         "Hamburgo Palace Hotel": 370,
-        "Camboriú Praia": 205,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 366
+        "Hotel HM": 205,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 273,
+        "Bella Camboriú": 366
       }
     },
     {
@@ -94,10 +95,10 @@
       "check_out": "2026-06-02",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 214
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 273,
+        "Bella Camboriú": 214
       }
     },
     {
@@ -105,10 +106,10 @@
       "check_out": "2026-06-03",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 214
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 273,
+        "Bella Camboriú": 214
       }
     },
     {
@@ -116,10 +117,10 @@
       "check_out": "2026-06-04",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 248,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 214
+        "Hotel HM": 248,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 273,
+        "Bella Camboriú": 214
       }
     },
     {
@@ -127,10 +128,10 @@
       "check_out": "2026-06-05",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": null,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": null,
-        "Ibis Balneario Camboriu": 214
+        "Hotel HM": null,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": null,
+        "Bella Camboriú": 214
       }
     },
     {
@@ -138,10 +139,10 @@
       "check_out": "2026-06-06",
       "precos": {
         "Hamburgo Palace Hotel": 341,
-        "Camboriú Praia": null,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": null,
-        "Ibis Balneario Camboriu": 423
+        "Hotel HM": null,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": null,
+        "Bella Camboriú": 423
       }
     },
     {
@@ -149,10 +150,10 @@
       "check_out": "2026-06-07",
       "precos": {
         "Hamburgo Palace Hotel": 341,
-        "Camboriú Praia": null,
-        "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": null,
-        "Ibis Balneario Camboriu": 423
+        "Hotel HM": null,
+        "Camboriú Praia": 225,
+        "San Marino Cassino Hotel": null,
+        "Bella Camboriú": 423
       }
     },
     {
@@ -160,10 +161,10 @@
       "check_out": "2026-06-08",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 290
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 273,
+        "Bella Camboriú": 290
       }
     },
     {
@@ -171,10 +172,10 @@
       "check_out": "2026-06-09",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 205,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 337
+        "Hotel HM": 205,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 337
       }
     },
     {
@@ -182,10 +183,10 @@
       "check_out": "2026-06-10",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -193,10 +194,10 @@
       "check_out": "2026-06-11",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -204,10 +205,10 @@
       "check_out": "2026-06-12",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 251,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 251,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -215,10 +216,10 @@
       "check_out": "2026-06-13",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 275,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -226,10 +227,10 @@
       "check_out": "2026-06-14",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": 398,
-        "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 398,
+        "Camboriú Praia": 225,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -237,10 +238,10 @@
       "check_out": "2026-06-15",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 248,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 248,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -248,10 +249,10 @@
       "check_out": "2026-06-16",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -259,10 +260,10 @@
       "check_out": "2026-06-17",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": null
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": null
       }
     },
     {
@@ -270,10 +271,10 @@
       "check_out": "2026-06-18",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 285,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": null
+        "Hotel HM": 285,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": null
       }
     },
     {
@@ -281,10 +282,10 @@
       "check_out": "2026-06-19",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 251,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 251,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -292,10 +293,10 @@
       "check_out": "2026-06-20",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": 317,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 317,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -303,10 +304,10 @@
       "check_out": "2026-06-21",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 275,
+        "Camboriú Praia": 225,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -314,10 +315,10 @@
       "check_out": "2026-06-22",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -325,10 +326,10 @@
       "check_out": "2026-06-23",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -336,10 +337,10 @@
       "check_out": "2026-06-24",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 259,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 259,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -347,10 +348,10 @@
       "check_out": "2026-06-25",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -358,10 +359,10 @@
       "check_out": "2026-06-26",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 288,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 288,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -369,10 +370,10 @@
       "check_out": "2026-06-27",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": null,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": null,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -380,10 +381,10 @@
       "check_out": "2026-06-28",
       "precos": {
         "Hamburgo Palace Hotel": 321,
-        "Camboriú Praia": 275,
-        "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 363,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 275,
+        "Camboriú Praia": 225,
+        "San Marino Cassino Hotel": 363,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -391,10 +392,10 @@
       "check_out": "2026-06-29",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -402,10 +403,10 @@
       "check_out": "2026-06-30",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     },
     {
@@ -413,10 +414,10 @@
       "check_out": "2026-07-01",
       "precos": {
         "Hamburgo Palace Hotel": 280,
-        "Camboriú Praia": 225,
-        "San Marino Cassino Hotel": 208,
-        "Bella Camboriú": 312,
-        "Ibis Balneario Camboriu": 320
+        "Hotel HM": 225,
+        "Camboriú Praia": 208,
+        "San Marino Cassino Hotel": 312,
+        "Bella Camboriú": 320
       }
     }
   ],
@@ -429,9 +430,9 @@
           "check_out": "2026-05-26",
           "precos": {
             "Hamburgo Palace Hotel": 291,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Ibis Balneário": 385
           }
         },
@@ -440,9 +441,9 @@
           "check_out": "2026-05-27",
           "precos": {
             "Hamburgo Palace Hotel": 291,
-            "Camboriú Praia": 248,
+            "Hotel HM": 248,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Ibis Balneário": 385
           }
         },
@@ -451,9 +452,9 @@
           "check_out": "2026-05-28",
           "precos": {
             "Hamburgo Palace Hotel": 291,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Ibis Balneário": 385
           }
         },
@@ -462,9 +463,9 @@
           "check_out": "2026-05-29",
           "precos": {
             "Hamburgo Palace Hotel": 291,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Ibis Balneário": 270
           }
         },
@@ -473,9 +474,9 @@
           "check_out": "2026-05-30",
           "precos": {
             "Hamburgo Palace Hotel": 370,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Ibis Balneário": 385
           }
         },
@@ -484,9 +485,9 @@
           "check_out": "2026-05-31",
           "precos": {
             "Hamburgo Palace Hotel": 370,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 347,
+            "San Marino Cassino Hotel": 347,
             "Ibis Balneário": 366
           }
         },
@@ -495,9 +496,9 @@
           "check_out": "2026-06-01",
           "precos": {
             "Hamburgo Palace Hotel": 370,
-            "Camboriú Praia": 205,
+            "Hotel HM": 205,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Ibis Balneário": 366
           }
         },
@@ -506,9 +507,9 @@
           "check_out": "2026-06-02",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Ibis Balneário": 337
           }
         },
@@ -517,9 +518,9 @@
           "check_out": "2026-06-03",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Ibis Balneário": 337
           }
         },
@@ -528,9 +529,9 @@
           "check_out": "2026-06-04",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 248,
+            "Hotel HM": 248,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Ibis Balneário": 337
           }
         },
@@ -539,9 +540,9 @@
           "check_out": "2026-06-05",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "San Marino Cassino": 208,
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Ibis Balneário": 423
           }
         },
@@ -550,9 +551,9 @@
           "check_out": "2026-06-06",
           "precos": {
             "Hamburgo Palace Hotel": 341,
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "San Marino Cassino": 225,
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Ibis Balneário": 423
           }
         },
@@ -561,9 +562,9 @@
           "check_out": "2026-06-07",
           "precos": {
             "Hamburgo Palace Hotel": 341,
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "San Marino Cassino": 225,
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Ibis Balneário": 423
           }
         },
@@ -572,9 +573,9 @@
           "check_out": "2026-06-08",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Ibis Balneário": 290
           }
         },
@@ -583,9 +584,9 @@
           "check_out": "2026-06-09",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 205,
+            "Hotel HM": 205,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 337
           }
         },
@@ -594,9 +595,9 @@
           "check_out": "2026-06-10",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -605,9 +606,9 @@
           "check_out": "2026-06-11",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -616,9 +617,9 @@
           "check_out": "2026-06-12",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -627,9 +628,9 @@
           "check_out": "2026-06-13",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -638,9 +639,9 @@
           "check_out": "2026-06-14",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": 398,
+            "Hotel HM": 398,
             "San Marino Cassino": 225,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -649,9 +650,9 @@
           "check_out": "2026-06-15",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 248,
+            "Hotel HM": 248,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -660,9 +661,9 @@
           "check_out": "2026-06-16",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -671,9 +672,9 @@
           "check_out": "2026-06-17",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": null
           }
         },
@@ -682,9 +683,9 @@
           "check_out": "2026-06-18",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 280,
+            "Hotel HM": 280,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": null
           }
         },
@@ -693,9 +694,9 @@
           "check_out": "2026-06-19",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -704,9 +705,9 @@
           "check_out": "2026-06-20",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": 317,
+            "Hotel HM": 317,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -715,9 +716,9 @@
           "check_out": "2026-06-21",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 225,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -726,9 +727,9 @@
           "check_out": "2026-06-22",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -737,9 +738,9 @@
           "check_out": "2026-06-23",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -748,9 +749,9 @@
           "check_out": "2026-06-24",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 259,
+            "Hotel HM": 259,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -759,9 +760,9 @@
           "check_out": "2026-06-25",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -770,9 +771,9 @@
           "check_out": "2026-06-26",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 288,
+            "Hotel HM": 288,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -781,9 +782,9 @@
           "check_out": "2026-06-27",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -792,9 +793,9 @@
           "check_out": "2026-06-28",
           "precos": {
             "Hamburgo Palace Hotel": 321,
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "San Marino Cassino": 225,
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Ibis Balneário": 320
           }
         },
@@ -803,9 +804,9 @@
           "check_out": "2026-06-29",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -814,9 +815,9 @@
           "check_out": "2026-06-30",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         },
@@ -825,9 +826,9 @@
           "check_out": "2026-07-01",
           "precos": {
             "Hamburgo Palace Hotel": 280,
-            "Camboriú Praia": 225,
+            "Hotel HM": 225,
             "San Marino Cassino": 208,
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Ibis Balneário": 320
           }
         }
@@ -842,11 +843,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 514,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 501,
+            "Hotel HM": 501,
             "Camboriú Praia__quarto": "Quarto Triplo Deluxe",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 297,
+            "San Marino Cassino Hotel": 297,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 385,
             "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
@@ -858,11 +859,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 541,
             "Hamburgo Palace Hotel__quarto": "Apartamento Superior",
-            "Camboriú Praia": 387,
+            "Hotel HM": 387,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 376,
+            "San Marino Cassino Hotel": 376,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 385,
             "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
@@ -874,11 +875,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 404,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 385,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -890,11 +891,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 404,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 385,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -906,11 +907,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 404,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 385,
             "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
@@ -922,11 +923,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 404,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": null,
             "Ibis Balneário__quarto": ""
@@ -938,11 +939,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 404,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 346,
+            "Hotel HM": 346,
             "Camboriú Praia__quarto": "Quarto Triplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": null,
             "Ibis Balneário__quarto": ""
@@ -954,11 +955,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 514,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 352,
+            "Hotel HM": 352,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 289,
+            "San Marino Cassino Hotel": 289,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 366,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -970,11 +971,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 514,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 352,
+            "Hotel HM": 352,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 347,
+            "San Marino Cassino Hotel": 347,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 366,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -986,11 +987,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 514,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 227,
+            "Hotel HM": 227,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 366,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1002,11 +1003,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 337,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1018,11 +1019,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 337,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1034,11 +1035,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 273,
+            "San Marino Cassino Hotel": 273,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 337,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1050,11 +1051,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "Camboriú Praia__quarto": "",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Bella Camboriú__quarto": "",
             "Ibis Balneário": 423,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1066,11 +1067,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 473,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "Camboriú Praia__quarto": "",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Bella Camboriú__quarto": "",
             "Ibis Balneário": 423,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1082,11 +1083,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 473,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "Camboriú Praia__quarto": "",
             "San Marino Cassino": 225,
             "San Marino Cassino__quarto": "Apartamento com Varanda",
-            "Bella Camboriú": null,
+            "San Marino Cassino Hotel": null,
             "Bella Camboriú__quarto": "",
             "Ibis Balneário": 401,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1098,11 +1099,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 275,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1114,11 +1115,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 227,
+            "Hotel HM": 227,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1130,11 +1131,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1146,11 +1147,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1162,11 +1163,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 278,
+            "Hotel HM": 278,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1178,11 +1179,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 306,
+            "Hotel HM": 306,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
@@ -1194,11 +1195,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 352,
+            "Hotel HM": 352,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 225,
             "San Marino Cassino__quarto": "Apartamento com Varanda",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1210,11 +1211,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1226,11 +1227,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1242,11 +1243,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": null,
             "Ibis Balneário__quarto": ""
@@ -1258,11 +1259,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 275,
+            "Hotel HM": 275,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": null,
             "Ibis Balneário__quarto": ""
@@ -1274,11 +1275,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 278,
+            "Hotel HM": 278,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1290,11 +1291,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 352,
+            "Hotel HM": 352,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1306,11 +1307,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 306,
+            "Hotel HM": 306,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 225,
             "San Marino Cassino__quarto": "Apartamento com Varanda",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1322,11 +1323,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 2 Camas de Solteiro"
@@ -1338,11 +1339,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Standard com 1 Cama de Casal e 1 Beliche"
@@ -1354,11 +1355,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 288,
+            "Hotel HM": 288,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1370,11 +1371,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1386,11 +1387,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 320,
+            "Hotel HM": 320,
             "Camboriú Praia__quarto": "Quarto Duplo Luxo",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1402,11 +1403,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": null,
+            "Hotel HM": null,
             "Camboriú Praia__quarto": "",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1418,11 +1419,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 445,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 306,
+            "Hotel HM": 306,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 225,
             "San Marino Cassino__quarto": "Apartamento com Varanda",
-            "Bella Camboriú": 363,
+            "San Marino Cassino Hotel": 363,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1434,11 +1435,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1450,11 +1451,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
@@ -1466,11 +1467,11 @@
           "precos": {
             "Hamburgo Palace Hotel": 390,
             "Hamburgo Palace Hotel__quarto": "Apartamento Clássico",
-            "Camboriú Praia": 251,
+            "Hotel HM": 251,
             "Camboriú Praia__quarto": "Quarto Duplo Standard",
             "San Marino Cassino": 208,
             "San Marino Cassino__quarto": "Apartamento",
-            "Bella Camboriú": 312,
+            "San Marino Cassino Hotel": 312,
             "Bella Camboriú__quarto": "Quarto Duplo",
             "Ibis Balneário": 320,
             "Ibis Balneário__quarto": "Quarto Duplo Standard"
