@@ -1,5 +1,5 @@
 {
-  "_comentario": "Configuração dos hotéis monitorados. Para adicionar/remover, edite este arquivo. O 'id' é usado internamente (sem acentos/espaços). O 'slug' é o que aparece na URL do Booking.",
+  "_comentario": "Configuração dos hotéis. O 'nome' deve ser EXATAMENTE igual ao usado no listener_auto.py",
   "configuracoes_busca": {
     "adultos": 2,
     "quartos": 1,
@@ -9,38 +9,38 @@
   "hoteis": [
     {
       "id": "alto_da_boa_vista",
-      "nome": "Pousada Alto Da Boa Vista",
+      "nome": "Pousada Alto Da Boa Vista Campos do Jordão",
       "cidade": "Campos do Jordão",
       "emoji": "🎯",
       "slug": "pousada-alto-da-boa-vista",
       "concorrentes": [
         {
-          "nome": "Pousada Villa Capivary",
-          "slug": "pousada-villa-capivary"
+          "nome": "Pousada Villa Capivary Campos do Jordão",
+          "slug": null
         },
         {
           "nome": "Pousada Da Pedra",
-          "slug": "pousada-da-pedra"
+          "slug": null
         },
         {
           "nome": "Villa Amistà Campos do Jordão",
-          "slug": "villa-amista-campos-do-jordao"
+          "slug": null
         },
         {
-          "nome": "Pousada Boutique Figueira",
-          "slug": "pousada-figueira-da-serra"
+          "nome": "Pousada Boutique Figueira da Serra",
+          "slug": null
         },
         {
           "nome": "L.A.H. Hostellerie",
-          "slug": "l-a-h-hostellerie"
+          "slug": null
         },
         {
           "nome": "Carballo Hotel & Spa",
-          "slug": "carballo-amp-spa"
+          "slug": null
         },
         {
           "nome": "Hotel Boutique QUEBRA-NOZ",
-          "slug": "quebra-noz"
+          "slug": null
         }
       ]
     },
@@ -49,23 +49,23 @@
       "nome": "Hamburgo Palace Hotel",
       "cidade": "Balneário Camboriú",
       "emoji": "🍺",
-      "slug": "hamburgo-palace",
+      "slug": null,
       "concorrentes": [
         {
           "nome": "Camboriú Praia",
-          "slug": "camboriu-pecon"
+          "slug": null
         },
         {
-          "nome": "San Marino Cassino",
-          "slug": "san-marino-cassino"
+          "nome": "San Marino Cassino Hotel",
+          "slug": null
         },
         {
           "nome": "Bella Camboriú",
-          "slug": "bella-camboriu"
+          "slug": null
         },
         {
-          "nome": "Ibis Balneário",
-          "slug": "ibis-plaza-balneario-camboriu"
+          "nome": "Ibis Balneario Camboriu",
+          "slug": null
         }
       ]
     },
@@ -74,29 +74,29 @@
       "nome": "Terrazzo Bonjardim",
       "cidade": "Campos do Jordão",
       "emoji": "🏨",
-      "slug": "pousada-terrazzo-bonjardim-campos-do-jordao",
+      "slug": null,
       "concorrentes": [
         {
           "nome": "Hotel Moinho Itália",
-          "slug": "o-moinho"
+          "slug": null
         },
         {
           "nome": "Hotel Vila Dom Bosco",
-          "slug": "vila-dom-bosco"
+          "slug": null
         },
         {
           "nome": "Altitude Lodge Hotel",
-          "slug": "altitude-lodge"
+          "slug": null
         },
         {
           "nome": "La Vita Pousada de Charme",
-          "slug": "la-vie-pousada-de-charme"
+          "slug": null
         }
       ]
     },
     {
       "id": "serra_negra",
-      "nome": "Serra Negra Pousada & Spa",
+      "nome": "Serra Negra Pousada Spa - by Easy Hotéis",
       "cidade": "Guarapari",
       "emoji": "🏖️",
       "slug": "serra-negra-pousada-spa",
@@ -110,7 +110,7 @@
           "slug": "pousada-caminho-da-praia-guarapari"
         },
         {
-          "nome": "Hotel Diamantina Guarapari",
+          "nome": "Hotel Diamantina - em Guarapari",
           "slug": "diamantina-guarapari"
         }
       ]
@@ -124,23 +124,23 @@
       "concorrentes": [
         {
           "nome": "Hotel Gelps",
-          "slug": "gelps"
+          "slug": null
         },
         {
           "nome": "Rota Hotéis Rio Verde",
-          "slug": "rota-hoteis-rio-verde"
+          "slug": null
         },
         {
           "nome": "Acanto Rio Verde",
-          "slug": "acanto-rio-verde"
+          "slug": null
         },
         {
           "nome": "Bons Tempos Rio Verde",
-          "slug": "bons-tempos-rio-verde"
+          "slug": null
         },
         {
           "nome": "Transamerica Fit Rio Verde",
-          "slug": "transamerica-fit-rio-verde"
+          "slug": null
         }
       ]
     },
@@ -149,15 +149,15 @@
       "nome": "Golden Plaza Hotel",
       "cidade": "Porto Velho",
       "emoji": "🌟",
-      "slug": "golden-plaza",
+      "slug": "golden-plaza-porto-velho",
       "concorrentes": [
         {
           "nome": "Oscar Hotel Executive",
-          "slug": "oscar-executive"
+          "slug": "oscar-hotel-executive"
         },
         {
           "nome": "Slaviero Porto Velho",
-          "slug": "slaviero-essential-porto-velho"
+          "slug": "slaviero-porto-velho"
         }
       ]
     },
@@ -166,15 +166,15 @@
       "nome": "Maper Ouro Hotel",
       "cidade": "Parauapebas",
       "emoji": "⛏️",
-      "slug": "maper-mardan-ouro",
+      "slug": null,
       "concorrentes": [
         {
-          "nome": "Ibis Parauapebas",
-          "slug": "ibis-parauapebas"
+          "nome": "Hotel Ibis Parauapebas",
+          "slug": null
         },
         {
-          "nome": "Atrium Conforts Hotel",
-          "slug": "atrium-conforts-ltda"
+          "nome": "Hotel Savana Parauapebas",
+          "slug": null
         }
       ]
     }
