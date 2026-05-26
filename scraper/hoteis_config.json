@@ -1,5 +1,4 @@
 {
-  "_comentario": "Configuração dos hotéis. O 'nome' deve ser EXATAMENTE igual ao usado no listener_auto.py",
   "configuracoes_busca": {
     "adultos": 2,
     "quartos": 1,
@@ -10,9 +9,9 @@
     {
       "id": "alto_da_boa_vista",
       "nome": "Pousada Alto Da Boa Vista Campos do Jordão",
-      "cidade": "Campos do Jordão",
-      "emoji": "🎯",
       "slug": "pousada-alto-da-boa-vista",
+      "emoji": "🎯",
+      "cidade": "Campos do Jordão",
       "concorrentes": [
         {
           "nome": "Pousada Villa Capivary Campos do Jordão",
@@ -45,61 +44,36 @@
       ]
     },
     {
-      "id": "hamburgo",
-      "nome": "Hamburgo Palace Hotel",
-      "cidade": "Balneário Camboriú",
-      "emoji": "🍺",
-      "slug": null,
-      "concorrentes": [
-        {
-          "nome": "Camboriú Praia",
-          "slug": null
-        },
-        {
-          "nome": "San Marino Cassino Hotel",
-          "slug": null
-        },
-        {
-          "nome": "Bella Camboriú",
-          "slug": null
-        },
-        {
-          "nome": "Ibis Balneario Camboriu",
-          "slug": null
-        }
-      ]
-    },
-    {
       "id": "terrazzo",
       "nome": "Terrazzo Bonjardim",
-      "cidade": "Campos do Jordão",
+      "slug": "pousada-terrazzo-bonjardim-campos-do-jordao",
       "emoji": "🏨",
-      "slug": null,
+      "cidade": "Campos do Jordão",
       "concorrentes": [
         {
           "nome": "Hotel Moinho Itália",
-          "slug": null
+          "slug": "o-moinho"
         },
         {
           "nome": "Hotel Vila Dom Bosco",
-          "slug": null
+          "slug": "vila-dom-bosco"
         },
         {
           "nome": "Altitude Lodge Hotel",
-          "slug": null
+          "slug": "altitude-lodge"
         },
         {
           "nome": "La Vita Pousada de Charme",
-          "slug": null
+          "slug": "la-vie-pousada-de-charme"
         }
       ]
     },
     {
       "id": "serra_negra",
       "nome": "Serra Negra Pousada Spa - by Easy Hotéis",
-      "cidade": "Guarapari",
-      "emoji": "🏖️",
       "slug": "serra-negra-pousada-spa",
+      "emoji": "🏖️",
+      "cidade": "Guarapari",
       "concorrentes": [
         {
           "nome": "Duas Praias Hotel Pousada",
@@ -118,9 +92,9 @@
     {
       "id": "honorato",
       "nome": "Hotel Honorato Plaza",
-      "cidade": "Rio Verde",
-      "emoji": "🏨",
       "slug": "honorato-plaza",
+      "emoji": "🏨",
+      "cidade": "Rio Verde",
       "concorrentes": [
         {
           "nome": "Hotel Gelps",
@@ -147,9 +121,9 @@
     {
       "id": "golden_plaza",
       "nome": "Golden Plaza Hotel",
-      "cidade": "Porto Velho",
+      "slug": "golden-plaza",
       "emoji": "🌟",
-      "slug": "golden-plaza-porto-velho",
+      "cidade": "Porto Velho",
       "concorrentes": [
         {
           "nome": "Oscar Hotel Executive",
@@ -163,18 +137,22 @@
     },
     {
       "id": "maper_ouro",
-      "nome": "Maper Ouro Hotel",
-      "cidade": "Parauapebas",
+      "nome": "Maper Mardan Ouro Hotel",
+      "slug": "maper-mardan-ouro",
       "emoji": "⛏️",
-      "slug": null,
+      "cidade": "Parauapebas",
       "concorrentes": [
         {
-          "nome": "Hotel Ibis Parauapebas",
-          "slug": null
+          "nome": "Vale dos Carajás Park Hotel",
+          "slug": "vale-dos-caraja-s-park"
         },
         {
-          "nome": "Hotel Savana Parauapebas",
-          "slug": null
+          "nome": "Atrium Conforts Hotel",
+          "slug": "atrium-conforts-ltda"
+        },
+        {
+          "nome": "Zii Hotel Parauapebas",
+          "slug": "zii-parauapebas"
         }
       ]
     }
