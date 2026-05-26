@@ -1,0 +1,27 @@
+{
+  "hotel_id": "honorato",
+  "hotel_nome": "Hotel Honorato Plaza",
+  "data_busca": "2026-05-26T00:14:15.260926",
+  "concorrentes": [
+    "Hotel Honorato Plaza",
+    "Hotel Gelps",
+    "Rota Hotéis Rio Verde",
+    "Acanto Rio Verde",
+    "Bons Tempos Rio Verde",
+    "Transamerica Fit Rio Verde"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-06-15",
+      "check_out": "2026-06-16",
+      "precos": {
+        "Hotel Honorato Plaza": 730,
+        "Hotel Gelps": 344,
+        "Rota Hotéis Rio Verde": 330,
+        "Acanto Rio Verde": 375,
+        "Bons Tempos Rio Verde": 391,
+        "Transamerica Fit Rio Verde": 295
+      }
+    }
+  ]
+}
