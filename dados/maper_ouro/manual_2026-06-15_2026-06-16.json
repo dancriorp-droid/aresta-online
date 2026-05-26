@@ -1,22 +1,22 @@
 {
   "hotel_id": "maper_ouro",
-  "hotel_nome": "Maper Mardan Ouro Hotel",
-  "data_busca": "2026-05-25T22:57:14.679806",
+  "hotel_nome": "Maper Ouro - by Easy Hotéis",
+  "data_busca": "2026-05-25T23:05:36.771719",
   "concorrentes": [
-    "Maper Mardan Ouro Hotel",
-    "Vale dos Carajás Park Hotel",
-    "Atrium Conforts Hotel",
-    "Zii Hotel Parauapebas"
+    "Maper Ouro - by Easy Hotéis",
+    "Vale dos Carajás Hotel",
+    "Atrium Confort Hotels",
+    "Ibis Styles Parauapebas"
   ],
   "precos_por_data": [
     {
       "check_in": "2026-06-15",
       "check_out": "2026-06-16",
       "precos": {
-        "Maper Mardan Ouro Hotel": null,
-        "Vale dos Carajás Park Hotel": null,
-        "Atrium Conforts Hotel": null,
-        "Zii Hotel Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 417
       }
     }
   ]
