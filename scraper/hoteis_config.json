@@ -120,7 +120,7 @@
     },
     {
       "id": "golden_plaza",
-      "nome": "Golden Plaza Hotel",
+      "nome": "Golden Plaza Hotel by Easy Class",
       "slug": "golden-plaza",
       "emoji": "🌟",
       "cidade": "Porto Velho",
@@ -137,22 +137,22 @@
     },
     {
       "id": "maper_ouro",
-      "nome": "Maper Mardan Ouro Hotel",
+      "nome": "Maper Ouro - by Easy Hotéis",
       "slug": "maper-mardan-ouro",
       "emoji": "⛏️",
       "cidade": "Parauapebas",
       "concorrentes": [
         {
-          "nome": "Vale dos Carajás Park Hotel",
-          "slug": "vale-dos-caraja-s-park"
+          "nome": "Ibis Styles Parauapebas",
+          "slug": null
         },
         {
-          "nome": "Atrium Conforts Hotel",
-          "slug": "atrium-conforts-ltda"
+          "nome": "Atrium Confort Hotels",
+          "slug": null
         },
         {
-          "nome": "Zii Hotel Parauapebas",
-          "slug": "zii-parauapebas"
+          "nome": "Vale dos Carajás Hotel",
+          "slug": null
         }
       ]
     }
