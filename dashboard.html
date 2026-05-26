@@ -1111,7 +1111,7 @@ function renderizarTabela(registros) {
     return `
       <tr class="${ehFds ? 'fds' : ''}">
         <td class="col-data">${fmtDataCurta(r.check_in)}</td>
-        ${celula(hotel.nome, true)}
+        ${celula(nomesHoteis[0], true)}
         ${nomesHoteis.slice(1).map(n => celula(n, false)).join('')}
       </tr>`;
   }).join('') + '</tbody>';
@@ -1121,7 +1121,7 @@ function renderizarTabela(registros) {
     <tfoot>
       <tr>
         <td class="col-data">Média do período</td>
-        <td class="col-base">${fmtMoeda(medias[hotel.nome])}</td>
+        <td class="col-base">${fmtMoeda(medias[nomesHoteis[0]])}</td>
         ${nomesHoteis.slice(1).map(n => `<td>${fmtMoeda(medias[n])}</td>`).join('')}
       </tr>
     </tfoot>`;
