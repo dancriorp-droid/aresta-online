@@ -776,6 +776,7 @@ function sair() {
 let CONFIG = null;        // hoteis_config.json
 let HOTEL_ATUAL = null;   // id do hotel sendo exibido
 let DADOS_HOTEL = null;   // JSON do hotel atual
+const RAW_BASE = 'https://raw.githubusercontent.com/dancriorp-droid/aresta-online/main';  // fonte sempre atualizada (sem cache do Pages)
 let MODO_FILTRO = 'atual';
 
 /* ============================================================
@@ -883,8 +884,9 @@ async function selecionarHotel(hotelId) {
   // Carrega o JSON do hotel — tenta múltiplos caminhos
   const vMain = Date.now(); // anti-cache
   const caminhosHotel = [
-    `dados/${hotelId}/dados.json?v=${vMain}`,        // GitHub Pages (estrutura raiz)
-    `../dados/${hotelId}/dados.json?v=${vMain}`,     // servidor local (dentro de site/)
+    `${RAW_BASE}/dados/${hotelId}/dados.json?v=${vMain}`,  // raw github: sempre atualizado
+    `dados/${hotelId}/dados.json?v=${vMain}`,
+    `../dados/${hotelId}/dados.json?v=${vMain}`,
     `./dados/${hotelId}/dados.json?v=${vMain}`,
   ];
 
@@ -929,6 +931,7 @@ async function carregarBuscasManuais(hotelId) {
   // O scraper gera um arquivo indice.json com a lista dos arquivos manuais
   const vIdx = Date.now(); // anti-cache
   const caminhos = [
+    `${RAW_BASE}/dados/${hotelId}/indice.json?v=${vIdx}`,
     `dados/${hotelId}/indice.json?v=${vIdx}`,
     `../dados/${hotelId}/indice.json?v=${vIdx}`,
   ];
@@ -962,6 +965,7 @@ function renderizarAbasManuais(hotelId) {
 async function verBuscaManual(hotelId, arquivo) {
   const v = Date.now(); // anti-cache: força buscar sempre a versão mais nova
   const caminhos = [
+    `${RAW_BASE}/dados/${hotelId}/${arquivo}?v=${v}`,
     `dados/${hotelId}/${arquivo}?v=${v}`,
     `../dados/${hotelId}/${arquivo}?v=${v}`,
   ];
