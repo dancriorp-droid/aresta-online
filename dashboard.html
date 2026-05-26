@@ -1050,7 +1050,11 @@ function aplicarFiltro() {
 ============================================================ */
 function renderizarTabela(registros) {
   const hotel = CONFIG.hoteis.find(h => h.id === HOTEL_ATUAL);
-  const nomesHoteis = [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
+  // Usa os nomes diretamente do JSON de dados (campo "concorrentes")
+  // Isso garante que o painel mostra exatamente o que o scraper salvou
+  const nomesHoteis = DADOS_HOTEL && DADOS_HOTEL.concorrentes
+    ? DADOS_HOTEL.concorrentes
+    : [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
 
   // Calcula médias por hotel
   const medias = {};
@@ -1064,8 +1068,8 @@ function renderizarTabela(registros) {
     <thead>
       <tr>
         <th class="col-data">Data</th>
-        <th class="col-base">${hotel.nome}</th>
-        ${hotel.concorrentes.map(c => `<th>${c.nome}</th>`).join('')}
+        <th class="col-base">${nomesHoteis[0]}</th>
+        ${nomesHoteis.slice(1).map(n => `<th>${n}</th>`).join('')}
       </tr>
     </thead>`;
 
@@ -1101,7 +1105,7 @@ function renderizarTabela(registros) {
       <tr class="${ehFds ? 'fds' : ''}">
         <td class="col-data">${fmtDataCurta(r.check_in)}</td>
         ${celula(hotel.nome, true)}
-        ${hotel.concorrentes.map(c => celula(c.nome, false)).join('')}
+        ${nomesHoteis.slice(1).map(n => celula(n, false)).join('')}
       </tr>`;
   }).join('') + '</tbody>';
 
@@ -1111,7 +1115,7 @@ function renderizarTabela(registros) {
       <tr>
         <td class="col-data">Média do período</td>
         <td class="col-base">${fmtMoeda(medias[hotel.nome])}</td>
-        ${hotel.concorrentes.map(c => `<td>${fmtMoeda(medias[c.nome])}</td>`).join('')}
+        ${nomesHoteis.slice(1).map(n => `<td>${fmtMoeda(medias[n])}</td>`).join('')}
       </tr>
     </tfoot>`;
 
@@ -1140,7 +1144,9 @@ function exportarCSV() {
   }
 
   const hotel = CONFIG.hoteis.find(h => h.id === HOTEL_ATUAL);
-  const nomes = [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
+  const nomes = DADOS_HOTEL && DADOS_HOTEL.concorrentes
+    ? DADOS_HOTEL.concorrentes
+    : [hotel.nome, ...hotel.concorrentes.map(c => c.nome)];
 
   const cabecalho = ['Data', ...nomes].join(';');
   const linhas = registros.map(r => {
