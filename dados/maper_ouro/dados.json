@@ -3,348 +3,714 @@
   "hotel_nome": "Maper Ouro - by Easy Hotéis",
   "cidade": "Parauapebas",
   "emoji": "⛏️",
-  "data_busca": "2026-05-25T21:21:16.791527",
+  "data_busca": "2026-05-26T02:22:09.295066",
   "concorrentes": [
     "Maper Ouro - by Easy Hotéis",
-    "Ibis Styles Parauapebas",
-    "Hotel Savana Parauapebas"
+    "Vale dos Carajás Hotel",
+    "Atrium Confort Hotels",
+    "Ibis Styles Parauapebas"
   ],
   "precos_por_data": [
-    {
-      "check_in": "2026-05-25",
-      "check_out": "2026-05-26",
-      "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 303,
-        "Hotel Savana Parauapebas": null
-      }
-    },
     {
       "check_in": "2026-05-26",
       "check_out": "2026-05-27",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 303,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 456,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 541
       }
     },
     {
       "check_in": "2026-05-27",
       "check_out": "2026-05-28",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 333,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 476,
+        "Vale dos Carajás Hotel": 505,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 541
       }
     },
     {
       "check_in": "2026-05-28",
       "check_out": "2026-05-29",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 318,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 456,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 521
       }
     },
     {
       "check_in": "2026-05-29",
       "check_out": "2026-05-30",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 303,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 451
       }
     },
     {
       "check_in": "2026-05-30",
       "check_out": "2026-05-31",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 470,
+        "Ibis Styles Parauapebas": 451
       }
     },
     {
       "check_in": "2026-05-31",
       "check_out": "2026-06-01",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 434
       }
     },
     {
       "check_in": "2026-06-01",
       "check_out": "2026-06-02",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 414,
+        "Ibis Styles Parauapebas": 434
       }
     },
     {
       "check_in": "2026-06-02",
       "check_out": "2026-06-03",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 448
       }
     },
     {
       "check_in": "2026-06-03",
       "check_out": "2026-06-04",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 448
       }
     },
     {
       "check_in": "2026-06-04",
       "check_out": "2026-06-05",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 434
       }
     },
     {
       "check_in": "2026-06-05",
       "check_out": "2026-06-06",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 405
       }
     },
     {
       "check_in": "2026-06-06",
       "check_out": "2026-06-07",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 405
       }
     },
     {
       "check_in": "2026-06-07",
       "check_out": "2026-06-08",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 420
       }
     },
     {
       "check_in": "2026-06-08",
       "check_out": "2026-06-09",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 448
       }
     },
     {
       "check_in": "2026-06-09",
       "check_out": "2026-06-10",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 437,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 393,
+        "Ibis Styles Parauapebas": 481
       }
     },
     {
       "check_in": "2026-06-10",
       "check_out": "2026-06-11",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 291,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 437,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 481
       }
     },
     {
       "check_in": "2026-06-11",
       "check_out": "2026-06-12",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 430
       }
     },
     {
       "check_in": "2026-06-12",
       "check_out": "2026-06-13",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-13",
       "check_out": "2026-06-14",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-14",
       "check_out": "2026-06-15",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 403
       }
     },
     {
       "check_in": "2026-06-15",
       "check_out": "2026-06-16",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 292,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 417
       }
     },
     {
       "check_in": "2026-06-16",
       "check_out": "2026-06-17",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 481
       }
     },
     {
       "check_in": "2026-06-17",
       "check_out": "2026-06-18",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 481
       }
     },
     {
       "check_in": "2026-06-18",
       "check_out": "2026-06-19",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 292,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 417
       }
     },
     {
       "check_in": "2026-06-19",
       "check_out": "2026-06-20",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-20",
       "check_out": "2026-06-21",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-21",
       "check_out": "2026-06-22",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 403
       }
     },
     {
       "check_in": "2026-06-22",
       "check_out": "2026-06-23",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 292,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 430
       }
     },
     {
       "check_in": "2026-06-23",
       "check_out": "2026-06-24",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 481
       }
     },
     {
       "check_in": "2026-06-24",
       "check_out": "2026-06-25",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 466
       }
     },
     {
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 292,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 417,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 417
       }
     },
     {
       "check_in": "2026-06-26",
       "check_out": "2026-06-27",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-27",
       "check_out": "2026-06-28",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 390
       }
     },
     {
       "check_in": "2026-06-28",
       "check_out": "2026-06-29",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 278,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 403
       }
     },
     {
       "check_in": "2026-06-29",
       "check_out": "2026-06-30",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 292,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 417
       }
     },
     {
       "check_in": "2026-06-30",
       "check_out": "2026-07-01",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": null,
-        "Ibis Styles Parauapebas": 305,
-        "Hotel Savana Parauapebas": null
+        "Maper Ouro - by Easy Hotéis": 397,
+        "Vale dos Carajás Hotel": 379,
+        "Atrium Confort Hotels": 354,
+        "Ibis Styles Parauapebas": 466
       }
     }
   ],
   "historico": [
+    {
+      "data_busca": "2026-05-25T21:21:16.791527",
+      "precos_por_data": [
+        {
+          "check_in": "2026-05-25",
+          "check_out": "2026-05-26",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 303,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-26",
+          "check_out": "2026-05-27",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 303,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-27",
+          "check_out": "2026-05-28",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 333,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-28",
+          "check_out": "2026-05-29",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 318,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-29",
+          "check_out": "2026-05-30",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 303,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-30",
+          "check_out": "2026-05-31",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-05-31",
+          "check_out": "2026-06-01",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-01",
+          "check_out": "2026-06-02",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-02",
+          "check_out": "2026-06-03",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-03",
+          "check_out": "2026-06-04",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-04",
+          "check_out": "2026-06-05",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-05",
+          "check_out": "2026-06-06",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-06",
+          "check_out": "2026-06-07",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-07",
+          "check_out": "2026-06-08",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-08",
+          "check_out": "2026-06-09",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-09",
+          "check_out": "2026-06-10",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-10",
+          "check_out": "2026-06-11",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 291,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-11",
+          "check_out": "2026-06-12",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-12",
+          "check_out": "2026-06-13",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-13",
+          "check_out": "2026-06-14",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-14",
+          "check_out": "2026-06-15",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-15",
+          "check_out": "2026-06-16",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 292,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-16",
+          "check_out": "2026-06-17",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-17",
+          "check_out": "2026-06-18",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-18",
+          "check_out": "2026-06-19",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 292,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-19",
+          "check_out": "2026-06-20",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-20",
+          "check_out": "2026-06-21",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-21",
+          "check_out": "2026-06-22",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-22",
+          "check_out": "2026-06-23",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 292,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-23",
+          "check_out": "2026-06-24",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-24",
+          "check_out": "2026-06-25",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-25",
+          "check_out": "2026-06-26",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 292,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-26",
+          "check_out": "2026-06-27",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-27",
+          "check_out": "2026-06-28",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-28",
+          "check_out": "2026-06-29",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 278,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-29",
+          "check_out": "2026-06-30",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 292,
+            "Hotel Savana Parauapebas": null
+          }
+        },
+        {
+          "check_in": "2026-06-30",
+          "check_out": "2026-07-01",
+          "precos": {
+            "Maper Ouro - by Easy Hotéis": null,
+            "Ibis Styles Parauapebas": 305,
+            "Hotel Savana Parauapebas": null
+          }
+        }
+      ]
+    },
     {
       "data_busca": "2026-05-25T12:56:10.032910",
       "precos_por_data": [
