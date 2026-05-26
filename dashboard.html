@@ -776,6 +776,7 @@ function sair() {
 let CONFIG = null;        // hoteis_config.json
 let HOTEL_ATUAL = null;   // id do hotel sendo exibido
 let DADOS_HOTEL = null;   // JSON do hotel atual
+const RAW_BASE = 'https://raw.githubusercontent.com/dancriorp-droid/aresta-online/main';  // fonte sempre atualizada (sem cache do Pages)
 let MODO_FILTRO = 'atual';
 
 /* ============================================================
@@ -881,16 +882,18 @@ async function selecionarHotel(hotelId) {
     </div>`;
 
   // Carrega o JSON do hotel — tenta múltiplos caminhos
+  const vMain = Date.now(); // anti-cache
   const caminhosHotel = [
-    `dados/${hotelId}/dados.json`,        // GitHub Pages (estrutura raiz)
-    `../dados/${hotelId}/dados.json`,     // servidor local (dentro de site/)
-    `./dados/${hotelId}/dados.json`,
+    `${RAW_BASE}/dados/${hotelId}/dados.json?v=${vMain}`,  // raw github: sempre atualizado
+    `dados/${hotelId}/dados.json?v=${vMain}`,
+    `../dados/${hotelId}/dados.json?v=${vMain}`,
+    `./dados/${hotelId}/dados.json?v=${vMain}`,
   ];
 
   let dadosCarregados = false;
   for (const caminho of caminhosHotel) {
     try {
-      const resp = await fetch(caminho);
+      const resp = await fetch(caminho, { cache: 'no-store' });
       if (resp.ok) {
         DADOS_HOTEL = await resp.json();
         document.getElementById('ultimaAtualizacao').textContent = fmtTimestamp(DADOS_HOTEL.data_busca);
@@ -926,14 +929,16 @@ let BUSCAS_MANUAIS = {};  // { hotelId: [{check_in, check_out, dados}] }
 async function carregarBuscasManuais(hotelId) {
   // Tenta carregar o índice de buscas manuais
   // O scraper gera um arquivo indice.json com a lista dos arquivos manuais
+  const vIdx = Date.now(); // anti-cache
   const caminhos = [
-    `dados/${hotelId}/indice.json`,
-    `../dados/${hotelId}/indice.json`,
+    `${RAW_BASE}/dados/${hotelId}/indice.json?v=${vIdx}`,
+    `dados/${hotelId}/indice.json?v=${vIdx}`,
+    `../dados/${hotelId}/indice.json?v=${vIdx}`,
   ];
 
   for (const caminho of caminhos) {
     try {
-      const resp = await fetch(caminho);
+      const resp = await fetch(caminho, { cache: 'no-store' });
       if (!resp.ok) continue;
       const indice = await resp.json();
       BUSCAS_MANUAIS[hotelId] = indice;
@@ -958,13 +963,15 @@ function renderizarAbasManuais(hotelId) {
 }
 
 async function verBuscaManual(hotelId, arquivo) {
+  const v = Date.now(); // anti-cache: força buscar sempre a versão mais nova
   const caminhos = [
-    `dados/${hotelId}/${arquivo}`,
-    `../dados/${hotelId}/${arquivo}`,
+    `${RAW_BASE}/dados/${hotelId}/${arquivo}?v=${v}`,
+    `dados/${hotelId}/${arquivo}?v=${v}`,
+    `../dados/${hotelId}/${arquivo}?v=${v}`,
   ];
   for (const caminho of caminhos) {
     try {
-      const resp = await fetch(caminho);
+      const resp = await fetch(caminho, { cache: 'no-store' });
       if (!resp.ok) continue;
       const dados = await resp.json();
       // Mostra no painel igual os dados normais
