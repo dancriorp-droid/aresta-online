@@ -1,0 +1,23 @@
+{
+  "hotel_id": "maper_ouro",
+  "hotel_nome": "Maper Ouro - by Easy Hotéis",
+  "data_busca": "2026-05-25T23:04:55.605626",
+  "concorrentes": [
+    "Maper Ouro - by Easy Hotéis",
+    "Vale dos Carajás Hotel",
+    "Atrium Confort Hotels",
+    "Ibis Styles Parauapebas"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-05-25",
+      "check_out": "2026-05-26",
+      "precos": {
+        "Maper Ouro - by Easy Hotéis": null,
+        "Vale dos Carajás Hotel": 400,
+        "Atrium Confort Hotels": null,
+        "Ibis Styles Parauapebas": null
+      }
+    }
+  ]
+}

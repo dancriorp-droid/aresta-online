@@ -1,5 +1,11 @@
 [
   {
+    "arquivo": "manual_2026-05-25_2026-05-26.json",
+    "check_in": "2026-05-25",
+    "check_out": "2026-05-26",
+    "tipo": "periodo"
+  },
+  {
     "arquivo": "manual_2026-06-15_2026-06-16.json",
     "check_in": "2026-06-15",
     "check_out": "2026-06-16",
