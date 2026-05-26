@@ -1,0 +1,31 @@
+{
+  "hotel_id": "alto_da_boa_vista",
+  "hotel_nome": "Pousada Alto Da Boa Vista Campos do Jordão",
+  "data_busca": "2026-05-25T22:55:19.093678",
+  "concorrentes": [
+    "Pousada Alto Da Boa Vista Campos do Jordão",
+    "Pousada Villa Capivary Campos do Jordão",
+    "Pousada Da Pedra",
+    "Villa Amistà Campos do Jordão",
+    "Pousada Boutique Figueira da Serra",
+    "L.A.H. Hostellerie",
+    "Carballo Hotel & Spa",
+    "Hotel Boutique QUEBRA-NOZ"
+  ],
+  "precos_por_data": [
+    {
+      "check_in": "2026-06-15",
+      "check_out": "2026-06-16",
+      "precos": {
+        "Pousada Alto Da Boa Vista Campos do Jordão": 1048,
+        "Pousada Villa Capivary Campos do Jordão": 1050,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": 1430,
+        "Pousada Boutique Figueira da Serra": 1097,
+        "L.A.H. Hostellerie": 1476,
+        "Carballo Hotel & Spa": 1093,
+        "Hotel Boutique QUEBRA-NOZ": 1492
+      }
+    }
+  ]
+}
