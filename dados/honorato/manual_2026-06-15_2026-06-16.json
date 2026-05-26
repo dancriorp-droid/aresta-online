@@ -1,9 +1,9 @@
 {
   "hotel_id": "honorato",
-  "hotel_nome": "Hotel Honorato Plaza",
-  "data_busca": "2026-05-26T00:14:15.260926",
+  "hotel_nome": "Honorato Hotel by - Easy Hotéis",
+  "data_busca": "2026-05-26T00:20:17.262096",
   "concorrentes": [
-    "Hotel Honorato Plaza",
+    "Honorato Hotel by - Easy Hotéis",
     "Hotel Gelps",
     "Rota Hotéis Rio Verde",
     "Acanto Rio Verde",
@@ -15,7 +15,7 @@
       "check_in": "2026-06-15",
       "check_out": "2026-06-16",
       "precos": {
-        "Hotel Honorato Plaza": 730,
+        "Honorato Hotel by - Easy Hotéis": null,
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 330,
         "Acanto Rio Verde": 375,
