@@ -1,7 +1,7 @@
 {
   "hotel_id": "golden_plaza",
   "hotel_nome": "Golden Plaza Hotel",
-  "data_busca": "2026-05-25T22:28:33.519953",
+  "data_busca": "2026-05-25T22:33:27.304019",
   "concorrentes": [
     "Golden Plaza Hotel",
     "Oscar Hotel Executive",
@@ -13,8 +13,8 @@
       "check_out": "2026-06-16",
       "precos": {
         "Golden Plaza Hotel": null,
-        "Oscar Hotel Executive": 394,
-        "Slaviero Porto Velho": 508
+        "Oscar Hotel Executive": null,
+        "Slaviero Porto Velho": null
       }
     }
   ]
