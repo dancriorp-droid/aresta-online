@@ -3,7 +3,7 @@
   "hotel_nome": "Terrazzo Bonjardim",
   "cidade": "Campos do Jordão",
   "emoji": "🏨",
-  "data_busca": "2026-05-27T01:13:03.146795",
+  "data_busca": "2026-05-27T03:47:49.611564",
   "concorrentes": [
     "Terrazzo Bonjardim",
     "Hotel Moinho Itália",
@@ -399,6 +399,396 @@
     }
   ],
   "historico": [
+    {
+      "data_busca": "2026-05-27T01:13:03.146795",
+      "precos_por_data": [
+        {
+          "check_in": "2026-05-27",
+          "check_out": "2026-05-28",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 588,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-05-28",
+          "check_out": "2026-05-29",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 394,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-05-29",
+          "check_out": "2026-05-30",
+          "precos": {
+            "Terrazzo Bonjardim": 545,
+            "Hotel Moinho Itália": 646,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 899,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-05-30",
+          "check_out": "2026-05-31",
+          "precos": {
+            "Terrazzo Bonjardim": 734,
+            "Hotel Moinho Itália": 646,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-05-31",
+          "check_out": "2026-06-01",
+          "precos": {
+            "Terrazzo Bonjardim": 401,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 230,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-01",
+          "check_out": "2026-06-02",
+          "precos": {
+            "Terrazzo Bonjardim": 321,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 332,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-02",
+          "check_out": "2026-06-03",
+          "precos": {
+            "Terrazzo Bonjardim": 321,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 314,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-03",
+          "check_out": "2026-06-04",
+          "precos": {
+            "Terrazzo Bonjardim": 321,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 1025,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-04",
+          "check_out": "2026-06-05",
+          "precos": {
+            "Terrazzo Bonjardim": null,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-05",
+          "check_out": "2026-06-06",
+          "precos": {
+            "Terrazzo Bonjardim": null,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-06",
+          "check_out": "2026-06-07",
+          "precos": {
+            "Terrazzo Bonjardim": null,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-07",
+          "check_out": "2026-06-08",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 1025,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-08",
+          "check_out": "2026-06-09",
+          "precos": {
+            "Terrazzo Bonjardim": 425,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 410,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-09",
+          "check_out": "2026-06-10",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 410,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-10",
+          "check_out": "2026-06-11",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 392,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-11",
+          "check_out": "2026-06-12",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 520,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-12",
+          "check_out": "2026-06-13",
+          "precos": {
+            "Terrazzo Bonjardim": 657,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 1274,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-13",
+          "check_out": "2026-06-14",
+          "precos": {
+            "Terrazzo Bonjardim": 1079,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-14",
+          "check_out": "2026-06-15",
+          "precos": {
+            "Terrazzo Bonjardim": null,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 468,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-15",
+          "check_out": "2026-06-16",
+          "precos": {
+            "Terrazzo Bonjardim": null,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 372,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-16",
+          "check_out": "2026-06-17",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 532,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-17",
+          "check_out": "2026-06-18",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 560,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-18",
+          "check_out": "2026-06-19",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 510,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-19",
+          "check_out": "2026-06-20",
+          "precos": {
+            "Terrazzo Bonjardim": 657,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 891,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-20",
+          "check_out": "2026-06-21",
+          "precos": {
+            "Terrazzo Bonjardim": 755,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-21",
+          "check_out": "2026-06-22",
+          "precos": {
+            "Terrazzo Bonjardim": 386,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 552,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-22",
+          "check_out": "2026-06-23",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 373,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-23",
+          "check_out": "2026-06-24",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 372,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-24",
+          "check_out": "2026-06-25",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 357,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-25",
+          "check_out": "2026-06-26",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 363,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-26",
+          "check_out": "2026-06-27",
+          "precos": {
+            "Terrazzo Bonjardim": 599,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 811,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-27",
+          "check_out": "2026-06-28",
+          "precos": {
+            "Terrazzo Bonjardim": 541,
+            "Hotel Moinho Itália": null,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-28",
+          "check_out": "2026-06-29",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": null,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-29",
+          "check_out": "2026-06-30",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 339,
+            "La Vita Pousada de Charme": null
+          }
+        },
+        {
+          "check_in": "2026-06-30",
+          "check_out": "2026-07-01",
+          "precos": {
+            "Terrazzo Bonjardim": 353,
+            "Hotel Moinho Itália": 394,
+            "Hotel Vila Dom Bosco": null,
+            "Altitude Lodge Hotel": 372,
+            "La Vita Pousada de Charme": null
+          }
+        }
+      ]
+    },
     {
       "data_busca": "2026-05-26T03:08:25.726984",
       "precos_por_data": [
