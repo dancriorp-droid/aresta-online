@@ -1,7 +1,7 @@
 {
   "hotel_id": "terrazzo",
   "hotel_nome": "Terrazzo Bonjardim",
-  "data_busca": "2026-05-28T20:30:41",
+  "data_busca": "2026-05-29T09:33:52",
   "concorrentes": [
     "Terrazzo Bonjardim",
     "Hotel Moinho Itália",
@@ -10,17 +10,6 @@
     "La Vita Pousada de Charme"
   ],
   "precos_por_data": [
-    {
-      "check_in": "2026-05-28",
-      "check_out": "2026-05-29",
-      "precos": {
-        "Terrazzo Bonjardim": 353,
-        "Hotel Moinho Itália": 394,
-        "Hotel Vila Dom Bosco": "minimo_noites",
-        "Altitude Lodge Hotel": 346,
-        "La Vita Pousada de Charme": "minimo_noites"
-      }
-    },
     {
       "check_in": "2026-05-29",
       "check_out": "2026-05-30",
@@ -48,7 +37,7 @@
       "check_out": "2026-06-01",
       "precos": {
         "Terrazzo Bonjardim": 449,
-        "Hotel Moinho Itália": null,
+        "Hotel Moinho Itália": 351,
         "Hotel Vila Dom Bosco": "minimo_noites",
         "Altitude Lodge Hotel": 230,
         "La Vita Pousada de Charme": "minimo_noites"
@@ -61,7 +50,7 @@
         "Terrazzo Bonjardim": 321,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco": "minimo_noites",
-        "Altitude Lodge Hotel": 365,
+        "Altitude Lodge Hotel": 281,
         "La Vita Pousada de Charme": "minimo_noites"
       }
     },
