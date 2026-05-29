@@ -1,41 +1,47 @@
 {
   "_comentario": "Configuração dos hotéis monitorados. Para adicionar/remover, edite este arquivo. O 'id' é usado internamente (sem acentos/espaços). O 'slug' é o que aparece na URL do Booking.",
-
   "configuracoes_busca": {
     "adultos": 2,
     "quartos": 1,
     "moeda": "BRL",
     "idioma": "pt-br"
   },
-
   "hoteis": [
     {
       "id": "alto_da_boa_vista",
-      "nome": "Pousada Alto Da Boa Vista",
+      "nome": "Pousada Alto Da Boa Vista Campos do Jordão",
       "cidade": "Campos do Jordão",
       "emoji": "🎯",
       "slug": "pousada-alto-da-boa-vista",
       "concorrentes": [
-        { "nome": "Pousada Villa Capivary",        "slug": "pousada-villa-capivary" },
-        { "nome": "Pousada Da Pedra",              "slug": "pousada-da-pedra" },
-        { "nome": "Villa Amistà Campos do Jordão", "slug": "villa-amista-campos-do-jordao" },
-        { "nome": "Pousada Boutique Figueira",     "slug": "pousada-figueira-da-serra" },
-        { "nome": "L.A.H. Hostellerie",            "slug": "l-a-h-hostellerie" },
-        { "nome": "Carballo Hotel & Spa",          "slug": "carballo-amp-spa" },
-        { "nome": "Hotel Boutique QUEBRA-NOZ",     "slug": "quebra-noz" }
-      ]
-    },
-    {
-      "id": "hamburgo",
-      "nome": "Hamburgo Palace Hotel",
-      "cidade": "Balneário Camboriú",
-      "emoji": "🍺",
-      "slug": "hamburgo-palace",
-      "concorrentes": [
-        { "nome": "Camboriú Praia",      "slug": "camboriu-pecon" },
-        { "nome": "San Marino Cassino",  "slug": "san-marino-cassino" },
-        { "nome": "Bella Camboriú",      "slug": "bella-camboriu" },
-        { "nome": "Ibis Balneário",      "slug": "ibis-plaza-balneario-camboriu" }
+        {
+          "nome": "Pousada Villa Capivary Campos do Jordão",
+          "slug": null
+        },
+        {
+          "nome": "Pousada Da Pedra",
+          "slug": null
+        },
+        {
+          "nome": "Villa Amistà Campos do Jordão",
+          "slug": null
+        },
+        {
+          "nome": "Pousada Boutique Figueira da Serra",
+          "slug": null
+        },
+        {
+          "nome": "L.A.H. Hostellerie",
+          "slug": null
+        },
+        {
+          "nome": "Carballo Hotel & Spa",
+          "slug": null
+        },
+        {
+          "nome": "Hotel Boutique QUEBRA-NOZ",
+          "slug": null
+        }
       ]
     },
     {
@@ -45,59 +51,106 @@
       "emoji": "🏨",
       "slug": "pousada-terrazzo-bonjardim-campos-do-jordao",
       "concorrentes": [
-        { "nome": "Hotel Moinho Itália",       "slug": "o-moinho" },
-        { "nome": "Hotel Vila Dom Bosco",      "slug": "vila-dom-bosco" },
-        { "nome": "Altitude Lodge Hotel",      "slug": "altitude-lodge" },
-        { "nome": "La Vita Pousada de Charme", "slug": "la-vie-pousada-de-charme" }
+        {
+          "nome": "Hotel Moinho Itália",
+          "slug": null
+        },
+        {
+          "nome": "Hotel Vila Dom Bosco",
+          "slug": null
+        },
+        {
+          "nome": "Altitude Lodge Hotel",
+          "slug": null
+        },
+        {
+          "nome": "La Vita Pousada de Charme",
+          "slug": null
+        }
       ]
     },
     {
       "id": "serra_negra",
-      "nome": "Serra Negra Pousada & Spa",
+      "nome": "Serra Negra Pousada Spa - by Easy Hotéis",
       "cidade": "Guarapari",
       "emoji": "🏖️",
       "slug": "serra-negra-pousada-spa",
       "concorrentes": [
-        { "nome": "Duas Praias Hotel Pousada",       "slug": "pousada-duas-praias" },
-        { "nome": "Hotel Pousada Caminho da Praia",  "slug": "pousada-caminho-da-praia-guarapari" },
-        { "nome": "Hotel Diamantina Guarapari",      "slug": "diamantina-guarapari" }
+        {
+          "nome": "Duas Praias Hotel Pousada",
+          "slug": null
+        },
+        {
+          "nome": "Hotel Pousada Caminho da Praia",
+          "slug": null
+        },
+        {
+          "nome": "Hotel Diamantina - em Guarapari",
+          "slug": null
+        }
       ]
     },
     {
       "id": "honorato",
-      "nome": "Hotel Honorato Plaza",
+      "nome": "Honorato Hotel by - Easy Hotéis",
       "cidade": "Rio Verde",
       "emoji": "🏨",
       "slug": "honorato-plaza",
       "concorrentes": [
-        { "nome": "Hotel Gelps",                "slug": "gelps" },
-        { "nome": "Rota Hotéis Rio Verde",      "slug": "rota-hoteis-rio-verde" },
-        { "nome": "Acanto Rio Verde",           "slug": "acanto-rio-verde" },
-        { "nome": "Bons Tempos Rio Verde",      "slug": "bons-tempos-rio-verde" },
-        { "nome": "Transamerica Fit Rio Verde", "slug": "transamerica-fit-rio-verde" }
+        {
+          "nome": "Hotel Gelps",
+          "slug": null
+        },
+        {
+          "nome": "Rota Hotéis Rio Verde",
+          "slug": null
+        },
+        {
+          "nome": "Bons Tempos Rio Verde",
+          "slug": null
+        },
+        {
+          "nome": "Transamerica Fit Rio Verde",
+          "slug": null
+        }
       ]
     },
     {
       "id": "golden_plaza",
-      "nome": "Golden Plaza Hotel",
+      "nome": "Golden Plaza Hotel by Easy Class",
       "cidade": "Porto Velho",
       "emoji": "🌟",
       "slug": "golden-plaza",
       "concorrentes": [
-        { "nome": "Oscar Hotel Executive", "slug": "oscar-executive" },
-        { "nome": "Slaviero Porto Velho",  "slug": "slaviero-essential-porto-velho" }
+        {
+          "nome": "Oscar Hotel Executive Porto Velho",
+          "slug": null
+        },
+        {
+          "nome": "Slaviero Essential Porto Velho",
+          "slug": null
+        }
       ]
     },
     {
       "id": "maper_ouro",
-      "nome": "Maper Ouro Hotel",
+      "nome": "Maper Ouro - by Easy Hotéis",
       "cidade": "Parauapebas",
       "emoji": "⛏️",
       "slug": "maper-mardan-ouro",
       "concorrentes": [
-        { "nome": "Hotel Vale dos Carajás", "slug": "vale-dos-caraja-s-park" },
-        { "nome": "Atrium Conforts Hotel", "slug": "atrium-conforts-ltda" },
-        { "nome": "Ibis Styles Parauapebas", "slug": "zii-parauapebas" }
+        {
+          "nome": "Ibis Styles Parauapebas",
+          "slug": null
+        },
+        {
+          "nome": "Atrium Confort Hotels",
+          "slug": null
+        },
+        {
+          "nome": "Vale dos Carajás Hotel",
+          "slug": null
+        }
       ]
     }
   ]
