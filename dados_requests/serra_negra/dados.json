@@ -1,7 +1,7 @@
 {
   "hotel_id": "serra_negra",
   "hotel_nome": "Serra Negra Pousada Spa - by Easy Hotéis",
-  "data_busca": "2026-05-29T09:39:15",
+  "data_busca": "2026-05-29T15:33:41",
   "concorrentes": [
     "Serra Negra Pousada Spa - by Easy Hotéis",
     "Duas Praias Hotel Pousada",
@@ -43,7 +43,7 @@
       "check_in": "2026-06-01",
       "check_out": "2026-06-02",
       "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 347,
+        "Serra Negra Pousada Spa - by Easy Hotéis": 369,
         "Duas Praias Hotel Pousada": 364,
         "Hotel Pousada Caminho da Praia": 275,
         "Hotel Diamantina - em Guarapari": 325
@@ -53,7 +53,7 @@
       "check_in": "2026-06-02",
       "check_out": "2026-06-03",
       "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 347,
+        "Serra Negra Pousada Spa - by Easy Hotéis": 369,
         "Duas Praias Hotel Pousada": 364,
         "Hotel Pousada Caminho da Praia": 275,
         "Hotel Diamantina - em Guarapari": 325
@@ -86,7 +86,7 @@
         "Serra Negra Pousada Spa - by Easy Hotéis": 439,
         "Duas Praias Hotel Pousada": 781,
         "Hotel Pousada Caminho da Praia": "minimo_noites",
-        "Hotel Diamantina - em Guarapari": 390
+        "Hotel Diamantina - em Guarapari": 402
       }
     },
     {
@@ -96,7 +96,7 @@
         "Serra Negra Pousada Spa - by Easy Hotéis": "minimo_noites",
         "Duas Praias Hotel Pousada": 781,
         "Hotel Pousada Caminho da Praia": "minimo_noites",
-        "Hotel Diamantina - em Guarapari": 390
+        "Hotel Diamantina - em Guarapari": 402
       }
     },
     {
