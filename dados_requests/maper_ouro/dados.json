@@ -1,7 +1,7 @@
 {
   "hotel_id": "maper_ouro",
   "hotel_nome": "Maper Ouro - by Easy Hotéis",
-  "data_busca": "2026-06-01T11:42:47",
+  "data_busca": "2026-06-01T20:37:26",
   "concorrentes": [
     "Maper Ouro - by Easy Hotéis",
     "Ibis Styles Parauapebas",
@@ -13,7 +13,7 @@
       "check_in": "2026-06-01",
       "check_out": "2026-06-02",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 417,
+        "Maper Ouro - by Easy Hotéis": 437,
         "Ibis Styles Parauapebas": 451,
         "Atrium Confort Hotels": 414,
         "Vale dos Carajás Hotel": 400
@@ -83,7 +83,7 @@
       "check_in": "2026-06-08",
       "check_out": "2026-06-09",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 417,
+        "Maper Ouro - by Easy Hotéis": 437,
         "Ibis Styles Parauapebas": 448,
         "Atrium Confort Hotels": 393,
         "Vale dos Carajás Hotel": 400
@@ -153,7 +153,7 @@
       "check_in": "2026-06-15",
       "check_out": "2026-06-16",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 437,
+        "Maper Ouro - by Easy Hotéis": 456,
         "Ibis Styles Parauapebas": 448,
         "Atrium Confort Hotels": 393,
         "Vale dos Carajás Hotel": 400
@@ -173,7 +173,7 @@
       "check_in": "2026-06-17",
       "check_out": "2026-06-18",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 437,
+        "Maper Ouro - by Easy Hotéis": 456,
         "Ibis Styles Parauapebas": 481,
         "Atrium Confort Hotels": 393,
         "Vale dos Carajás Hotel": 400
@@ -223,7 +223,7 @@
       "check_in": "2026-06-22",
       "check_out": "2026-06-23",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 417,
+        "Maper Ouro - by Easy Hotéis": 437,
         "Ibis Styles Parauapebas": 430,
         "Atrium Confort Hotels": 393,
         "Vale dos Carajás Hotel": 400
@@ -243,7 +243,7 @@
       "check_in": "2026-06-24",
       "check_out": "2026-06-25",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 417,
+        "Maper Ouro - by Easy Hotéis": 437,
         "Ibis Styles Parauapebas": 466,
         "Atrium Confort Hotels": 393,
         "Vale dos Carajás Hotel": 400
@@ -253,9 +253,9 @@
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 417,
+        "Maper Ouro - by Easy Hotéis": 437,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -263,9 +263,9 @@
       "check_in": "2026-06-26",
       "check_out": "2026-06-27",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -273,9 +273,9 @@
       "check_in": "2026-06-27",
       "check_out": "2026-06-28",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -283,9 +283,9 @@
       "check_in": "2026-06-28",
       "check_out": "2026-06-29",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -293,9 +293,9 @@
       "check_in": "2026-06-29",
       "check_out": "2026-06-30",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -305,7 +305,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 466,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 400
       }
     },
@@ -315,7 +315,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -325,7 +325,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -335,7 +335,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -345,7 +345,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -355,7 +355,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -365,7 +365,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -375,7 +375,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -385,7 +385,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -395,7 +395,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -405,7 +405,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -415,7 +415,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -425,7 +425,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -435,7 +435,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -445,7 +445,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -455,7 +455,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -465,7 +465,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -475,7 +475,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -485,7 +485,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -495,7 +495,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -505,7 +505,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -515,7 +515,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -525,7 +525,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -535,7 +535,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -545,7 +545,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -555,7 +555,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -565,7 +565,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -575,7 +575,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -585,7 +585,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -595,7 +595,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 417,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -605,7 +605,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 403,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     },
@@ -615,10 +615,10 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 397,
         "Ibis Styles Parauapebas": 390,
-        "Atrium Confort Hotels": 393,
+        "Atrium Confort Hotels": 374,
         "Vale dos Carajás Hotel": 370
       }
     }
   ],
-  "fonte": "requests_v1"
+  "fonte": "destid_paralelo_v1"
 }

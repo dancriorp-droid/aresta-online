@@ -1,7 +1,7 @@
 {
   "hotel_id": "terrazzo",
   "hotel_nome": "Terrazzo Bonjardim",
-  "data_busca": "2026-06-01T11:05:20",
+  "data_busca": "2026-06-01T20:34:19",
   "concorrentes": [
     "Terrazzo Bonjardim",
     "Hotel Moinho Itália",
@@ -26,7 +26,7 @@
         "Terrazzo Bonjardim": 321,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 406
+        "Altitude Lodge Hotel": 528
       }
     },
     {
@@ -156,7 +156,7 @@
         "Terrazzo Bonjardim": "minimo_noites",
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 372
+        "Altitude Lodge Hotel": 484
       }
     },
     {
@@ -166,7 +166,7 @@
         "Terrazzo Bonjardim": 353,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 410
+        "Altitude Lodge Hotel": 532
       }
     },
     {
@@ -366,7 +366,7 @@
         "Terrazzo Bonjardim": 599,
         "Hotel Moinho Itália": 502,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": null
+        "Altitude Lodge Hotel": "minimo_noites"
       }
     },
     {
@@ -543,7 +543,7 @@
       "check_in": "2026-07-24",
       "check_out": "2026-07-25",
       "precos": {
-        "Terrazzo Bonjardim": 715,
+        "Terrazzo Bonjardim": 734,
         "Hotel Moinho Itália": "minimo_noites",
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
         "Altitude Lodge Hotel": "minimo_noites"
@@ -553,7 +553,7 @@
       "check_in": "2026-07-25",
       "check_out": "2026-07-26",
       "precos": {
-        "Terrazzo Bonjardim": 1025,
+        "Terrazzo Bonjardim": 1079,
         "Hotel Moinho Itália": "minimo_noites",
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
         "Altitude Lodge Hotel": "minimo_noites"
@@ -620,5 +620,5 @@
       }
     }
   ],
-  "fonte": "requests_v1"
+  "fonte": "destid_paralelo_v1"
 }

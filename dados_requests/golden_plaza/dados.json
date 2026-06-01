@@ -1,7 +1,7 @@
 {
   "hotel_id": "golden_plaza",
   "hotel_nome": "Golden Plaza Hotel by Easy Class",
-  "data_busca": "2026-06-01T11:33:33",
+  "data_busca": "2026-06-01T20:35:48",
   "concorrentes": [
     "Golden Plaza Hotel by Easy Class",
     "Oscar Hotel Executive Porto Velho",
@@ -39,7 +39,7 @@
       "check_in": "2026-06-04",
       "check_out": "2026-06-05",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 486,
+        "Golden Plaza Hotel by Easy Class": 507,
         "Oscar Hotel Executive Porto Velho": 394,
         "Slaviero Essential Porto Velho": 508
       }
@@ -112,7 +112,7 @@
       "check_out": "2026-06-13",
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
+        "Oscar Hotel Executive Porto Velho": 504,
         "Slaviero Essential Porto Velho": 599
       }
     },
@@ -121,7 +121,7 @@
       "check_out": "2026-06-14",
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
+        "Oscar Hotel Executive Porto Velho": 504,
         "Slaviero Essential Porto Velho": 453
       }
     },
@@ -201,7 +201,7 @@
       "check_in": "2026-06-22",
       "check_out": "2026-06-23",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 436,
+        "Golden Plaza Hotel by Easy Class": 448,
         "Oscar Hotel Executive Porto Velho": 394,
         "Slaviero Essential Porto Velho": 508
       }
@@ -228,7 +228,7 @@
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
         "Slaviero Essential Porto Velho": 508
       }
@@ -365,7 +365,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": null
       }
     },
     {
@@ -558,5 +558,5 @@
       }
     }
   ],
-  "fonte": "requests_v1"
+  "fonte": "destid_paralelo_v1"
 }
