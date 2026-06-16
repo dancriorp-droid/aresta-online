@@ -1,7 +1,7 @@
 {
   "hotel_id": "terrazzo",
   "hotel_nome": "Terrazzo Bonjardim",
-  "data_busca": "2026-06-16T16:29:27",
+  "data_busca": "2026-06-16T16:42:07",
   "concorrentes": [
     "Terrazzo Bonjardim",
     "Hotel Moinho Itália",
@@ -453,20 +453,20 @@
       "check_in": "2026-07-30",
       "check_out": "2026-07-31",
       "precos": {
-        "Terrazzo Bonjardim": 599,
-        "Hotel Moinho Itália": 502,
-        "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": "minimo_noites"
+        "Terrazzo Bonjardim": null,
+        "Hotel Moinho Itália": null,
+        "Hotel Vila Dom Bosco Campos do Jordão": null,
+        "Altitude Lodge Hotel": null
       }
     },
     {
       "check_in": "2026-07-31",
       "check_out": "2026-08-01",
       "precos": {
-        "Terrazzo Bonjardim": 715,
-        "Hotel Moinho Itália": "minimo_noites",
-        "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": "minimo_noites"
+        "Terrazzo Bonjardim": null,
+        "Hotel Moinho Itália": null,
+        "Hotel Vila Dom Bosco Campos do Jordão": null,
+        "Altitude Lodge Hotel": null
       }
     }
   ],
