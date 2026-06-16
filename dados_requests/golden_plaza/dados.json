@@ -1,7 +1,7 @@
 {
   "hotel_id": "golden_plaza",
   "hotel_nome": "Golden Plaza Hotel by Easy Class",
-  "data_busca": "2026-06-02T09:35:35",
+  "data_busca": "2026-06-16T16:29:30",
   "concorrentes": [
     "Golden Plaza Hotel by Easy Class",
     "Oscar Hotel Executive Porto Velho",
@@ -9,163 +9,37 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-06-02",
-      "check_out": "2026-06-03",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 436,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 539
-      }
-    },
-    {
-      "check_in": "2026-06-03",
-      "check_out": "2026-06-04",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
-      }
-    },
-    {
-      "check_in": "2026-06-04",
-      "check_out": "2026-06-05",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
-      }
-    },
-    {
-      "check_in": "2026-06-05",
-      "check_out": "2026-06-06",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 539
-      }
-    },
-    {
-      "check_in": "2026-06-06",
-      "check_out": "2026-06-07",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
-      }
-    },
-    {
-      "check_in": "2026-06-07",
-      "check_out": "2026-06-08",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
-      }
-    },
-    {
-      "check_in": "2026-06-08",
-      "check_out": "2026-06-09",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
-      }
-    },
-    {
-      "check_in": "2026-06-09",
-      "check_out": "2026-06-10",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 539
-      }
-    },
-    {
-      "check_in": "2026-06-10",
-      "check_out": "2026-06-11",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 629
-      }
-    },
-    {
-      "check_in": "2026-06-11",
-      "check_out": "2026-06-12",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 629
-      }
-    },
-    {
-      "check_in": "2026-06-12",
-      "check_out": "2026-06-13",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 504,
-        "Slaviero Essential Porto Velho": 599
-      }
-    },
-    {
-      "check_in": "2026-06-13",
-      "check_out": "2026-06-14",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 504,
-        "Slaviero Essential Porto Velho": 453
-      }
-    },
-    {
-      "check_in": "2026-06-14",
-      "check_out": "2026-06-15",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
-      }
-    },
-    {
-      "check_in": "2026-06-15",
-      "check_out": "2026-06-16",
-      "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
-        "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
-      }
-    },
-    {
       "check_in": "2026-06-16",
       "check_out": "2026-06-17",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 507,
+        "Golden Plaza Hotel by Easy Class": 465,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 569
       }
     },
     {
       "check_in": "2026-06-17",
       "check_out": "2026-06-18",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 486,
+        "Golden Plaza Hotel by Easy Class": 465,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
       "check_in": "2026-06-18",
       "check_out": "2026-06-19",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 486,
+        "Golden Plaza Hotel by Easy Class": 465,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
       "check_in": "2026-06-19",
       "check_out": "2026-06-20",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
+        "Golden Plaza Hotel by Easy Class": 406,
         "Oscar Hotel Executive Porto Velho": 394,
         "Slaviero Essential Porto Velho": 539
       }
@@ -174,9 +48,9 @@
       "check_in": "2026-06-20",
       "check_out": "2026-06-21",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 394,
+        "Golden Plaza Hotel by Easy Class": 406,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 447
       }
     },
     {
@@ -185,16 +59,16 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
       "check_in": "2026-06-22",
       "check_out": "2026-06-23",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 448,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
@@ -203,25 +77,25 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
       "check_in": "2026-06-24",
       "check_out": "2026-06-25",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 436,
+        "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 436,
+        "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 539
       }
     },
     {
@@ -239,7 +113,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -248,7 +122,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -257,7 +131,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 483
+        "Slaviero Essential Porto Velho": 508
       }
     },
     {
@@ -266,7 +140,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 483
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -275,16 +149,16 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
       "check_in": "2026-07-02",
       "check_out": "2026-07-03",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 436,
+        "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -293,7 +167,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -302,7 +176,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -311,43 +185,43 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
       "check_in": "2026-07-06",
       "check_out": "2026-07-07",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
       "check_in": "2026-07-07",
       "check_out": "2026-07-08",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
       "check_in": "2026-07-08",
       "check_out": "2026-07-09",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
       "check_in": "2026-07-09",
       "check_out": "2026-07-10",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -356,7 +230,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -365,7 +239,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -374,7 +248,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -383,7 +257,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -392,7 +266,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -401,16 +275,16 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
       "check_in": "2026-07-16",
       "check_out": "2026-07-17",
       "precos": {
-        "Golden Plaza Hotel by Easy Class": 423,
+        "Golden Plaza Hotel by Easy Class": 436,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -419,7 +293,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -428,7 +302,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -437,7 +311,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -446,7 +320,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -455,7 +329,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -464,7 +338,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -473,7 +347,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -482,7 +356,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -491,7 +365,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -500,7 +374,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 453
+        "Slaviero Essential Porto Velho": 432
       }
     },
     {
@@ -509,7 +383,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -518,7 +392,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -527,7 +401,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -536,7 +410,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 423,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     },
     {
@@ -545,7 +419,7 @@
       "precos": {
         "Golden Plaza Hotel by Easy Class": 394,
         "Oscar Hotel Executive Porto Velho": 394,
-        "Slaviero Essential Porto Velho": 508
+        "Slaviero Essential Porto Velho": 488
       }
     }
   ],
