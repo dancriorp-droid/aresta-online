@@ -1,7 +1,7 @@
 {
   "hotel_id": "alto_da_boa_vista",
   "hotel_nome": "Pousada Alto Da Boa Vista Campos do Jordão",
-  "data_busca": "2026-06-20T19:08:36",
+  "data_busca": "2026-06-23T10:10:02",
   "concorrentes": [
     "Pousada Alto Da Boa Vista Campos do Jordão",
     "Pousada Villa Capivary Campos do Jordão",
@@ -14,59 +14,17 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-06-20",
-      "check_out": "2026-06-21",
-      "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1293,
-        "Pousada Villa Capivary Campos do Jordão": 1314,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 2458,
-        "Pousada Boutique Figueira da Serra": 1858,
-        "L.A.H. Hostellerie": "minimo_noites",
-        "Carballo Hotel & Spa": 1922,
-        "Hotel Boutique QUEBRA-NOZ": 3866
-      }
-    },
-    {
-      "check_in": "2026-06-21",
-      "check_out": "2026-06-22",
-      "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1048,
-        "Pousada Villa Capivary Campos do Jordão": 1314,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1215,
-        "Pousada Boutique Figueira da Serra": 1303,
-        "L.A.H. Hostellerie": 1837,
-        "Carballo Hotel & Spa": 1398,
-        "Hotel Boutique QUEBRA-NOZ": 1928
-      }
-    },
-    {
-      "check_in": "2026-06-22",
-      "check_out": "2026-06-23",
-      "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 943,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1215,
-        "Pousada Boutique Figueira da Serra": 1303,
-        "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
-        "Hotel Boutique QUEBRA-NOZ": 1928
-      }
-    },
-    {
       "check_in": "2026-06-23",
       "check_out": "2026-06-24",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 943,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1215,
-        "Pousada Boutique Figueira da Serra": 1303,
-        "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
-        "Hotel Boutique QUEBRA-NOZ": 1928
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -74,27 +32,27 @@
       "check_out": "2026-06-25",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": 943,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
+        "Pousada Villa Capivary Campos do Jordão": 690,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1215,
+        "Villa Amistà Campos do Jordão": null,
         "Pousada Boutique Figueira da Serra": 1303,
         "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
-        "Hotel Boutique QUEBRA-NOZ": 1928
+        "Carballo Hotel & Spa": 904,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
       "check_in": "2026-06-25",
       "check_out": "2026-06-26",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 943,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": 690,
         "Pousada Da Pedra": "minimo_noites",
         "Villa Amistà Campos do Jordão": 1215,
         "Pousada Boutique Figueira da Serra": 1303,
-        "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
-        "Hotel Boutique QUEBRA-NOZ": 1928
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": 904,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -102,13 +60,13 @@
       "check_out": "2026-06-27",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": "minimo_noites",
-        "Pousada Villa Capivary Campos do Jordão": 1650,
+        "Pousada Villa Capivary Campos do Jordão": 1320,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": "minimo_noites",
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 2587,
-        "Carballo Hotel & Spa": 1922,
-        "Hotel Boutique QUEBRA-NOZ": 3121
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": 1754,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -119,9 +77,9 @@
         "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
         "Pousada Da Pedra": "minimo_noites",
         "Villa Amistà Campos do Jordão": "minimo_noites",
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 2587,
-        "Carballo Hotel & Spa": 1922,
+        "Pousada Boutique Figueira da Serra": 1754,
+        "L.A.H. Hostellerie": 2849,
+        "Carballo Hotel & Spa": null,
         "Hotel Boutique QUEBRA-NOZ": 3121
       }
     },
@@ -135,7 +93,7 @@
         "Villa Amistà Campos do Jordão": 1215,
         "Pousada Boutique Figueira da Serra": 1303,
         "L.A.H. Hostellerie": 1837,
-        "Carballo Hotel & Spa": 1398,
+        "Carballo Hotel & Spa": 1259,
         "Hotel Boutique QUEBRA-NOZ": 1928
       }
     },
@@ -149,7 +107,7 @@
         "Villa Amistà Campos do Jordão": 1215,
         "Pousada Boutique Figueira da Serra": 1303,
         "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
+        "Carballo Hotel & Spa": 904,
         "Hotel Boutique QUEBRA-NOZ": 1928
       }
     },
@@ -157,14 +115,14 @@
       "check_in": "2026-06-30",
       "check_out": "2026-07-01",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 943,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1215,
-        "Pousada Boutique Figueira da Serra": 1303,
-        "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1004,
-        "Hotel Boutique QUEBRA-NOZ": 1928
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -174,7 +132,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1293,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1591,
         "Carballo Hotel & Spa": 1211,
@@ -185,14 +143,14 @@
       "check_in": "2026-07-02",
       "check_out": "2026-07-03",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1293,
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1499,
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 1591,
-        "Carballo Hotel & Spa": 1329,
-        "Hotel Boutique QUEBRA-NOZ": 2501
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -200,12 +158,12 @@
       "check_out": "2026-07-04",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": "minimo_noites",
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": "minimo_noites",
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
         "L.A.H. Hostellerie": 2587,
-        "Carballo Hotel & Spa": "minimo_noites",
+        "Carballo Hotel & Spa": null,
         "Hotel Boutique QUEBRA-NOZ": 4435
       }
     },
@@ -214,40 +172,40 @@
       "check_out": "2026-07-05",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": "minimo_noites",
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": "minimo_noites",
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
         "L.A.H. Hostellerie": 3500,
-        "Carballo Hotel & Spa": "minimo_noites",
-        "Hotel Boutique QUEBRA-NOZ": 4435
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
       "check_in": "2026-07-05",
       "check_out": "2026-07-06",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 1824,
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": 1271,
+        "Pousada Boutique Figueira da Serra": null,
+        "L.A.H. Hostellerie": null,
         "Carballo Hotel & Spa": 1337,
-        "Hotel Boutique QUEBRA-NOZ": 2501
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
       "check_in": "2026-07-06",
       "check_out": "2026-07-07",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
-        "Pousada Villa Capivary Campos do Jordão": 940,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Pousada Alto Da Boa Vista Campos do Jordão": 1293,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 1260,
-        "Carballo Hotel & Spa": 1211,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
         "Hotel Boutique QUEBRA-NOZ": 2501
       }
     },
@@ -258,7 +216,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -272,7 +230,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -286,7 +244,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
         "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": "minimo_noites",
+        "Villa Amistà Campos do Jordão": null,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1534,
@@ -311,28 +269,28 @@
       "check_in": "2026-07-11",
       "check_out": "2026-07-12",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": "minimo_noites",
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": "minimo_noites",
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 3500,
-        "Carballo Hotel & Spa": "minimo_noites",
-        "Hotel Boutique QUEBRA-NOZ": 4435
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": null,
+        "Pousada Boutique Figueira da Serra": null,
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
       "check_in": "2026-07-12",
       "check_out": "2026-07-13",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
         "Pousada Villa Capivary Campos do Jordão": 1630,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1824,
-        "Carballo Hotel & Spa": 1337,
-        "Hotel Boutique QUEBRA-NOZ": 2501
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -341,12 +299,12 @@
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
         "Pousada Villa Capivary Campos do Jordão": 1010,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": 1271,
+        "Pousada Boutique Figueira da Serra": null,
         "L.A.H. Hostellerie": 1260,
-        "Carballo Hotel & Spa": 1211,
-        "Hotel Boutique QUEBRA-NOZ": 2501
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -354,13 +312,13 @@
       "check_out": "2026-07-15",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
-        "Pousada Villa Capivary Campos do Jordão": 1010,
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 1260,
-        "Carballo Hotel & Spa": 1211,
-        "Hotel Boutique QUEBRA-NOZ": 2501
+        "L.A.H. Hostellerie": null,
+        "Carballo Hotel & Spa": null,
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
@@ -370,10 +328,10 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
         "Pousada Villa Capivary Campos do Jordão": 1010,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
-        "Pousada Boutique Figueira da Serra": "minimo_noites",
+        "Villa Amistà Campos do Jordão": 1271,
+        "Pousada Boutique Figueira da Serra": null,
         "L.A.H. Hostellerie": 1260,
-        "Carballo Hotel & Spa": 1211,
+        "Carballo Hotel & Spa": null,
         "Hotel Boutique QUEBRA-NOZ": 2501
       }
     },
@@ -384,7 +342,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1365,
         "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": null,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1329,
@@ -426,7 +384,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1824,
         "Carballo Hotel & Spa": 1337,
@@ -440,7 +398,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -454,7 +412,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -468,7 +426,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 980,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -479,13 +437,13 @@
       "check_in": "2026-07-23",
       "check_out": "2026-07-24",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1950,
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
+        "Pousada Alto Da Boa Vista Campos do Jordão": null,
+        "Pousada Villa Capivary Campos do Jordão": null,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": null,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
-        "Carballo Hotel & Spa": 1329,
+        "Carballo Hotel & Spa": null,
         "Hotel Boutique QUEBRA-NOZ": 2501
       }
     },
@@ -521,10 +479,10 @@
       "check_in": "2026-07-26",
       "check_out": "2026-07-27",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1044,
+        "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 1630,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1837,
         "Carballo Hotel & Spa": 1337,
@@ -535,10 +493,10 @@
       "check_in": "2026-07-27",
       "check_out": "2026-07-28",
       "precos": {
-        "Pousada Alto Da Boa Vista Campos do Jordão": 1044,
+        "Pousada Alto Da Boa Vista Campos do Jordão": 1229,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -552,7 +510,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1044,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -566,7 +524,7 @@
         "Pousada Alto Da Boa Vista Campos do Jordão": 1044,
         "Pousada Villa Capivary Campos do Jordão": 940,
         "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
         "L.A.H. Hostellerie": 1260,
         "Carballo Hotel & Spa": 1211,
@@ -578,13 +536,13 @@
       "check_out": "2026-07-31",
       "precos": {
         "Pousada Alto Da Boa Vista Campos do Jordão": 1044,
-        "Pousada Villa Capivary Campos do Jordão": "minimo_noites",
-        "Pousada Da Pedra": "minimo_noites",
-        "Villa Amistà Campos do Jordão": 1412,
+        "Pousada Villa Capivary Campos do Jordão": null,
+        "Pousada Da Pedra": null,
+        "Villa Amistà Campos do Jordão": 1271,
         "Pousada Boutique Figueira da Serra": "minimo_noites",
-        "L.A.H. Hostellerie": 1260,
+        "L.A.H. Hostellerie": null,
         "Carballo Hotel & Spa": 1329,
-        "Hotel Boutique QUEBRA-NOZ": "minimo_noites"
+        "Hotel Boutique QUEBRA-NOZ": null
       }
     },
     {
