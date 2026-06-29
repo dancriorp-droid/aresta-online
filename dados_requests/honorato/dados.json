@@ -1,7 +1,7 @@
 {
   "hotel_id": "honorato",
   "hotel_nome": "Honorato Hotel by - Easy Hotéis",
-  "data_busca": "2026-06-29T09:20:47",
+  "data_busca": "2026-06-29T09:21:03",
   "concorrentes": [
     "Honorato Hotel by - Easy Hotéis",
     "Hotel Gelps",
@@ -338,6 +338,39 @@
         "Rota Hotéis Rio Verde": 314,
         "Bons Tempos Rio Verde": 391,
         "Transamerica Fit Rio Verde": 300
+      }
+    },
+    {
+      "check_in": "2026-07-29",
+      "check_out": "2026-07-30",
+      "precos": {
+        "Honorato Hotel by - Easy Hotéis": 340,
+        "Hotel Gelps": 261,
+        "Rota Hotéis Rio Verde": 314,
+        "Bons Tempos Rio Verde": 391,
+        "Transamerica Fit Rio Verde": 300
+      }
+    },
+    {
+      "check_in": "2026-07-30",
+      "check_out": "2026-07-31",
+      "precos": {
+        "Honorato Hotel by - Easy Hotéis": 265,
+        "Hotel Gelps": 261,
+        "Rota Hotéis Rio Verde": 314,
+        "Bons Tempos Rio Verde": 391,
+        "Transamerica Fit Rio Verde": 284
+      }
+    },
+    {
+      "check_in": "2026-07-31",
+      "check_out": "2026-08-01",
+      "precos": {
+        "Honorato Hotel by - Easy Hotéis": 265,
+        "Hotel Gelps": 261,
+        "Rota Hotéis Rio Verde": 314,
+        "Bons Tempos Rio Verde": 391,
+        "Transamerica Fit Rio Verde": 267
       }
     }
   ],

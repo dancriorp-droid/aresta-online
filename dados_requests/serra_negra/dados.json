@@ -1,7 +1,7 @@
 {
   "hotel_id": "serra_negra",
   "hotel_nome": "Serra Negra Pousada Spa - by Easy Hotéis",
-  "data_busca": "2026-06-29T09:20:45",
+  "data_busca": "2026-06-29T09:21:20",
   "concorrentes": [
     "Serra Negra Pousada Spa - by Easy Hotéis",
     "Duas Praias Hotel Pousada",
@@ -316,6 +316,61 @@
         "Hotel Pousada Caminho da Praia": "minimo_noites",
         "Pousada Mar e Mata": 360,
         "Hotel Fragata": 377
+      }
+    },
+    {
+      "check_in": "2026-07-27",
+      "check_out": "2026-07-28",
+      "precos": {
+        "Serra Negra Pousada Spa - by Easy Hotéis": 312,
+        "Duas Praias Hotel Pousada": 391,
+        "Hotel Pousada Caminho da Praia": "minimo_noites",
+        "Pousada Mar e Mata": 360,
+        "Hotel Fragata": 395
+      }
+    },
+    {
+      "check_in": "2026-07-28",
+      "check_out": "2026-07-29",
+      "precos": {
+        "Serra Negra Pousada Spa - by Easy Hotéis": 312,
+        "Duas Praias Hotel Pousada": 391,
+        "Hotel Pousada Caminho da Praia": "minimo_noites",
+        "Pousada Mar e Mata": 360,
+        "Hotel Fragata": 348
+      }
+    },
+    {
+      "check_in": "2026-07-29",
+      "check_out": "2026-07-30",
+      "precos": {
+        "Serra Negra Pousada Spa - by Easy Hotéis": 233,
+        "Duas Praias Hotel Pousada": 391,
+        "Hotel Pousada Caminho da Praia": 332,
+        "Pousada Mar e Mata": 360,
+        "Hotel Fragata": 348
+      }
+    },
+    {
+      "check_in": "2026-07-30",
+      "check_out": "2026-07-31",
+      "precos": {
+        "Serra Negra Pousada Spa - by Easy Hotéis": 233,
+        "Duas Praias Hotel Pousada": 391,
+        "Hotel Pousada Caminho da Praia": 332,
+        "Pousada Mar e Mata": 360,
+        "Hotel Fragata": 348
+      }
+    },
+    {
+      "check_in": "2026-07-31",
+      "check_out": "2026-08-01",
+      "precos": {
+        "Serra Negra Pousada Spa - by Easy Hotéis": 233,
+        "Duas Praias Hotel Pousada": 391,
+        "Hotel Pousada Caminho da Praia": 248,
+        "Pousada Mar e Mata": 360,
+        "Hotel Fragata": 348
       }
     }
   ],
