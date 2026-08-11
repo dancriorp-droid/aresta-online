@@ -1,7 +1,7 @@
 {
   "hotel_id": "terrazzo",
   "hotel_nome": "Terrazzo Bonjardim",
-  "data_busca": "2026-08-10T16:57:56",
+  "data_busca": "2026-08-11T10:14:04",
   "concorrentes": [
     "Terrazzo Bonjardim",
     "Hotel Moinho Itália",
@@ -10,23 +10,13 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-08-10",
-      "check_out": "2026-08-11",
-      "precos": {
-        "Terrazzo Bonjardim": "minimo_noites",
-        "Hotel Moinho Itália": 215,
-        "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 342
-      }
-    },
-    {
       "check_in": "2026-08-11",
       "check_out": "2026-08-12",
       "precos": {
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 444
+        "Altitude Lodge Hotel": 280
       }
     },
     {
@@ -36,7 +26,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 319
+        "Altitude Lodge Hotel": 201
       }
     },
     {
@@ -46,7 +36,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 319
+        "Altitude Lodge Hotel": 261
       }
     },
     {
@@ -56,7 +46,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 638,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 676
+        "Altitude Lodge Hotel": 503
       }
     },
     {
@@ -76,7 +66,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 931
+        "Altitude Lodge Hotel": 583
       }
     },
     {
@@ -86,7 +76,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 420
+        "Altitude Lodge Hotel": 413
       }
     },
     {
@@ -96,7 +86,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 420
+        "Altitude Lodge Hotel": 344
       }
     },
     {
@@ -106,7 +96,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 757
+        "Altitude Lodge Hotel": 474
       }
     },
     {
@@ -116,7 +106,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 230
+        "Altitude Lodge Hotel": 167
       }
     },
     {
@@ -126,7 +116,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": "minimo_noites",
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 732
+        "Altitude Lodge Hotel": 600
       }
     },
     {
@@ -146,7 +136,7 @@
         "Terrazzo Bonjardim": "minimo_noites",
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 303
+        "Altitude Lodge Hotel": 248
       }
     },
     {
@@ -156,7 +146,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 256
+        "Altitude Lodge Hotel": 209
       }
     },
     {
@@ -166,7 +156,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 256
+        "Altitude Lodge Hotel": 209
       }
     },
     {
@@ -176,7 +166,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 256
+        "Altitude Lodge Hotel": 209
       }
     },
     {
@@ -186,7 +176,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 215,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 464
+        "Altitude Lodge Hotel": 379
       }
     },
     {
@@ -196,7 +186,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": "minimo_noites",
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 690
+        "Altitude Lodge Hotel": 565
       }
     },
     {
@@ -226,7 +216,7 @@
         "Terrazzo Bonjardim": 343,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 217
+        "Altitude Lodge Hotel": 178
       }
     },
     {
@@ -236,7 +226,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -246,7 +236,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -256,7 +246,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -316,7 +306,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -326,7 +316,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -334,9 +324,9 @@
       "check_out": "2026-09-12",
       "precos": {
         "Terrazzo Bonjardim": 386,
-        "Hotel Moinho Itália": 948,
+        "Hotel Moinho Itália": 610,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 625
+        "Altitude Lodge Hotel": 512
       }
     },
     {
@@ -344,7 +334,7 @@
       "check_out": "2026-09-13",
       "precos": {
         "Terrazzo Bonjardim": 541,
-        "Hotel Moinho Itália": 948,
+        "Hotel Moinho Itália": 610,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
         "Altitude Lodge Hotel": "minimo_noites"
       }
@@ -356,7 +346,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 280
+        "Altitude Lodge Hotel": 229
       }
     },
     {
@@ -366,7 +356,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 267
+        "Altitude Lodge Hotel": 218
       }
     },
     {
@@ -376,7 +366,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 267
+        "Altitude Lodge Hotel": 218
       }
     },
     {
@@ -386,7 +376,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 267
+        "Altitude Lodge Hotel": 218
       }
     },
     {
@@ -396,7 +386,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 347
+        "Altitude Lodge Hotel": 284
       }
     },
     {
@@ -406,7 +396,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 610,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 625
+        "Altitude Lodge Hotel": 512
       }
     },
     {
@@ -426,7 +416,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 280
+        "Altitude Lodge Hotel": 229
       }
     },
     {
@@ -436,7 +426,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -446,7 +436,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -456,7 +446,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -466,7 +456,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 243
+        "Altitude Lodge Hotel": 199
       }
     },
     {
@@ -506,7 +496,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 221
+        "Altitude Lodge Hotel": 181
       }
     },
     {
@@ -516,7 +506,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 221
+        "Altitude Lodge Hotel": 181
       }
     },
     {
@@ -526,7 +516,7 @@
         "Terrazzo Bonjardim": 386,
         "Hotel Moinho Itália": 394,
         "Hotel Vila Dom Bosco Campos do Jordão": "minimo_noites",
-        "Altitude Lodge Hotel": 221
+        "Altitude Lodge Hotel": 181
       }
     }
   ],
