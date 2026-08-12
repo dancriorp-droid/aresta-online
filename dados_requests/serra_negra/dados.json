@@ -1,7 +1,7 @@
 {
   "hotel_id": "serra_negra",
   "hotel_nome": "Serra Negra Pousada Spa - by Easy Hotéis",
-  "data_busca": "2026-08-11T10:14:14",
+  "data_busca": "2026-08-12T09:43:41",
   "concorrentes": [
     "Serra Negra Pousada Spa - by Easy Hotéis",
     "Duas Praias Hotel Pousada",
@@ -11,22 +11,11 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-08-11",
-      "check_out": "2026-08-12",
-      "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 262,
-        "Duas Praias Hotel Pousada": 322,
-        "Hotel Pousada Caminho da Praia": 253,
-        "Pousada Mar e Mata": "minimo_noites",
-        "Hotel Fragata": 348
-      }
-    },
-    {
       "check_in": "2026-08-12",
       "check_out": "2026-08-13",
       "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 262,
-        "Duas Praias Hotel Pousada": 322,
+        "Serra Negra Pousada Spa - by Easy Hotéis": 339,
+        "Duas Praias Hotel Pousada": 347,
         "Hotel Pousada Caminho da Praia": 250,
         "Pousada Mar e Mata": "minimo_noites",
         "Hotel Fragata": 348
@@ -36,7 +25,7 @@
       "check_in": "2026-08-13",
       "check_out": "2026-08-14",
       "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 262,
+        "Serra Negra Pousada Spa - by Easy Hotéis": 295,
         "Duas Praias Hotel Pousada": 347,
         "Hotel Pousada Caminho da Praia": "minimo_noites",
         "Pousada Mar e Mata": 315,
@@ -48,7 +37,7 @@
       "check_out": "2026-08-15",
       "precos": {
         "Serra Negra Pousada Spa - by Easy Hotéis": 339,
-        "Duas Praias Hotel Pousada": 347,
+        "Duas Praias Hotel Pousada": 363,
         "Hotel Pousada Caminho da Praia": "minimo_noites",
         "Pousada Mar e Mata": 315,
         "Hotel Fragata": 348
@@ -127,7 +116,7 @@
         "Serra Negra Pousada Spa - by Easy Hotéis": 292,
         "Duas Praias Hotel Pousada": 347,
         "Hotel Pousada Caminho da Praia": 268,
-        "Pousada Mar e Mata": 360,
+        "Pousada Mar e Mata": 315,
         "Hotel Fragata": 302
       }
     },
@@ -149,7 +138,7 @@
         "Serra Negra Pousada Spa - by Easy Hotéis": 312,
         "Duas Praias Hotel Pousada": 448,
         "Hotel Pousada Caminho da Praia": 268,
-        "Pousada Mar e Mata": 360,
+        "Pousada Mar e Mata": 315,
         "Hotel Fragata": 302
       }
     },
@@ -192,7 +181,7 @@
       "precos": {
         "Serra Negra Pousada Spa - by Easy Hotéis": 312,
         "Duas Praias Hotel Pousada": 312,
-        "Hotel Pousada Caminho da Praia": 391,
+        "Hotel Pousada Caminho da Praia": null,
         "Pousada Mar e Mata": 315,
         "Hotel Fragata": 302
       }
@@ -531,7 +520,7 @@
       "check_in": "2026-09-27",
       "check_out": "2026-09-28",
       "precos": {
-        "Serra Negra Pousada Spa - by Easy Hotéis": 312,
+        "Serra Negra Pousada Spa - by Easy Hotéis": "minimo_noites",
         "Duas Praias Hotel Pousada": 397,
         "Hotel Pousada Caminho da Praia": 273,
         "Pousada Mar e Mata": 315,
