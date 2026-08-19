@@ -1,7 +1,7 @@
 {
   "hotel_id": "maper_ouro",
   "hotel_nome": "Maper Ouro - by Easy Hotéis",
-  "data_busca": "2026-08-18T14:41:07",
+  "data_busca": "2026-08-19T09:17:26",
   "concorrentes": [
     "Maper Ouro - by Easy Hotéis",
     "Ibis Styles Parauapebas",
@@ -10,22 +10,12 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-08-18",
-      "check_out": "2026-08-19",
-      "precos": {
-        "Maper Ouro - by Easy Hotéis": 536,
-        "Ibis Styles Parauapebas": "minimo_noites",
-        "Atrium Confort Hotels": 623,
-        "Vale dos Carajás Hotel": "minimo_noites"
-      }
-    },
-    {
       "check_in": "2026-08-19",
       "check_out": "2026-08-20",
       "precos": {
         "Maper Ouro - by Easy Hotéis": 516,
         "Ibis Styles Parauapebas": 541,
-        "Atrium Confort Hotels": 988,
+        "Atrium Confort Hotels": "minimo_noites",
         "Vale dos Carajás Hotel": "minimo_noites"
       }
     },
@@ -35,7 +25,7 @@
       "precos": {
         "Maper Ouro - by Easy Hotéis": 496,
         "Ibis Styles Parauapebas": 541,
-        "Atrium Confort Hotels": 988,
+        "Atrium Confort Hotels": 504,
         "Vale dos Carajás Hotel": 391
       }
     },
@@ -64,7 +54,7 @@
       "check_out": "2026-08-24",
       "precos": {
         "Maper Ouro - by Easy Hotéis": 437,
-        "Ibis Styles Parauapebas": 462,
+        "Ibis Styles Parauapebas": 481,
         "Atrium Confort Hotels": 504,
         "Vale dos Carajás Hotel": 391
       }
@@ -193,7 +183,7 @@
       "check_in": "2026-09-05",
       "check_out": "2026-09-06",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 444,
         "Atrium Confort Hotels": 504,
         "Vale dos Carajás Hotel": 391
@@ -273,7 +263,7 @@
       "check_in": "2026-09-13",
       "check_out": "2026-09-14",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 444,
         "Atrium Confort Hotels": 504,
         "Vale dos Carajás Hotel": 391
@@ -316,7 +306,7 @@
         "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 444,
         "Atrium Confort Hotels": 504,
-        "Vale dos Carajás Hotel": 370
+        "Vale dos Carajás Hotel": 391
       }
     },
     {
@@ -373,7 +363,7 @@
       "check_in": "2026-09-23",
       "check_out": "2026-09-24",
       "precos": {
-        "Maper Ouro - by Easy Hotéis": 397,
+        "Maper Ouro - by Easy Hotéis": 417,
         "Ibis Styles Parauapebas": 481,
         "Atrium Confort Hotels": 504,
         "Vale dos Carajás Hotel": 370
