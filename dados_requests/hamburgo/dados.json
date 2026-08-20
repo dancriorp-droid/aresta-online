@@ -1,7 +1,7 @@
 {
   "hotel_id": "hamburgo",
   "hotel_nome": "Hamburgo Palace Hotel",
-  "data_busca": "2026-08-19T09:17:54",
+  "data_busca": "2026-08-20T10:13:13",
   "concorrentes": [
     "Hamburgo Palace Hotel",
     "Hotel HM",
@@ -11,17 +11,6 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-08-19",
-      "check_out": "2026-08-20",
-      "precos": {
-        "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 286,
-        "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 415
-      }
-    },
-    {
       "check_in": "2026-08-20",
       "check_out": "2026-08-21",
       "precos": {
@@ -29,7 +18,7 @@
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 415
+        "Ibis Balneario Camboriu": 385
       }
     },
     {
@@ -40,7 +29,7 @@
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 295,
-        "Ibis Balneario Camboriu": 415
+        "Ibis Balneario Camboriu": 385
       }
     },
     {
@@ -62,7 +51,7 @@
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 250,
-        "Ibis Balneario Camboriu": 355
+        "Ibis Balneario Camboriu": 305
       }
     },
     {
@@ -73,7 +62,7 @@
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 337
+        "Ibis Balneario Camboriu": 355
       }
     },
     {
@@ -125,7 +114,7 @@
       "check_out": "2026-08-30",
       "precos": {
         "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 416,
+        "Hotel HM": 342,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 318,
         "Ibis Balneario Camboriu": 394
@@ -136,7 +125,7 @@
       "check_out": "2026-08-31",
       "precos": {
         "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 347,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
         "Bella Camboriú": 250,
         "Ibis Balneario Camboriu": 290
@@ -171,7 +160,7 @@
         "Hamburgo Palace Hotel": 291,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 326,
+        "Bella Camboriú": 285,
         "Ibis Balneario Camboriu": 366
       }
     },
@@ -183,7 +172,7 @@
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 326,
-        "Ibis Balneario Camboriu": 347
+        "Ibis Balneario Camboriu": 366
       }
     },
     {
