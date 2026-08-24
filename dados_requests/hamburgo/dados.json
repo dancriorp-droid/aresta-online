@@ -1,7 +1,7 @@
 {
   "hotel_id": "hamburgo",
   "hotel_nome": "Hamburgo Palace Hotel",
-  "data_busca": "2026-08-21T09:25:17",
+  "data_busca": "2026-08-24T10:12:30",
   "concorrentes": [
     "Hamburgo Palace Hotel",
     "Hotel HM",
@@ -11,47 +11,14 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-08-21",
-      "check_out": "2026-08-22",
-      "precos": {
-        "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 286,
-        "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 295,
-        "Ibis Balneario Camboriu": 385
-      }
-    },
-    {
-      "check_in": "2026-08-22",
-      "check_out": "2026-08-23",
-      "precos": {
-        "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 416,
-        "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 318,
-        "Ibis Balneario Camboriu": "minimo_noites"
-      }
-    },
-    {
-      "check_in": "2026-08-23",
-      "check_out": "2026-08-24",
-      "precos": {
-        "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 286,
-        "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 250,
-        "Ibis Balneario Camboriu": 305
-      }
-    },
-    {
       "check_in": "2026-08-24",
       "check_out": "2026-08-25",
       "precos": {
         "Hamburgo Palace Hotel": 245,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 355
+        "Bella Camboriú": 249,
+        "Ibis Balneario Camboriu": 385
       }
     },
     {
@@ -61,8 +28,8 @@
         "Hamburgo Palace Hotel": 245,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 355
+        "Bella Camboriú": 249,
+        "Ibis Balneario Camboriu": 385
       }
     },
     {
@@ -72,8 +39,8 @@
         "Hamburgo Palace Hotel": 245,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
-        "Ibis Balneario Camboriu": 423
+        "Bella Camboriú": 249,
+        "Ibis Balneario Camboriu": 445
       }
     },
     {
@@ -83,7 +50,7 @@
         "Hamburgo Palace Hotel": 245,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
+        "Bella Camboriú": 249,
         "Ibis Balneario Camboriu": "minimo_noites"
       }
     },
@@ -92,10 +59,10 @@
       "check_out": "2026-08-29",
       "precos": {
         "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 347,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 295,
-        "Ibis Balneario Camboriu": 423
+        "Bella Camboriú": 270,
+        "Ibis Balneario Camboriu": 445
       }
     },
     {
@@ -103,9 +70,9 @@
       "check_out": "2026-08-30",
       "precos": {
         "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 416,
+        "Hotel HM": 342,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 318,
+        "Bella Camboriú": 291,
         "Ibis Balneario Camboriu": 394
       }
     },
@@ -114,9 +81,9 @@
       "check_out": "2026-08-31",
       "precos": {
         "Hamburgo Palace Hotel": 245,
-        "Hotel HM": 347,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 250,
+        "Bella Camboriú": 228,
         "Ibis Balneario Camboriu": 290
       }
     },
@@ -127,7 +94,7 @@
         "Hamburgo Palace Hotel": 245,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 200,
-        "Bella Camboriú": 273,
+        "Bella Camboriú": 249,
         "Ibis Balneario Camboriu": 290
       }
     },
@@ -138,7 +105,7 @@
         "Hamburgo Palace Hotel": 291,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 273,
+        "Bella Camboriú": 249,
         "Ibis Balneario Camboriu": 366
       }
     },
@@ -149,7 +116,7 @@
         "Hamburgo Palace Hotel": 291,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 285,
+        "Bella Camboriú": 261,
         "Ibis Balneario Camboriu": 366
       }
     },
@@ -160,7 +127,7 @@
         "Hamburgo Palace Hotel": 291,
         "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
-        "Bella Camboriú": 285,
+        "Bella Camboriú": 261,
         "Ibis Balneario Camboriu": 366
       }
     },
@@ -169,9 +136,9 @@
       "check_out": "2026-09-05",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Hotel HM": 312,
+        "Hotel HM": 374,
         "San Marino Cassino Hotel": "minimo_noites",
-        "Bella Camboriú": 445,
+        "Bella Camboriú": 356,
         "Ibis Balneario Camboriu": 423
       }
     },
@@ -182,7 +149,7 @@
         "Hamburgo Palace Hotel": "minimo_noites",
         "Hotel HM": "minimo_noites",
         "San Marino Cassino Hotel": "minimo_noites",
-        "Bella Camboriú": 595,
+        "Bella Camboriú": 476,
         "Ibis Balneario Camboriu": "minimo_noites"
       }
     },
@@ -193,8 +160,8 @@
         "Hamburgo Palace Hotel": "minimo_noites",
         "Hotel HM": "minimo_noites",
         "San Marino Cassino Hotel": "minimo_noites",
-        "Bella Camboriú": 441,
-        "Ibis Balneario Camboriu": "minimo_noites"
+        "Bella Camboriú": 353,
+        "Ibis Balneario Camboriu": 423
       }
     },
     {
@@ -202,10 +169,10 @@
       "check_out": "2026-09-08",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 354,
-        "Ibis Balneario Camboriu": 347
+        "Ibis Balneario Camboriu": 366
       }
     },
     {
@@ -213,7 +180,7 @@
       "check_out": "2026-09-09",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
@@ -224,7 +191,7 @@
       "check_out": "2026-09-10",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 368,
         "Ibis Balneario Camboriu": 347
@@ -235,7 +202,7 @@
       "check_out": "2026-09-11",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 368,
         "Ibis Balneario Camboriu": 347
@@ -257,7 +224,7 @@
       "check_out": "2026-09-13",
       "precos": {
         "Hamburgo Palace Hotel": 341,
-        "Hotel HM": 374,
+        "Hotel HM": 342,
         "San Marino Cassino Hotel": "minimo_noites",
         "Bella Camboriú": 430,
         "Ibis Balneario Camboriu": 374
@@ -268,7 +235,7 @@
       "check_out": "2026-09-14",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 350,
         "Ibis Balneario Camboriu": 347
@@ -279,7 +246,7 @@
       "check_out": "2026-09-15",
       "precos": {
         "Hamburgo Palace Hotel": 311,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 368,
         "Ibis Balneario Camboriu": 347
@@ -345,7 +312,7 @@
       "check_out": "2026-09-21",
       "precos": {
         "Hamburgo Palace Hotel": 521,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 312,
         "Ibis Balneario Camboriu": 401
@@ -356,7 +323,7 @@
       "check_out": "2026-09-22",
       "precos": {
         "Hamburgo Palace Hotel": "minimo_noites",
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
@@ -367,7 +334,7 @@
       "check_out": "2026-09-23",
       "precos": {
         "Hamburgo Palace Hotel": "minimo_noites",
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
@@ -378,7 +345,7 @@
       "check_out": "2026-09-24",
       "precos": {
         "Hamburgo Palace Hotel": 381,
-        "Hotel HM": 342,
+        "Hotel HM": 312,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
@@ -389,7 +356,7 @@
       "check_out": "2026-09-25",
       "precos": {
         "Hamburgo Palace Hotel": 381,
-        "Hotel HM": 342,
+        "Hotel HM": 312,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 354,
         "Ibis Balneario Camboriu": "minimo_noites"
@@ -400,7 +367,7 @@
       "check_out": "2026-09-26",
       "precos": {
         "Hamburgo Palace Hotel": 341,
-        "Hotel HM": 342,
+        "Hotel HM": 312,
         "San Marino Cassino Hotel": "minimo_noites",
         "Bella Camboriú": 384,
         "Ibis Balneario Camboriu": "minimo_noites"
@@ -422,7 +389,7 @@
       "check_out": "2026-09-28",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 325,
         "Ibis Balneario Camboriu": 347
@@ -433,7 +400,7 @@
       "check_out": "2026-09-29",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 354,
         "Ibis Balneario Camboriu": 347
@@ -444,7 +411,7 @@
       "check_out": "2026-09-30",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
@@ -455,7 +422,7 @@
       "check_out": "2026-10-01",
       "precos": {
         "Hamburgo Palace Hotel": 291,
-        "Hotel HM": 312,
+        "Hotel HM": 286,
         "San Marino Cassino Hotel": 225,
         "Bella Camboriú": 340,
         "Ibis Balneario Camboriu": 347
