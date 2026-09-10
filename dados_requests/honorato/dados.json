@@ -1,7 +1,7 @@
 {
   "hotel_id": "honorato",
   "hotel_nome": "Honorato Hotel by - Easy Hotéis",
-  "data_busca": "2026-09-08T10:05:40",
+  "data_busca": "2026-09-10T09:43:31",
   "concorrentes": [
     "Honorato Hotel by - Easy Hotéis",
     "Hotel Gelps",
@@ -11,45 +11,23 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-09-08",
-      "check_out": "2026-09-09",
-      "precos": {
-        "Honorato Hotel by - Easy Hotéis": 421,
-        "Hotel Gelps": 344,
-        "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 391,
-        "Transamerica Fit Rio Verde": 381
-      }
-    },
-    {
-      "check_in": "2026-09-09",
-      "check_out": "2026-09-10",
-      "precos": {
-        "Honorato Hotel by - Easy Hotéis": 409,
-        "Hotel Gelps": 344,
-        "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 391,
-        "Transamerica Fit Rio Verde": "minimo_noites"
-      }
-    },
-    {
       "check_in": "2026-09-10",
       "check_out": "2026-09-11",
       "precos": {
-        "Honorato Hotel by - Easy Hotéis": 286,
+        "Honorato Hotel by - Easy Hotéis": 295,
         "Hotel Gelps": "minimo_noites",
         "Rota Hotéis Rio Verde": 347,
         "Bons Tempos Rio Verde": 334,
-        "Transamerica Fit Rio Verde": 365
+        "Transamerica Fit Rio Verde": 381
       }
     },
     {
       "check_in": "2026-09-11",
       "check_out": "2026-09-12",
       "precos": {
-        "Honorato Hotel by - Easy Hotéis": 278,
-        "Hotel Gelps": 279,
-        "Rota Hotéis Rio Verde": 347,
+        "Honorato Hotel by - Easy Hotéis": 286,
+        "Hotel Gelps": "minimo_noites",
+        "Rota Hotéis Rio Verde": 252,
         "Bons Tempos Rio Verde": 276,
         "Transamerica Fit Rio Verde": 284
       }
@@ -59,8 +37,8 @@
       "check_out": "2026-09-13",
       "precos": {
         "Honorato Hotel by - Easy Hotéis": 278,
-        "Hotel Gelps": 279,
-        "Rota Hotéis Rio Verde": 347,
+        "Hotel Gelps": "minimo_noites",
+        "Rota Hotéis Rio Verde": 252,
         "Bons Tempos Rio Verde": 276,
         "Transamerica Fit Rio Verde": 284
       }
@@ -71,7 +49,7 @@
       "precos": {
         "Honorato Hotel by - Easy Hotéis": 278,
         "Hotel Gelps": 279,
-        "Rota Hotéis Rio Verde": 347,
+        "Rota Hotéis Rio Verde": 252,
         "Bons Tempos Rio Verde": 276,
         "Transamerica Fit Rio Verde": 284
       }
@@ -82,9 +60,9 @@
       "precos": {
         "Honorato Hotel by - Easy Hotéis": 397,
         "Hotel Gelps": 344,
-        "Rota Hotéis Rio Verde": 347,
+        "Rota Hotéis Rio Verde": 252,
         "Bons Tempos Rio Verde": 334,
-        "Transamerica Fit Rio Verde": 332
+        "Transamerica Fit Rio Verde": 365
       }
     },
     {
@@ -95,7 +73,7 @@
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
         "Bons Tempos Rio Verde": 334,
-        "Transamerica Fit Rio Verde": 365
+        "Transamerica Fit Rio Verde": 381
       }
     },
     {
@@ -105,8 +83,8 @@
         "Honorato Hotel by - Easy Hotéis": 397,
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 368,
-        "Transamerica Fit Rio Verde": 365
+        "Bons Tempos Rio Verde": 334,
+        "Transamerica Fit Rio Verde": 381
       }
     },
     {
@@ -116,8 +94,8 @@
         "Honorato Hotel by - Easy Hotéis": 278,
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 368,
-        "Transamerica Fit Rio Verde": 316
+        "Bons Tempos Rio Verde": 334,
+        "Transamerica Fit Rio Verde": 332
       }
     },
     {
@@ -127,7 +105,7 @@
         "Honorato Hotel by - Easy Hotéis": 278,
         "Hotel Gelps": 279,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 334,
+        "Bons Tempos Rio Verde": 276,
         "Transamerica Fit Rio Verde": 284
       }
     },
@@ -138,7 +116,7 @@
         "Honorato Hotel by - Easy Hotéis": 278,
         "Hotel Gelps": 279,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 423,
+        "Bons Tempos Rio Verde": 299,
         "Transamerica Fit Rio Verde": 284
       }
     },
@@ -149,7 +127,7 @@
         "Honorato Hotel by - Easy Hotéis": 278,
         "Hotel Gelps": 279,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 391,
+        "Bons Tempos Rio Verde": 276,
         "Transamerica Fit Rio Verde": 284
       }
     },
@@ -160,7 +138,7 @@
         "Honorato Hotel by - Easy Hotéis": 397,
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 391,
+        "Bons Tempos Rio Verde": 334,
         "Transamerica Fit Rio Verde": 316
       }
     },
@@ -171,8 +149,8 @@
         "Honorato Hotel by - Easy Hotéis": 397,
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
-        "Bons Tempos Rio Verde": 391,
-        "Transamerica Fit Rio Verde": 332
+        "Bons Tempos Rio Verde": 334,
+        "Transamerica Fit Rio Verde": 348
       }
     },
     {
@@ -183,7 +161,7 @@
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
         "Bons Tempos Rio Verde": 405,
-        "Transamerica Fit Rio Verde": 348
+        "Transamerica Fit Rio Verde": 365
       }
     },
     {
@@ -194,7 +172,7 @@
         "Hotel Gelps": 344,
         "Rota Hotéis Rio Verde": 347,
         "Bons Tempos Rio Verde": 518,
-        "Transamerica Fit Rio Verde": 316
+        "Transamerica Fit Rio Verde": 332
       }
     },
     {

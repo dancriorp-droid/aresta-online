@@ -1,7 +1,7 @@
 {
   "hotel_id": "monaco",
   "hotel_nome": "Monaco Convention",
-  "data_busca": "2026-09-08T10:05:43",
+  "data_busca": "2026-09-10T09:43:35",
   "concorrentes": [
     "Monaco Convention",
     "Slaviero Guarulhos Aeroporto",
@@ -10,31 +10,11 @@
   ],
   "precos_por_data": [
     {
-      "check_in": "2026-09-08",
-      "check_out": "2026-09-09",
-      "precos": {
-        "Monaco Convention": 503,
-        "Slaviero Guarulhos Aeroporto": 581,
-        "Bristol Dobly International": 556,
-        "Comfort Guarulhos (Monreale)": 472
-      }
-    },
-    {
-      "check_in": "2026-09-09",
-      "check_out": "2026-09-10",
-      "precos": {
-        "Monaco Convention": 528,
-        "Slaviero Guarulhos Aeroporto": 569,
-        "Bristol Dobly International": 556,
-        "Comfort Guarulhos (Monreale)": 462
-      }
-    },
-    {
       "check_in": "2026-09-10",
       "check_out": "2026-09-11",
       "precos": {
-        "Monaco Convention": 503,
-        "Slaviero Guarulhos Aeroporto": 558,
+        "Monaco Convention": 587,
+        "Slaviero Guarulhos Aeroporto": 587,
         "Bristol Dobly International": 567,
         "Comfort Guarulhos (Monreale)": "minimo_noites"
       }
@@ -43,47 +23,47 @@
       "check_in": "2026-09-11",
       "check_out": "2026-09-12",
       "precos": {
-        "Monaco Convention": 503,
+        "Monaco Convention": 528,
         "Slaviero Guarulhos Aeroporto": 535,
-        "Bristol Dobly International": 478,
-        "Comfort Guarulhos (Monreale)": 450
+        "Bristol Dobly International": 489,
+        "Comfort Guarulhos (Monreale)": 471
       }
     },
     {
       "check_in": "2026-09-12",
       "check_out": "2026-09-13",
       "precos": {
-        "Monaco Convention": 483,
+        "Monaco Convention": 434,
         "Slaviero Guarulhos Aeroporto": 512,
-        "Bristol Dobly International": 478,
-        "Comfort Guarulhos (Monreale)": 411
+        "Bristol Dobly International": 489,
+        "Comfort Guarulhos (Monreale)": 442
       }
     },
     {
       "check_in": "2026-09-13",
       "check_out": "2026-09-14",
       "precos": {
-        "Monaco Convention": 483,
+        "Monaco Convention": 434,
         "Slaviero Guarulhos Aeroporto": 512,
         "Bristol Dobly International": 478,
-        "Comfort Guarulhos (Monreale)": 411
+        "Comfort Guarulhos (Monreale)": 442
       }
     },
     {
       "check_in": "2026-09-14",
       "check_out": "2026-09-15",
       "precos": {
-        "Monaco Convention": 559,
-        "Slaviero Guarulhos Aeroporto": 587,
+        "Monaco Convention": 587,
+        "Slaviero Guarulhos Aeroporto": 615,
         "Bristol Dobly International": 535,
-        "Comfort Guarulhos (Monreale)": 461
+        "Comfort Guarulhos (Monreale)": 487
       }
     },
     {
       "check_in": "2026-09-15",
       "check_out": "2026-09-16",
       "precos": {
-        "Monaco Convention": 559,
+        "Monaco Convention": 587,
         "Slaviero Guarulhos Aeroporto": 558,
         "Bristol Dobly International": 535,
         "Comfort Guarulhos (Monreale)": 442
@@ -95,7 +75,7 @@
       "precos": {
         "Monaco Convention": 559,
         "Slaviero Guarulhos Aeroporto": 558,
-        "Bristol Dobly International": 525,
+        "Bristol Dobly International": 541,
         "Comfort Guarulhos (Monreale)": 472
       }
     },
@@ -103,9 +83,9 @@
       "check_in": "2026-09-17",
       "check_out": "2026-09-18",
       "precos": {
-        "Monaco Convention": 532,
-        "Slaviero Guarulhos Aeroporto": 587,
-        "Bristol Dobly International": 525,
+        "Monaco Convention": 559,
+        "Slaviero Guarulhos Aeroporto": 615,
+        "Bristol Dobly International": 541,
         "Comfort Guarulhos (Monreale)": "minimo_noites"
       }
     },
@@ -115,7 +95,7 @@
       "precos": {
         "Monaco Convention": 532,
         "Slaviero Guarulhos Aeroporto": 512,
-        "Bristol Dobly International": 468,
+        "Bristol Dobly International": 478,
         "Comfort Guarulhos (Monreale)": "minimo_noites"
       }
     },
@@ -125,8 +105,8 @@
       "precos": {
         "Monaco Convention": 483,
         "Slaviero Guarulhos Aeroporto": 512,
-        "Bristol Dobly International": 468,
-        "Comfort Guarulhos (Monreale)": 411
+        "Bristol Dobly International": 478,
+        "Comfort Guarulhos (Monreale)": 422
       }
     },
     {
@@ -136,7 +116,7 @@
         "Monaco Convention": 483,
         "Slaviero Guarulhos Aeroporto": 512,
         "Bristol Dobly International": 468,
-        "Comfort Guarulhos (Monreale)": 411
+        "Comfort Guarulhos (Monreale)": 422
       }
     },
     {
@@ -145,8 +125,8 @@
       "precos": {
         "Monaco Convention": 559,
         "Slaviero Guarulhos Aeroporto": 558,
-        "Bristol Dobly International": 504,
-        "Comfort Guarulhos (Monreale)": 442
+        "Bristol Dobly International": 525,
+        "Comfort Guarulhos (Monreale)": 487
       }
     },
     {
@@ -154,9 +134,9 @@
       "check_out": "2026-09-23",
       "precos": {
         "Monaco Convention": 559,
-        "Slaviero Guarulhos Aeroporto": 558,
-        "Bristol Dobly International": 504,
-        "Comfort Guarulhos (Monreale)": 442
+        "Slaviero Guarulhos Aeroporto": 587,
+        "Bristol Dobly International": 525,
+        "Comfort Guarulhos (Monreale)": 487
       }
     },
     {
@@ -166,7 +146,7 @@
         "Monaco Convention": 559,
         "Slaviero Guarulhos Aeroporto": 558,
         "Bristol Dobly International": 504,
-        "Comfort Guarulhos (Monreale)": 472
+        "Comfort Guarulhos (Monreale)": "minimo_noites"
       }
     },
     {
@@ -174,7 +154,7 @@
       "check_out": "2026-09-25",
       "precos": {
         "Monaco Convention": 559,
-        "Slaviero Guarulhos Aeroporto": 535,
+        "Slaviero Guarulhos Aeroporto": 558,
         "Bristol Dobly International": 504,
         "Comfort Guarulhos (Monreale)": "minimo_noites"
       }
@@ -233,10 +213,10 @@
       "check_in": "2026-09-30",
       "check_out": "2026-10-01",
       "precos": {
-        "Monaco Convention": 532,
+        "Monaco Convention": 559,
         "Slaviero Guarulhos Aeroporto": 558,
         "Bristol Dobly International": 504,
-        "Comfort Guarulhos (Monreale)": 461
+        "Comfort Guarulhos (Monreale)": 513
       }
     },
     {
@@ -275,7 +255,7 @@
       "precos": {
         "Monaco Convention": 438,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 447,
+        "Bristol Dobly International": 467,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -305,7 +285,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 475,
+        "Bristol Dobly International": 516,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -315,7 +295,7 @@
       "precos": {
         "Monaco Convention": 483,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 516,
+        "Bristol Dobly International": 478,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -355,7 +335,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 516,
+        "Bristol Dobly International": 457,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -365,7 +345,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 475,
+        "Bristol Dobly International": 458,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -385,7 +365,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 475,
+        "Bristol Dobly International": 457,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -395,7 +375,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 457,
+        "Bristol Dobly International": 477,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -445,7 +425,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 516,
+        "Bristol Dobly International": 475,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -475,7 +455,7 @@
       "precos": {
         "Monaco Convention": 438,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 447,
+        "Bristol Dobly International": 467,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -485,7 +465,7 @@
       "precos": {
         "Monaco Convention": 438,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 468,
+        "Bristol Dobly International": 447,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -515,7 +495,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 538,
+        "Bristol Dobly International": 582,
         "Comfort Guarulhos (Monreale)": 442
       }
     },
@@ -525,7 +505,7 @@
       "precos": {
         "Monaco Convention": 460,
         "Slaviero Guarulhos Aeroporto": 575,
-        "Bristol Dobly International": 567,
+        "Bristol Dobly International": 582,
         "Comfort Guarulhos (Monreale)": 573
       }
     },
